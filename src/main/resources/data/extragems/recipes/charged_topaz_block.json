@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "###",
+    "###",
+    "###"
+    
+  ],
+  
+  "key": {
+    "#": {
+      "item": "extragems:topaz_charged"
+      }
+  },
+  
+  
+  "result": {
+    "item": "extragems:charged_topaz_block"
+  }
+}

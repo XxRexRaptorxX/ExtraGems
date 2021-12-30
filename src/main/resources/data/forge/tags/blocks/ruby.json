@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values":
+          [
+            "extragems:ruby_block",
+            "extragems:charged_ruby_block"
+          ]
+}

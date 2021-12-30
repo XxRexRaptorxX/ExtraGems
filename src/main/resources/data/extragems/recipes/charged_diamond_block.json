@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "###",
+    "###",
+    "###"
+    
+  ],
+  
+  "key": {
+    "#": {
+      "item": "extragems:diamond_charged"
+      }
+  },
+  
+  
+  "result": {
+    "item": "extragems:charged_diamond_block"
+  }
+}

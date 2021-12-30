@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values":
+          [
+            "extragems:amethyst_block",
+            "extragems:charged_amethyst_block"
+          ]
+}

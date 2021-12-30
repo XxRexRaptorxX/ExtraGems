@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    " X ",
+    "X#X",
+    " X "
+    
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/gold"
+    },
+    "#": {
+      "item": "extragems:crystal_charged"
+    }
+  },
+  
+  
+  "result": {
+    "item": "extragems:crystal_amulet"
+  }
+}

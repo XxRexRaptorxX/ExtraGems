@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[38,)"
+license="All rights reserved"
+issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/extra-gems/issues"
+
+[[mods]]
+modId="extragems"
+version="2.0.5"
+displayName="ExtraGems"
+updateJSONURL="https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/ExtraGems.json"
+displayURL="https://minecraft.curseforge.com/projects/extra-gems"
+logoFile="logo.png"
+#credits=""
+authors="XxRexRaptorxX (RexRaptor)"
+description='''
+Adds some new gems to your world!
+'''
+
+[[dependencies.extragems]]
+    modId="forge"
+    mandatory=true
+    versionRange="[38,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.extragems]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18,1.19)"
+    ordering="NONE"
+    side="BOTH"

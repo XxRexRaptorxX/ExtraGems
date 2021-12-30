@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    " X ",
+    "X#X",
+    " X "
+    
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/gold"
+    },
+    "#": {
+      "item": "extragems:sapphire_charged"
+    }
+  },
+  
+  
+  "result": {
+    "item": "extragems:sapphire_amulet"
+  }
+}

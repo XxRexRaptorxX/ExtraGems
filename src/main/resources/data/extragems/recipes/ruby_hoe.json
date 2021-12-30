@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "XX",
+    "# ",
+    "# "
+    
+  ],
+  
+  "key": {
+    "X": {
+      "tag": "forge:gems/ruby"
+      },
+    
+    "#": {
+        "item": "minecraft:stick"
+     }
+  },
+  
+  
+  "result": {
+    "item": "extragems:ruby_hoe"
+  }
+}

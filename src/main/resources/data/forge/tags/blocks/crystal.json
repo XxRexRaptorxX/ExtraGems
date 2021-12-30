@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values":
+          [
+            "extragems:crystal_block",
+            "extragems:charged_crystal_block"
+          ]
+}

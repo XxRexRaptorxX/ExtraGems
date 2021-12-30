@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "XX",
+    "#X",
+    "# "
+    
+  ],
+  
+  "key": {
+    "X": {
+      "tag": "forge:gems/amethyst"
+
+      },
+    
+    "#": {
+        "item": "minecraft:stick"
+     }
+  },
+  
+  
+  "result": {
+    "item": "extragems:amethyst_axe"
+  }
+}

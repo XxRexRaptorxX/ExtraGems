@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "###",
+    "###",
+    "###"
+    
+  ],
+  
+  "key": {
+    "#": {
+      "item": "extragems:amethyst_charged"
+      }
+  },
+  
+  
+  "result": {
+    "item": "extragems:charged_amethyst_block"
+  }
+}

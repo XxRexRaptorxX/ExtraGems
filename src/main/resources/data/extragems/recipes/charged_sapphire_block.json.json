@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "###",
+    "###",
+    "###"
+    
+  ],
+  
+  "key": {
+    "#": {
+      "item": "extragems:sapphire_charged"
+      }
+  },
+  
+  
+  "result": {
+    "item": "extragems:charged_sapphire_block"
+  }
+}

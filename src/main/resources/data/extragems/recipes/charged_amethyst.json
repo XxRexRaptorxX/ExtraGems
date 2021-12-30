@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "extragems:charged_amethyst_block"
+    }
+  ],
+  
+  "result": {
+    "item": "extragems:amethyst_charged",
+    "count": 9
+  }
+}

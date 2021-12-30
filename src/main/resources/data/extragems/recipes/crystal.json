@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "extragems:crystal_block"
+    }
+  ],
+  
+  "result": {
+    "item": "extragems:crystal",
+    "count": 9
+  }
+}

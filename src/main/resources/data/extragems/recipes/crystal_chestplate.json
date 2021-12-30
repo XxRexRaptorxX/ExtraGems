@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "# #",
+    "###",
+    "###"
+    
+  ],
+  
+  "key": {
+    "#": {
+      "tag": "forge:gems/crystal"
+      }
+  },
+  
+  
+  "result": {
+    "item": "extragems:crystal_chestplate"
+  }
+}

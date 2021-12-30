@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "extragems:block/gem_charger_side",
+    "down": "extragems:block/gem_charger_bottom",
+    "up": "extragems:block/gem_charger_top",
+    "north": "extragems:block/gem_charger_side",
+    "east": "extragems:block/gem_charger_side",
+    "south": "extragems:block/gem_charger_side",
+    "west": "extragems:block/gem_charger_side"
+  }
+}

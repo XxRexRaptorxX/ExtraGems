@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    " X ",
+    "X#X",
+    " X "
+    
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/gold"
+    },
+    "#": {
+      "item": "extragems:topaz_charged"
+    }
+  },
+  
+  
+  "result": {
+    "item": "extragems:topaz_amulet"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  
+    "XXX",
+    " # ",
+    " # "
+    
+  ],
+  
+  "key": {
+    "X": {
+      "tag": "forge:gems/sapphire"
+      },
+    
+    "#": {
+        "item": "minecraft:stick"
+     }
+  },
+  
+  
+  "result": {
+    "item": "extragems:sapphire_pickaxe"
+  }
+}

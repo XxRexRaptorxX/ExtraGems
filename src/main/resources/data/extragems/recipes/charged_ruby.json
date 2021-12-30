@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+  
+    {
+      "item": "extragems:charged_ruby_block"
+    }
+  ],
+  
+  "result": {
+    "item": "extragems:ruby_charged",
+    "count": 9
+  }
+}
