@@ -50,66 +50,66 @@ public class ModItems {
     public static final RegistryObject<PickaxeItem> AMETHYST_PICKAXE = ITEMS.register("amethyst_pickaxe",
             () -> new PickaxeItem(ToolMaterials.AMETHYST, 1, -2.8F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<AxeItem> AMETHYST_AXE = ITEMS.register("amethyst_axe",
-            () -> new AxeItem(ToolMaterials.AMETHYST, 7.0F, -3.2F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
+            () -> new AxeItem(ToolMaterials.AMETHYST, 6, -3.1F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<ShovelItem> AMETHYST_SHOVEL = ITEMS.register("amethyst_shovel",
             () -> new ShovelItem(ToolMaterials.AMETHYST, 1.5F, -3.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<HoeItem> AMETHYST_HOE = ITEMS.register("amethyst_hoe",
-            () -> new HoeItem(ToolMaterials.AMETHYST,-2, -2.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
+            () -> new HoeItem(ToolMaterials.AMETHYST,0, -1.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
 
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () ->
             new SwordItem(ToolMaterials.RUBY, 3, -2.4f, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<PickaxeItem> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe",
             () -> new PickaxeItem(ToolMaterials.RUBY, 1, -2.8F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<AxeItem> RUBY_AXE = ITEMS.register("ruby_axe",
-            () -> new AxeItem(ToolMaterials.RUBY, 7.0F, -3.2F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
+            () -> new AxeItem(ToolMaterials.RUBY, 6, -3.1F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<ShovelItem> RUBY_SHOVEL = ITEMS.register("ruby_shovel",
             () -> new ShovelItem(ToolMaterials.RUBY, 1.5F, -3.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<HoeItem> RUBY_HOE = ITEMS.register("ruby_hoe",
-            () -> new HoeItem(ToolMaterials.RUBY,-2, -2.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
+            () -> new HoeItem(ToolMaterials.RUBY,0, -1.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
 
     public static final RegistryObject<SwordItem> SAPPHIRE_SWORD = ITEMS.register("sapphire_sword", () ->
             new SwordItem(ToolMaterials.SAPPHIRE, 3, -2.4f, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<PickaxeItem> SAPPHIRE_PICKAXE = ITEMS.register("sapphire_pickaxe",
             () -> new PickaxeItem(ToolMaterials.SAPPHIRE, 1, -2.8F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<AxeItem> SAPPHIRE_AXE = ITEMS.register("sapphire_axe",
-            () -> new AxeItem(ToolMaterials.SAPPHIRE, 7.0F, -3.2F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
+            () -> new AxeItem(ToolMaterials.SAPPHIRE, 6, -3.1F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<ShovelItem> SAPPHIRE_SHOVEL = ITEMS.register("sapphire_shovel",
             () -> new ShovelItem(ToolMaterials.SAPPHIRE, 1.5F, -3.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<HoeItem> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
-            () -> new HoeItem(ToolMaterials.SAPPHIRE,-2, -2.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
+            () -> new HoeItem(ToolMaterials.SAPPHIRE,0, -1.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
 
     public static final RegistryObject<SwordItem> TOPAZ_SWORD = ITEMS.register("topaz_sword", () ->
             new SwordItem(ToolMaterials.TOPAZ, 3, -2.4f, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<PickaxeItem> TOPAZ_PICKAXE = ITEMS.register("topaz_pickaxe",
             () -> new PickaxeItem(ToolMaterials.TOPAZ, 1, -2.8F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<AxeItem> TOPAZ_AXE = ITEMS.register("topaz_axe",
-            () -> new AxeItem(ToolMaterials.TOPAZ, 7.0F, -3.2F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
+            () -> new AxeItem(ToolMaterials.TOPAZ, 6, -3.1F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<ShovelItem> TOPAZ_SHOVEL = ITEMS.register("topaz_shovel",
             () -> new ShovelItem(ToolMaterials.TOPAZ, 1.5F, -3.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<HoeItem> TOPAZ_HOE = ITEMS.register("topaz_hoe",
-            () -> new HoeItem(ToolMaterials.TOPAZ,-2, -2.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
+            () -> new HoeItem(ToolMaterials.TOPAZ,0, -1.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
 
     public static final RegistryObject<SwordItem> CRYSTAL_SWORD = ITEMS.register("crystal_sword", () ->
             new SwordItem(ToolMaterials.CRYSTAL, 3, -2.4f, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<PickaxeItem> CRYSTAL_PICKAXE = ITEMS.register("crystal_pickaxe",
             () -> new PickaxeItem(ToolMaterials.CRYSTAL, 1, -2.8F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<AxeItem> CRYSTAL_AXE = ITEMS.register("crystal_axe",
-            () -> new AxeItem(ToolMaterials.CRYSTAL, 7.0F, -3.2F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
+            () -> new AxeItem(ToolMaterials.CRYSTAL, 6, -3.1F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<ShovelItem> CRYSTAL_SHOVEL = ITEMS.register("crystal_shovel",
             () -> new ShovelItem(ToolMaterials.CRYSTAL, 1.5F, -3.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<HoeItem> CRYSTAL_HOE = ITEMS.register("crystal_hoe",
-            () -> new HoeItem(ToolMaterials.CRYSTAL,-2, -2.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
+            () -> new HoeItem(ToolMaterials.CRYSTAL,0, -1.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
 
     public static final RegistryObject<SwordItem> EMERALD_SWORD = ITEMS.register("emerald_sword", () ->
             new SwordItem(ToolMaterials.EMERALD, 3, -2.4f, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<PickaxeItem> EMERALD_PICKAXE = ITEMS.register("emerald_pickaxe",
             () -> new PickaxeItem(ToolMaterials.EMERALD, 1, -2.8F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<AxeItem> EMERALD_AXE = ITEMS.register("emerald_axe",
-            () -> new AxeItem(ToolMaterials.EMERALD, 7.0F, -3.2F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
+            () -> new AxeItem(ToolMaterials.EMERALD, 6, -3.1F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<ShovelItem> EMERALD_SHOVEL = ITEMS.register("emerald_shovel",
             () -> new ShovelItem(ToolMaterials.EMERALD, 1.5F, -3.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<HoeItem> EMERALD_HOE = ITEMS.register("emerald_hoe",
-            () -> new HoeItem(ToolMaterials.EMERALD,-2, -2.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
+            () -> new HoeItem(ToolMaterials.EMERALD,0, -1.0F, new Item.Properties().tab(CreativeTab.GEM_TAB)){});
 
     public static final RegistryObject<ArmorItem> AMETHYST_HELMET = ITEMS.register("amethyst_helmet", () -> new ArmorItem(ArmorMaterials.AMETHYST, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeTab.GEM_TAB)));
     public static final RegistryObject<ArmorItem> AMETHYST_LEGGINGS = ITEMS.register("amethyst_leggings", () -> new ArmorItem(ArmorMaterials.AMETHYST, EquipmentSlot.LEGS, new Item.Properties().tab(CreativeTab.GEM_TAB)));

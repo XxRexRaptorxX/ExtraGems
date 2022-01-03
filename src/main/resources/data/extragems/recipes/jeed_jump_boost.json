@@ -1,0 +1,14 @@
+{
+  "type": "jeed:effect_provider",
+  "effect":{
+    "id": "minecraft:jump_boost"
+  },
+  "providers": [
+    {
+      "item": "extragems:ruby_amulet"
+    },
+    {
+      "item": "extragems:charged_ruby_block"
+    }
+  ]
+}

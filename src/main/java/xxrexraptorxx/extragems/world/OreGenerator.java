@@ -38,6 +38,7 @@ public class OreGenerator {
             genOre(event.getGeneration(), OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.SAPPHIRE_ORE.get().defaultBlockState(), 3,0, 30, Config.ORE_RARITY.get());
             genOre(event.getGeneration(), OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.TOPAZ_ORE.get().defaultBlockState(), 3,0, 30, Config.ORE_RARITY.get());
             genOre(event.getGeneration(), OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.CRYSTAL_ORE.get().defaultBlockState(), 3,0, 30, Config.ORE_RARITY.get());
+
             genOre(event.getGeneration(), OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_RUBY_ORE.get().defaultBlockState(), 3,-50, 0, Config.DEEPSLATE_ORE_RARITY.get());
             genOre(event.getGeneration(), OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get().defaultBlockState(), 3,-50, 0, Config.DEEPSLATE_ORE_RARITY.get());
             genOre(event.getGeneration(), OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_TOPAZ_ORE.get().defaultBlockState(), 3,-50, 0, Config.DEEPSLATE_ORE_RARITY.get());

@@ -1,0 +1,14 @@
+{
+  "type": "jeed:effect_provider",
+  "effect":{
+    "id": "minecraft:regeneration"
+  },
+  "providers": [
+    {
+      "item": "extragems:amethyst_amulet"
+    },
+    {
+      "item": "extragems:charged_amethyst_block"
+    }
+  ]
+}

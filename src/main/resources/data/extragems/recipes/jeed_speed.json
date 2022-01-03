@@ -1,0 +1,14 @@
+{
+  "type": "jeed:effect_provider",
+  "effect":{
+    "id": "minecraft:speed"
+  },
+  "providers": [
+    {
+      "item": "extragems:emerald_amulet"
+    },
+    {
+      "item": "extragems:charged_emerald_block"
+    }
+  ]
+}

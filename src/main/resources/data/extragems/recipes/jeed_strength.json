@@ -1,0 +1,14 @@
+{
+  "type": "jeed:effect_provider",
+  "effect":{
+    "id": "minecraft:strength"
+  },
+  "providers": [
+    {
+      "item": "extragems:sapphire_amulet"
+    },
+    {
+      "item": "extragems:charged_sapphire_block"
+    }
+  ]
+}
