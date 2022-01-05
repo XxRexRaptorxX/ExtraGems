@@ -39,6 +39,7 @@ public class Config {
     public static ForgeConfigSpec.IntValue DEEPSLATE_ORE_RARITY;
     public static ForgeConfigSpec.IntValue CHARGING_COST;
     public static ForgeConfigSpec.BooleanValue LOOT_GENERATOR;
+    public static ForgeConfigSpec.IntValue MINING_LEVEL;
 
     public static void init() {
         initServer();
@@ -79,6 +80,7 @@ public class Config {
         AMULET_EFFECT_COOLDOWN = builder.comment("Change the effect cooldown after the usage").defineInRange("amulet_effect_cooldown", 600, 0, 10000);
         AMULET_MAX_USAGES = builder.comment("Change the maximum usages of the amulets").defineInRange("amulet_max_usages", 100, 1, 1000);
         CHARGING_COST = builder.comment("Change the amount of experience levels you need to charge a gem on the gem charger").defineInRange("charging_cost", 25, 1, 50);
+        MINING_LEVEL = builder.comment("Should the pickaxes have a mining level of diamond or iron? 1 = diamond, 0 = iron").defineInRange("mining_level", 1, 0, 1);
         builder.pop();
 
         SERVER_CONFIG = builder.build();
