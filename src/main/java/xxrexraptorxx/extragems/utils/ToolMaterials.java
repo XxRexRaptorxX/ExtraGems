@@ -3,6 +3,7 @@ package xxrexraptorxx.extragems.utils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.Tag;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -13,12 +14,12 @@ import xxrexraptorxx.extragems.main.References;
 
 public class ToolMaterials {
 
-    public static final Tag.Named<Block> AMETHYST_TAG = BlockTags.createOptional(new ResourceLocation(References.MODID, "needs_amethyst_tool"));
-    public static final Tag.Named<Block> RUBY_TAG = BlockTags.createOptional(new ResourceLocation(References.MODID, "needs_ruby_tool"));
-    public static final Tag.Named<Block> SAPPHIRE_TAG = BlockTags.createOptional(new ResourceLocation(References.MODID, "needs_sapphire_tool"));
-    public static final Tag.Named<Block> CRYSTAL_TAG = BlockTags.createOptional(new ResourceLocation(References.MODID, "needs_crystal_tool"));
-    public static final Tag.Named<Block> TOPAZ_TAG = BlockTags.createOptional(new ResourceLocation(References.MODID, "needs_topaz_tool"));
-    public static final Tag.Named<Block> EMERALD_TAG = BlockTags.createOptional(new ResourceLocation(References.MODID, "needs_emerald_tool"));
+    public static final TagKey<Block> AMETHYST_TAG = BlockTags.create(new ResourceLocation(References.MODID, "needs_amethyst_tool"));
+    public static final TagKey<Block> RUBY_TAG = BlockTags.create(new ResourceLocation(References.MODID, "needs_ruby_tool"));
+    public static final TagKey<Block> SAPPHIRE_TAG = BlockTags.create(new ResourceLocation(References.MODID, "needs_sapphire_tool"));
+    public static final TagKey<Block> CRYSTAL_TAG = BlockTags.create(new ResourceLocation(References.MODID, "needs_crystal_tool"));
+    public static final TagKey<Block> TOPAZ_TAG = BlockTags.create(new ResourceLocation(References.MODID, "needs_topaz_tool"));
+    public static final TagKey<Block> EMERALD_TAG = BlockTags.create(new ResourceLocation(References.MODID, "needs_emerald_tool"));
 
 
 

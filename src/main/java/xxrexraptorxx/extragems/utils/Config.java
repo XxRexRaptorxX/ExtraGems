@@ -98,8 +98,8 @@ public class Config {
         SAPPHIRE_ORE_GENERATION = builder.comment("Enable or disable the sapphire ore generation in your world").define("sapphire_ore_generation", true);
         TOPAZ_ORE_GENERATION = builder.comment("Enable or disable the topaz ore generation in your world").define("topaz_ore_generation", true);
         CRYSTAL_ORE_GENERATION = builder.comment("Enable or disable the crystal ore generation in your world").define("crystal_ore_generation", true);
-        ORE_RARITY = builder.comment("Change the rarity of regular ores").defineInRange("ore_rarity", 10, 1, 100);
-        DEEPSLATE_ORE_RARITY = builder.comment("Change the rarity of deepslate ores").defineInRange("deepslate_ore_rarity", 10, 1, 100);
+        ORE_RARITY = builder.comment("Change the rarity of regular ores [lower = rarer]").defineInRange("ore_rarity", 10, 1, 100);
+        DEEPSLATE_ORE_RARITY = builder.comment("Change the rarity of deepslate ores [lower = rarer]").defineInRange("deepslate_ore_rarity", 15, 1, 100);
         builder.pop();
 
         COMMON_CONFIG = builder.build();
