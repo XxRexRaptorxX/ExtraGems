@@ -5,7 +5,7 @@ issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/extra-gems/issues"
 
 [[mods]]
 modId="extragems"
-version="2.0.9"
+version="2.0.10"
 displayName="ExtraGems"
 itemIcon="extragems:amethyst"
 updateJSONURL="https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/ExtraGems.json"
