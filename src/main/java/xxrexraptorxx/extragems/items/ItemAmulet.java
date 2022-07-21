@@ -14,6 +14,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
+import net.minecraftforge.registries.ForgeRegistries;
 import xxrexraptorxx.extragems.main.References;
 import xxrexraptorxx.extragems.utils.Config;
 import xxrexraptorxx.extragems.utils.CreativeTab;
@@ -65,7 +66,7 @@ public class ItemAmulet extends Item {
             cloud1.setRadius(Config.AMULET_EFFECT_RADIUS.get());
             cloud1.setWaitTime(1);
             cloud1.setParticle(ParticleTypes.CRIT);
-            cloud1.addEffect(new MobEffectInstance(getEffect(this.getRegistryName().toString()), Config.AMULET_EFFECT_DURATION.get(), Config.AMULET_EFFECT_AMPLIFIER.get()));
+            cloud1.addEffect(new MobEffectInstance(getEffect(ForgeRegistries.ITEMS.getKey(this).toString()), Config.AMULET_EFFECT_DURATION.get(), Config.AMULET_EFFECT_AMPLIFIER.get()));
             level.addFreshEntity(cloud1);
         }
 

@@ -6,7 +6,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import xxrexraptorxx.extragems.utils.Config;
-import xxrexraptorxx.extragems.utils.ModSetup;
 
 /**
  * @author XxRexRaptorxX (RexRaptor)
@@ -18,13 +17,11 @@ public class ExtraGems {
     public static final Logger LOGGER = LogManager.getLogger();
 
     public ExtraGems() {
+        IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModSetup.setup();
         ModBlocks.init();
         ModItems.init();
         Config.init();
 
-        IEventBus modbus = FMLJavaModLoadingContext.get().getModEventBus();
-        modbus.addListener(ModSetup::init);
     }
 }
