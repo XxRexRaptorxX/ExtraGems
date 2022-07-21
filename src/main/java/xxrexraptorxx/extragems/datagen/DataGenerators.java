@@ -2,9 +2,9 @@ package xxrexraptorxx.extragems.datagen;
 
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
@@ -14,15 +14,12 @@ public class DataGenerators {
         DataGenerator generator = event.getGenerator();
         ExistingFileHelper helper = event.getExistingFileHelper();
 
-        if (event.includeServer()) {
-            //generator.addProvider(new Recipes(generator));
-            generator.addProvider(new LootTables(generator));
-            generator.addProvider(new TagsBlock(generator, helper));
-            generator.addProvider(new TagsItem(generator, new TagsBlock(generator, helper), helper));
-        }
-        if (event.includeClient()) {
-            generator.addProvider(new BlockStates(generator, helper));
-            generator.addProvider(new Items(generator, helper));
-        }
+
+            //generator.addProvider(event.includeServer(), new LootTables(generator));
+            generator.addProvider(event.includeServer(), new TagsBlock(generator, helper));
+            generator.addProvider(event.includeServer(), new TagsItem(generator, new TagsBlock(generator, helper), helper));
+
+            generator.addProvider(event.includeClient(), new BlockStates(generator, helper));
+            generator.addProvider(event.includeClient(), new Items(generator, helper));
     }
 }
