@@ -1,11 +1,11 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[41,)"
 license="All rights reserved"
 issueTrackerURL="https://www.curseforge.com/minecraft/mc-mods/extra-gems/issues"
 
 [[mods]]
 modId="extragems"
-version="2.0.10"
+version="2.1.0"
 displayName="ExtraGems"
 itemIcon="extragems:amethyst"
 updateJSONURL="https://raw.githubusercontent.com/XxRexRaptorxX/Update-Checker/main/ExtraGems.json"
@@ -20,13 +20,13 @@ Adds some new gems to your world!
 [[dependencies.extragems]]
     modId="forge"
     mandatory=true
-    versionRange="[40,)"
+    versionRange="[41.0.98,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.extragems]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2,1.19)"
+    versionRange="[1.19,1.20)"
     ordering="NONE"
     side="BOTH"
