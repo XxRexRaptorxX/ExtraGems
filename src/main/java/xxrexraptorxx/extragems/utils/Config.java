@@ -20,6 +20,8 @@ public class Config {
     public static ForgeConfigSpec COMMON_CONFIG;
 
     public static ForgeConfigSpec.BooleanValue UPDATE_CHECKER;
+    public static ForgeConfigSpec.BooleanValue PATREON_REWARDS;
+
     public static ForgeConfigSpec.IntValue CHARGED_BLOCK_EFFECT_DURATION;
     public static ForgeConfigSpec.IntValue CHARGED_BLOCK_EFFECT_AMPLIFIER;
     public static ForgeConfigSpec.BooleanValue AMULET_DESTROYABLE;
@@ -89,6 +91,10 @@ public class Config {
 
     public static void initCommon() {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
+
+        builder.comment("General settings").push(CATEGORY_GENERAL);
+        PATREON_REWARDS = builder.comment("Enables ingame rewards on first spawn for Patreons").define("patreon_rewards", true);
+        builder.pop();
 
         builder.comment("World").push(CATEGORY_WORLD);
         LOOT_GENERATOR = builder.comment("Enable or disable the dungeon loot generator").define("loot_generator", true);
