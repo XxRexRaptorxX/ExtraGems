@@ -1,11 +1,9 @@
 package xxrexraptorxx.extragems.utils;
 
 import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.config.ModConfigEvent;
 
 @Mod.EventBusSubscriber
 public class Config {
@@ -25,7 +23,6 @@ public class Config {
     public static ForgeConfigSpec.IntValue CHARGED_BLOCK_EFFECT_DURATION;
     public static ForgeConfigSpec.IntValue CHARGED_BLOCK_EFFECT_AMPLIFIER;
     public static ForgeConfigSpec.BooleanValue AMULET_DESTROYABLE;
-    public static ForgeConfigSpec.IntValue AMULET_DURABILITY;
     public static ForgeConfigSpec.IntValue AMULET_EFFECT_DURATION;
     public static ForgeConfigSpec.IntValue AMULET_EFFECT_AMPLIFIER;
     public static ForgeConfigSpec.IntValue AMULET_EFFECT_RADIUS;
@@ -46,11 +43,11 @@ public class Config {
     public static void init() {
         initServer();
         initClient();
-        initCommon();
+        //initCommon();
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, SERVER_CONFIG);
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, CLIENT_CONFIG);
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, COMMON_CONFIG);
+        //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, COMMON_CONFIG);
     }
 
 
@@ -68,6 +65,10 @@ public class Config {
     public static void initServer() {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
 
+        builder.comment("General settings").push(CATEGORY_GENERAL);
+        PATREON_REWARDS = builder.comment("Enables ingame rewards on first spawn for Patreons").define("patreon_rewards", true);
+        builder.pop();
+
         builder.comment("Blocks").push(CATEGORY_BLOCKS);
         CHARGED_BLOCK_EFFECT_DURATION = builder.comment("Change the effect duration of the charged gem blocks").defineInRange("charged_block_effect_duration", 300, 10, 10000);
         CHARGED_BLOCK_EFFECT_AMPLIFIER = builder.comment("Change the effect amplifier of the charged gem blocks").defineInRange("charged_block_effect_amplifier", 0, 0, 5);
@@ -75,7 +76,6 @@ public class Config {
 
         builder.comment("Items").push(CATEGORY_ITEMS);
         AMULET_DESTROYABLE = builder.comment("Enable or disable if the amulets should get a durability").define("is_amulet_destroyable", false);
-        AMULET_DURABILITY = builder.comment("Change the durability of the amulets").defineInRange("amulet_durability", 200, 1, 1000);
         AMULET_EFFECT_DURATION = builder.comment("Change the effect duration of the amulets").defineInRange("amulet_effect_duration", 200, 10, 10000);
         AMULET_EFFECT_AMPLIFIER = builder.comment("Change the effect amplifier of the amulets").defineInRange("amulet_effect_amplifier", 0, 0, 5);
         AMULET_EFFECT_RADIUS = builder.comment("Change the effect radius of the amulets").defineInRange("amulet_effect_radius", 3, 1, 10);
@@ -85,6 +85,10 @@ public class Config {
         MINING_LEVEL = builder.comment("Should the pickaxes have a mining level of diamond or iron? 1 = diamond, 0 = iron").defineInRange("mining_level", 1, 0, 1);
         builder.pop();
 
+        builder.comment("World").push(CATEGORY_WORLD);
+        LOOT_GENERATOR = builder.comment("Enable or disable the dungeon loot generator").define("loot_generator", true);
+        builder.pop();
+
         SERVER_CONFIG = builder.build();
     }
 
@@ -92,20 +96,15 @@ public class Config {
     public static void initCommon() {
         ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
 
-        builder.comment("General settings").push(CATEGORY_GENERAL);
-        PATREON_REWARDS = builder.comment("Enables ingame rewards on first spawn for Patreons").define("patreon_rewards", true);
-        builder.pop();
-
         builder.comment("World").push(CATEGORY_WORLD);
-        LOOT_GENERATOR = builder.comment("Enable or disable the dungeon loot generator").define("loot_generator", true);
-        GENERATE_STONE_ORE_VARIANTS = builder.comment("Enable normal ore variants generation in the stone layers").define("stone_ore_generation", true);
-        GENERATE_DEEPSLATE_ORE_VARIANTS = builder.comment("Enable ore variants generation in the deepslate layers").define("deepslate_ore_generation", true);
-        RUBY_ORE_GENERATION = builder.comment("Enable or disable the ruby ore generation in your world").define("ruby_ore_generation", true);
-        SAPPHIRE_ORE_GENERATION = builder.comment("Enable or disable the sapphire ore generation in your world").define("sapphire_ore_generation", true);
-        TOPAZ_ORE_GENERATION = builder.comment("Enable or disable the topaz ore generation in your world").define("topaz_ore_generation", true);
-        CRYSTAL_ORE_GENERATION = builder.comment("Enable or disable the crystal ore generation in your world").define("crystal_ore_generation", true);
-        ORE_RARITY = builder.comment("Change the rarity of regular ores [lower = rarer]").defineInRange("ore_rarity", 10, 1, 100);
-        DEEPSLATE_ORE_RARITY = builder.comment("Change the rarity of deepslate ores [lower = rarer]").defineInRange("deepslate_ore_rarity", 15, 1, 100);
+        // TODO!
+        //GENERATE_STONE_ORE_VARIANTS = builder.comment("Enable normal ore variants generation in the stone layers").define("stone_ore_generation", true);
+        //GENERATE_DEEPSLATE_ORE_VARIANTS = builder.comment("Enable ore variants generation in the deepslate layers").define("deepslate_ore_generation", true);
+        //RUBY_ORE_GENERATION = builder.comment("Enable or disable the ruby ore generation in your world").define("ruby_ore_generation", true);
+        //SAPPHIRE_ORE_GENERATION = builder.comment("Enable or disable the sapphire ore generation in your world").define("sapphire_ore_generation", true);
+        //TOPAZ_ORE_GENERATION = builder.comment("Enable or disable the topaz ore generation in your world").define("topaz_ore_generation", true);
+        //CRYSTAL_ORE_GENERATION = builder.comment("Enable or disable the crystal ore generation in your world").define("crystal_ore_generation", true);
+        //DEEPSLATE_ORE_RARITY = builder.comment("Change the rarity of deepslate ores [lower = rarer]").defineInRange("deepslate_ore_rarity", 15, 1, 100);
         builder.pop();
 
         COMMON_CONFIG = builder.build();

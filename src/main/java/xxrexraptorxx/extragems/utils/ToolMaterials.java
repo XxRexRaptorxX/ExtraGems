@@ -31,10 +31,14 @@ public class ToolMaterials {
 
 
     private static int getMiningLevel() {
+        /**     TODO
         if(Config.MINING_LEVEL.get() == 1) {
             return Tiers.DIAMOND.getLevel();
         } else {
             return Tiers.IRON.getLevel();
         }
+         **/
+
+        return Tiers.DIAMOND.getLevel();
     }
 }
