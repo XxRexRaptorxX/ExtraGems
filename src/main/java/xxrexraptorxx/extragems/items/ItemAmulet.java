@@ -28,7 +28,7 @@ public class ItemAmulet extends Item {
         super(new Properties()
             .tab(CreativeTab.GEM_TAB)
             .stacksTo(1)
-            .durability(Config.AMULET_MAX_USAGES.get())
+            .durability(100)
             .rarity(Rarity.RARE)
             .defaultDurability(200)
         );

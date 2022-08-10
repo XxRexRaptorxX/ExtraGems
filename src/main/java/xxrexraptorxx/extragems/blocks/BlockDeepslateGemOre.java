@@ -1,6 +1,7 @@
 package xxrexraptorxx.extragems.blocks;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -23,10 +24,9 @@ public class BlockDeepslateGemOre extends Block {
 	}
 
 	@Override
-	public int getExpDrop(BlockState state, LevelReader world, BlockPos pos, int fortune, int silktouch) {
+	public int getExpDrop(BlockState state, LevelReader level, RandomSource randomSource, BlockPos pos, int fortuneLevel, int silkTouchLevel) {
 		int random = ThreadLocalRandom.current().nextInt(4, 8 + 1);
-		return silktouch == 0 ? random : 0;
-
+		return silkTouchLevel == 0 ? random : 0;
 	}
 
 }
