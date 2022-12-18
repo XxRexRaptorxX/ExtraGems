@@ -1,5 +1,5 @@
 package xxrexraptorxx.extragems.datagen;
-
+/**
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -150,4 +150,4 @@ public class Items extends ItemModelProvider {
         withExistingParent(item.getId().getPath(), new ResourceLocation(References.MODID, "block/" + item.getId().getPath().toString().substring(References.MODID.length() + 1)));
     }
 
-}
+}**/

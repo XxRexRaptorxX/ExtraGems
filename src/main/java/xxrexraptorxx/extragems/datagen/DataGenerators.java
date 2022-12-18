@@ -16,10 +16,10 @@ public class DataGenerators {
 
 
             //generator.addProvider(event.includeServer(), new LootTables(generator));
-            generator.addProvider(event.includeServer(), new TagsBlock(generator, helper));
-            generator.addProvider(event.includeServer(), new TagsItem(generator, new TagsBlock(generator, helper), helper));
+            //generator.addProvider(event.includeServer(), new TagsBlock(generator, helper));
+            //generator.addProvider(event.includeServer(), new TagsItem(generator, new TagsBlock(generator, helper), helper));
 
-            generator.addProvider(event.includeClient(), new BlockStates(generator, helper));
-            generator.addProvider(event.includeClient(), new Items(generator, helper));
+            //generator.addProvider(event.includeClient(), new BlockStates(generator, helper));
+            //generator.addProvider(event.includeClient(), new Items(generator, helper));
     }
 }

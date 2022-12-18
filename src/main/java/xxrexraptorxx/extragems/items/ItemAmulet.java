@@ -17,7 +17,6 @@ import net.minecraft.world.level.Level;
 import net.minecraftforge.registries.ForgeRegistries;
 import xxrexraptorxx.extragems.main.References;
 import xxrexraptorxx.extragems.utils.Config;
-import xxrexraptorxx.extragems.utils.CreativeTab;
 
 import java.util.Random;
 
@@ -26,7 +25,6 @@ public class ItemAmulet extends Item {
 
     public ItemAmulet() {
         super(new Properties()
-            .tab(CreativeTab.GEM_TAB)
             .stacksTo(1)
             .durability(100)
             .rarity(Rarity.RARE)

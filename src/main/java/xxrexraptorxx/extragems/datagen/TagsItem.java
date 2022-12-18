@@ -1,5 +1,5 @@
 package xxrexraptorxx.extragems.datagen;
-
+/**
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -34,3 +34,4 @@ public class TagsItem extends ItemTagsProvider {
                         );
     }
 }
+ **/
