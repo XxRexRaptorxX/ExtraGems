@@ -1,5 +1,5 @@
 package xxrexraptorxx.extragems.integration;
-/**
+
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
@@ -37,7 +37,6 @@ public class JEIIntegration implements IModPlugin {
         IIngredientManager ingredientManager = registry.getIngredientManager();
 
         registry.addIngredientInfo(gems, VanillaTypes.ITEM_STACK, Component.translatable("message.extragems.charged_gem_jei_desc"));
-
     }
 }
-**/
+

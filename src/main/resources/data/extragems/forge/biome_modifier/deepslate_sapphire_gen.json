@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "extragems:deepslate_sapphire_gen",
+  "step": "underground_ores"
+}

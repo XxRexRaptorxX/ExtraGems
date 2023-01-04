@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "extragems:ruby_ore_placed",
+  "features": "extragems:crystal_gen",
   "step": "underground_ores"
 }

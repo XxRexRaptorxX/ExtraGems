@@ -1,0 +1,33 @@
+{
+  "feature": "extragems:topaz_gen",
+  "placement": [
+    {
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 1,
+          "max_inclusive": 3
+        }
+      },
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "height": {
+        "min_inclusive": {
+          "absolute": 0
+        },
+        "max_inclusive": {
+          "absolute": 30
+        },
+        "type": "minecraft:uniform"
+      },
+      "type": "minecraft:height_range"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

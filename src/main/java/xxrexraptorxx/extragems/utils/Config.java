@@ -43,11 +43,9 @@ public class Config {
     public static void init() {
         initServer();
         initClient();
-        //initCommon();
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, SERVER_CONFIG);
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, CLIENT_CONFIG);
-        //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, COMMON_CONFIG);
     }
 
 
@@ -91,24 +89,5 @@ public class Config {
 
         SERVER_CONFIG = builder.build();
     }
-
-
-    public static void initCommon() {
-        ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
-
-        builder.comment("World").push(CATEGORY_WORLD);
-        // TODO!
-        //GENERATE_STONE_ORE_VARIANTS = builder.comment("Enable normal ore variants generation in the stone layers").define("stone_ore_generation", true);
-        //GENERATE_DEEPSLATE_ORE_VARIANTS = builder.comment("Enable ore variants generation in the deepslate layers").define("deepslate_ore_generation", true);
-        //RUBY_ORE_GENERATION = builder.comment("Enable or disable the ruby ore generation in your world").define("ruby_ore_generation", true);
-        //SAPPHIRE_ORE_GENERATION = builder.comment("Enable or disable the sapphire ore generation in your world").define("sapphire_ore_generation", true);
-        //TOPAZ_ORE_GENERATION = builder.comment("Enable or disable the topaz ore generation in your world").define("topaz_ore_generation", true);
-        //CRYSTAL_ORE_GENERATION = builder.comment("Enable or disable the crystal ore generation in your world").define("crystal_ore_generation", true);
-        //DEEPSLATE_ORE_RARITY = builder.comment("Change the rarity of deepslate ores [lower = rarer]").defineInRange("deepslate_ore_rarity", 15, 1, 100);
-        builder.pop();
-
-        COMMON_CONFIG = builder.build();
-    }
-
 
 }

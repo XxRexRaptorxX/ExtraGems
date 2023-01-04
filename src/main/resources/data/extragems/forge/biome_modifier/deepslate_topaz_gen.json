@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "extragems:topaz_ore_placed",
+  "features": "extragems:deepslate_topaz_gen",
   "step": "underground_ores"
 }
