@@ -1,23 +1,25 @@
 package xxrexraptorxx.extragems.datagen;
-/**
-import net.minecraft.data.DataGenerator;
-import net.minecraft.data.tags.BlockTagsProvider;
+
+import net.minecraft.core.HolderLookup;
+import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import xxrexraptorxx.extragems.main.ModItems;
 import xxrexraptorxx.extragems.main.References;
 
-import javax.annotation.Nullable;
+import java.util.concurrent.CompletableFuture;
 
-public class TagsItem extends ItemTagsProvider {
-    public TagsItem(final DataGenerator generator, final BlockTagsProvider blockTagProvider, @Nullable final ExistingFileHelper existingFileHelper) {
-        super(generator, blockTagProvider, References.MODID, existingFileHelper);
+public class ItemTagGen extends ItemTagsProvider {
+
+    public ItemTagGen(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, BlockTagsProvider blockTags, ExistingFileHelper helper) {
+        super(packOutput, lookupProvider, blockTags, References.MODID, helper);
     }
 
 
     @Override
-    protected void addTags() {
+    protected void addTags(HolderLookup.Provider pProvider) {
         tag(ItemTags.BEACON_PAYMENT_ITEMS)
                 .add(   ModItems.AMETHYST.get(),
                         ModItems.RUBY.get(),
@@ -33,5 +35,6 @@ public class TagsItem extends ItemTagsProvider {
                         ModItems.CHARGED_EMERALD.get()
                         );
     }
+
 }
- **/
+

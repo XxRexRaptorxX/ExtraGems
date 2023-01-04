@@ -1,16 +1,16 @@
 package xxrexraptorxx.extragems.datagen;
-/**
-import net.minecraft.data.DataGenerator;
+
+import net.minecraft.data.PackOutput;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import xxrexraptorxx.extragems.main.ModBlocks;
 import xxrexraptorxx.extragems.main.References;
 
-public class BlockStates extends BlockStateProvider {
+public class BlockStateGen extends BlockStateProvider {
 
 
-    public BlockStates(DataGenerator gen, ExistingFileHelper exFileHelper) {
-        super(gen, References.MODID, exFileHelper);
+    public BlockStateGen(PackOutput packOutput, ExistingFileHelper exFileHelper) {
+        super(packOutput, References.MODID, exFileHelper);
     }
 
     @Override
@@ -38,4 +38,4 @@ public class BlockStates extends BlockStateProvider {
         simpleBlock(ModBlocks.DEEPSLATE_CRYSTAL_ORE.get());
     }
 
-}**/
+}
