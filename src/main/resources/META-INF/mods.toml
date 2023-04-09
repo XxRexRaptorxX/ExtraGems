@@ -13,9 +13,7 @@ displayURL="https://minecraft.curseforge.com/projects/extra-gems"
 logoFile="logo.png"
 #credits=""
 authors="XxRexRaptorxX (RexRaptor)"
-description='''
-Adds some new gems to your world!
-'''
+description='''This mod adds a few new gems for tools, weapons, armor, blocks and more to your world!'''
 
 [[dependencies.extragems]]
     modId="forge"
