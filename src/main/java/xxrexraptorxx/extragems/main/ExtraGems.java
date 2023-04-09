@@ -37,7 +37,8 @@ public class ExtraGems {
     @SubscribeEvent
     public static void registerTabs(final CreativeModeTabEvent.Register event) {
         event.registerCreativeModeTab(CREATIVE_TAB, (cf) -> cf.icon(() -> new ItemStack(ModItems.CHARGED_AMETHYST.get()))
-                .title(Component.translatable("itemGroup." + References.MODID + "_tab")).displayItems((flagSet, output, ifSth) -> {
+                .title(Component.translatable("itemGroup." + References.MODID + "_tab")).displayItems((params, output) -> {
+
                     output.accept(ModItems.AMETHYST.get());
                     output.accept(ModItems.CHARGED_AMETHYST.get());
                     output.accept(ModItems.AMETHYST_AMULET.get());
@@ -50,8 +51,6 @@ public class ExtraGems {
                     output.accept(ModItems.AMETHYST_CHESTPLATE.get());
                     output.accept(ModItems.AMETHYST_LEGGINGS.get());
                     output.accept(ModItems.AMETHYST_BOOTS.get());
-                    output.accept(ModBlocks.AMETHYST_BLOCK.get());
-                    output.accept(ModBlocks.CHARGED_AMETHYST_BLOCK.get());
 
                     output.accept(ModItems.RUBY.get());
                     output.accept(ModItems.CHARGED_RUBY.get());
@@ -65,10 +64,6 @@ public class ExtraGems {
                     output.accept(ModItems.RUBY_CHESTPLATE.get());
                     output.accept(ModItems.RUBY_LEGGINGS.get());
                     output.accept(ModItems.RUBY_BOOTS.get());
-                    output.accept(ModBlocks.RUBY_BLOCK.get());
-                    output.accept(ModBlocks.CHARGED_RUBY_BLOCK.get());
-                    output.accept(ModBlocks.RUBY_ORE.get());
-                    output.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
 
                     output.accept(ModItems.SAPPHIRE.get());
                     output.accept(ModItems.CHARGED_SAPPHIRE.get());
@@ -82,10 +77,6 @@ public class ExtraGems {
                     output.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
                     output.accept(ModItems.SAPPHIRE_LEGGINGS.get());
                     output.accept(ModItems.SAPPHIRE_BOOTS.get());
-                    output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
-                    output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
-                    output.accept(ModBlocks.SAPPHIRE_ORE.get());
-                    output.accept(ModBlocks.SAPPHIRE_ORE.get());
 
                     output.accept(ModItems.TOPAZ.get());
                     output.accept(ModItems.CHARGED_TOPAZ.get());
@@ -99,10 +90,6 @@ public class ExtraGems {
                     output.accept(ModItems.TOPAZ_CHESTPLATE.get());
                     output.accept(ModItems.TOPAZ_LEGGINGS.get());
                     output.accept(ModItems.TOPAZ_BOOTS.get());
-                    output.accept(ModBlocks.TOPAZ_BLOCK.get());
-                    output.accept(ModBlocks.CHARGED_TOPAZ_BLOCK.get());
-                    output.accept(ModBlocks.TOPAZ_ORE.get());
-                    output.accept(ModBlocks.DEEPSLATE_TOPAZ_ORE.get());
 
                     output.accept(ModItems.CRYSTAL.get());
                     output.accept(ModItems.CHARGED_CRYSTAL.get());
@@ -116,10 +103,6 @@ public class ExtraGems {
                     output.accept(ModItems.CRYSTAL_CHESTPLATE.get());
                     output.accept(ModItems.CRYSTAL_LEGGINGS.get());
                     output.accept(ModItems.CRYSTAL_BOOTS.get());
-                    output.accept(ModBlocks.CRYSTAL_BLOCK.get());
-                    output.accept(ModBlocks.CHARGED_CRYSTAL_BLOCK.get());
-                    output.accept(ModBlocks.CRYSTAL_ORE.get());
-                    output.accept(ModBlocks.DEEPSLATE_CRYSTAL_ORE.get());
 
                     output.accept(ModItems.CHARGED_CRYSTAL.get());
                     output.accept(ModItems.EMERALD_AMULET.get());
@@ -132,9 +115,27 @@ public class ExtraGems {
                     output.accept(ModItems.EMERALD_CHESTPLATE.get());
                     output.accept(ModItems.EMERALD_LEGGINGS.get());
                     output.accept(ModItems.EMERALD_BOOTS.get());
-                    output.accept(ModBlocks.CHARGED_EMERALD_BLOCK.get());
 
                     output.accept(ModBlocks.GEM_CHARGER.get());
+                    output.accept(ModBlocks.AMETHYST_BLOCK.get());
+                    output.accept(ModBlocks.CHARGED_AMETHYST_BLOCK.get());
+                    output.accept(ModBlocks.RUBY_BLOCK.get());
+                    output.accept(ModBlocks.CHARGED_RUBY_BLOCK.get());
+                    output.accept(ModBlocks.RUBY_ORE.get());
+                    output.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
+                    output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                    output.accept(ModBlocks.CHARGED_SAPPHIRE_BLOCK.get());
+                    output.accept(ModBlocks.SAPPHIRE_ORE.get());
+                    output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                    output.accept(ModBlocks.TOPAZ_BLOCK.get());
+                    output.accept(ModBlocks.CHARGED_TOPAZ_BLOCK.get());
+                    output.accept(ModBlocks.TOPAZ_ORE.get());
+                    output.accept(ModBlocks.DEEPSLATE_TOPAZ_ORE.get());
+                    output.accept(ModBlocks.CRYSTAL_BLOCK.get());
+                    output.accept(ModBlocks.CHARGED_CRYSTAL_BLOCK.get());
+                    output.accept(ModBlocks.CRYSTAL_ORE.get());
+                    output.accept(ModBlocks.DEEPSLATE_CRYSTAL_ORE.get());
+                    output.accept(ModBlocks.CHARGED_EMERALD_BLOCK.get());
                 })
         );
     }
