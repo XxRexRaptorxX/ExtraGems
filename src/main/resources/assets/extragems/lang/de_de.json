@@ -1,10 +1,9 @@
 {
-    "itemGroup.gemTab": "ExtraGems",
+    "itemGroup.extragems_tab": "ExtraGems",
     "message.extragems.not_enough_levels": "Du hast nicht genügend Erfahrungslevel!",
     "message.extragems.wrong_block": "Benutze es an einem Edelstein Charger...",
     "message.extragems.not_night": "Es muss Nacht und Vollmond sein...",
     "message.extragems.charged_gem_jei_desc": "Um Geladenene Edelsteine zu bekommen, clicke Nachts und Vollmond mit ausreichend XP auf dem Edelstein Charger.",
-
 
     "block.extragems.ruby_block": "Rubin Block",
     "block.extragems.sapphire_block": "Saphir Block",

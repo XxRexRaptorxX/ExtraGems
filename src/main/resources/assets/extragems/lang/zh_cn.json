@@ -1,12 +1,11 @@
 {
   "_comment": "translated by qyhao",
 
-  "itemGroup.gemTab": "额外的宝石矿物",
+  "itemGroup.extragems_tab": "ExtraGems",
   "message.extragems.not_enough_levels": "您没有足够的经验等级",
   "message.extragems.wrong_block": "Use it on a gem charger...",
   "message.extragems.not_night": "It has to be night with full moon...",
   "message.extragems.charged_gem_jei_desc": "To get a charged gem, click at night with full moon and enough experience levels on the gem charger.",
-
 
   "block.extragems.ruby_block": "红宝石块",
   "block.extragems.sapphire_block": "蓝宝石块",

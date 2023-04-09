@@ -1,7 +1,7 @@
 {
   "_comment": "translated by ragcloud",
 
-  "itemGroup.gemTab": "ExtraGems",
+  "itemGroup.extragems_tab": "ExtraGems",
   "message.extragems.not_enough_levels": "¡No tienes suficientes nivles de experiencia!",
   "message.extragems.wrong_block": "Usalo en un cargador de gemas...",
   "message.extragems.not_night": "Tiene que ser de noche con luna llena...",

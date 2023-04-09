@@ -1,5 +1,5 @@
 {
-  "itemGroup.gemTab": "ExtraGems",
+  "itemGroup.extragems_tab": "ExtraGems",
   "message.extragems.not_enough_levels": "You have not enough experience levels!",
   "message.extragems.wrong_block": "Use it on a gem charger...",
   "message.extragems.not_night": "It has to be night with full moon...",

@@ -1,8 +1,8 @@
 {
 	
 	"_comment": "translated by PasteKBrain",
-	
-	"itemGroup.gemTab": "ExtraGems",
+
+	"itemGroup.extragems_tab": "ExtraGems",
 	"message.extragems.not_enough_levels": "Vous n'avez pas suffisamment d'expérience!",
 	"message.extragems.wrong_block": "À utiliser sur un activateur de gemmes...",
 	"message.extragems.not_night": "Il doit faire nuit avec une pleine lune...",

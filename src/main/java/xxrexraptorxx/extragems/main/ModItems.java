@@ -1,6 +1,5 @@
 package xxrexraptorxx.extragems.main;
 
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -110,33 +109,33 @@ public class ModItems {
     public static final RegistryObject<HoeItem> EMERALD_HOE = ITEMS.register("emerald_hoe",
             () -> new HoeItem(ToolMaterials.EMERALD,0, -1.0F, new Item.Properties()));
 
-    public static final RegistryObject<ArmorItem> AMETHYST_HELMET = ITEMS.register("amethyst_helmet", () -> new ArmorItem(ArmorMaterials.AMETHYST, EquipmentSlot.HEAD, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> AMETHYST_LEGGINGS = ITEMS.register("amethyst_leggings", () -> new ArmorItem(ArmorMaterials.AMETHYST, EquipmentSlot.LEGS, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> AMETHYST_CHESTPLATE = ITEMS.register("amethyst_chestplate", () -> new ArmorItem(ArmorMaterials.AMETHYST, EquipmentSlot.CHEST, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> AMETHYST_BOOTS = ITEMS.register("amethyst_boots", () -> new ArmorItem(ArmorMaterials.AMETHYST, EquipmentSlot.FEET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> AMETHYST_HELMET = ITEMS.register("amethyst_helmet", () -> new ArmorItem(ArmorMaterials.AMETHYST, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> AMETHYST_LEGGINGS = ITEMS.register("amethyst_leggings", () -> new ArmorItem(ArmorMaterials.AMETHYST, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> AMETHYST_CHESTPLATE = ITEMS.register("amethyst_chestplate", () -> new ArmorItem(ArmorMaterials.AMETHYST, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> AMETHYST_BOOTS = ITEMS.register("amethyst_boots", () -> new ArmorItem(ArmorMaterials.AMETHYST, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<ArmorItem> RUBY_HELMET = ITEMS.register("ruby_helmet", () -> new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.HEAD, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> RUBY_LEGGINGS = ITEMS.register("ruby_leggings", () -> new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.LEGS, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate", () -> new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.CHEST, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> RUBY_BOOTS = ITEMS.register("ruby_boots", () -> new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.FEET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> RUBY_HELMET = ITEMS.register("ruby_helmet", () -> new ArmorItem(ArmorMaterials.RUBY, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> RUBY_LEGGINGS = ITEMS.register("ruby_leggings", () -> new ArmorItem(ArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate", () -> new ArmorItem(ArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> RUBY_BOOTS = ITEMS.register("ruby_boots", () -> new ArmorItem(ArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<ArmorItem> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet", () -> new ArmorItem(ArmorMaterials.SAPPHIRE, EquipmentSlot.HEAD, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings", () -> new ArmorItem(ArmorMaterials.SAPPHIRE, EquipmentSlot.LEGS, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate", () -> new ArmorItem(ArmorMaterials.SAPPHIRE, EquipmentSlot.CHEST, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots", () -> new ArmorItem(ArmorMaterials.SAPPHIRE, EquipmentSlot.FEET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet", () -> new ArmorItem(ArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings", () -> new ArmorItem(ArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate", () -> new ArmorItem(ArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots", () -> new ArmorItem(ArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<ArmorItem> TOPAZ_HELMET = ITEMS.register("topaz_helmet", () -> new ArmorItem(ArmorMaterials.TOPAZ, EquipmentSlot.HEAD, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> TOPAZ_LEGGINGS = ITEMS.register("topaz_leggings", () -> new ArmorItem(ArmorMaterials.TOPAZ, EquipmentSlot.LEGS, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> TOPAZ_CHESTPLATE = ITEMS.register("topaz_chestplate", () -> new ArmorItem(ArmorMaterials.TOPAZ, EquipmentSlot.CHEST, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> TOPAZ_BOOTS = ITEMS.register("topaz_boots", () -> new ArmorItem(ArmorMaterials.TOPAZ, EquipmentSlot.FEET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> TOPAZ_HELMET = ITEMS.register("topaz_helmet", () -> new ArmorItem(ArmorMaterials.TOPAZ, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> TOPAZ_LEGGINGS = ITEMS.register("topaz_leggings", () -> new ArmorItem(ArmorMaterials.TOPAZ, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> TOPAZ_CHESTPLATE = ITEMS.register("topaz_chestplate", () -> new ArmorItem(ArmorMaterials.TOPAZ, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> TOPAZ_BOOTS = ITEMS.register("topaz_boots", () -> new ArmorItem(ArmorMaterials.TOPAZ, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<ArmorItem> CRYSTAL_HELMET = ITEMS.register("crystal_helmet", () -> new ArmorItem(ArmorMaterials.CRYSTAL, EquipmentSlot.HEAD, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> CRYSTAL_LEGGINGS = ITEMS.register("crystal_leggings", () -> new ArmorItem(ArmorMaterials.CRYSTAL, EquipmentSlot.LEGS, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> CRYSTAL_CHESTPLATE = ITEMS.register("crystal_chestplate", () -> new ArmorItem(ArmorMaterials.CRYSTAL, EquipmentSlot.CHEST, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> CRYSTAL_BOOTS = ITEMS.register("crystal_boots", () -> new ArmorItem(ArmorMaterials.CRYSTAL, EquipmentSlot.FEET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> CRYSTAL_HELMET = ITEMS.register("crystal_helmet", () -> new ArmorItem(ArmorMaterials.CRYSTAL, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> CRYSTAL_LEGGINGS = ITEMS.register("crystal_leggings", () -> new ArmorItem(ArmorMaterials.CRYSTAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> CRYSTAL_CHESTPLATE = ITEMS.register("crystal_chestplate", () -> new ArmorItem(ArmorMaterials.CRYSTAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> CRYSTAL_BOOTS = ITEMS.register("crystal_boots", () -> new ArmorItem(ArmorMaterials.CRYSTAL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<ArmorItem> EMERALD_HELMET = ITEMS.register("emerald_helmet", () -> new ArmorItem(ArmorMaterials.EMERALD, EquipmentSlot.HEAD, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> EMERALD_LEGGINGS = ITEMS.register("emerald_leggings", () -> new ArmorItem(ArmorMaterials.EMERALD, EquipmentSlot.LEGS, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> EMERALD_CHESTPLATE = ITEMS.register("emerald_chestplate", () -> new ArmorItem(ArmorMaterials.EMERALD, EquipmentSlot.CHEST, new Item.Properties()));
-    public static final RegistryObject<ArmorItem> EMERALD_BOOTS = ITEMS.register("emerald_boots", () -> new ArmorItem(ArmorMaterials.EMERALD, EquipmentSlot.FEET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> EMERALD_HELMET = ITEMS.register("emerald_helmet", () -> new ArmorItem(ArmorMaterials.EMERALD, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> EMERALD_LEGGINGS = ITEMS.register("emerald_leggings", () -> new ArmorItem(ArmorMaterials.EMERALD, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> EMERALD_CHESTPLATE = ITEMS.register("emerald_chestplate", () -> new ArmorItem(ArmorMaterials.EMERALD, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<ArmorItem> EMERALD_BOOTS = ITEMS.register("emerald_boots", () -> new ArmorItem(ArmorMaterials.EMERALD, ArmorItem.Type.BOOTS, new Item.Properties()));
 }

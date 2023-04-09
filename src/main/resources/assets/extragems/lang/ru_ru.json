@@ -1,12 +1,11 @@
 {
   "_comment": "translated by Ulitraboom",
 
-  "itemGroup.gemTab": "ExtraGems",
+  "itemGroup.extragems_tab": "ExtraGems",
   "message.extragems.not_enough_levels": "You have not enough experience levels!",
   "message.extragems.wrong_block": "Use it on a gem charger...",
   "message.extragems.not_night": "It has to be night with full moon...",
   "message.extragems.charged_gem_jei_desc": "To get a charged gem, click at night with full moon and enough experience levels on the gem charger.",
-
 
   "block.extragems.ruby_block": "Рубиновый блок",
   "block.extragems.sapphire_block": "Сапфировый блок",
