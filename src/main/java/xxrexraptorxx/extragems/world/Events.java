@@ -76,8 +76,8 @@ public class Events {
 
     @SubscribeEvent
     public static void onInteract(PlayerInteractEvent.RightClickBlock event) {
-        if(ItemStack.isSame(event.getItemStack(), new ItemStack(ModItems.AMETHYST.get())) || ItemStack.isSame(event.getItemStack(), new ItemStack(ModItems.RUBY.get())) || ItemStack.isSame(event.getItemStack(), new ItemStack(ModItems.SAPPHIRE.get()))
-                || ItemStack.isSame(event.getItemStack(), new ItemStack(ModItems.CRYSTAL.get())) || ItemStack.isSame(event.getItemStack(), new ItemStack(ModItems.TOPAZ.get())) || ItemStack.isSame(event.getItemStack(), new ItemStack(Items.DIAMOND)) || ItemStack.isSame(event.getItemStack(), new ItemStack(Items.EMERALD))) {
+        if(ItemStack.isSameItem(event.getItemStack(), new ItemStack(ModItems.AMETHYST.get())) || ItemStack.isSameItem(event.getItemStack(), new ItemStack(ModItems.RUBY.get())) || ItemStack.isSameItem(event.getItemStack(), new ItemStack(ModItems.SAPPHIRE.get()))
+                || ItemStack.isSameItem(event.getItemStack(), new ItemStack(ModItems.CRYSTAL.get())) || ItemStack.isSameItem(event.getItemStack(), new ItemStack(ModItems.TOPAZ.get())) || ItemStack.isSameItem(event.getItemStack(), new ItemStack(Items.DIAMOND)) || ItemStack.isSameItem(event.getItemStack(), new ItemStack(Items.EMERALD))) {
             BlockPos pos = event.getPos();
             Player player = event.getEntity();
             Level level = event.getLevel();
@@ -158,7 +158,7 @@ public class Events {
     @SubscribeEvent
     public static void SupporterRewards(PlayerEvent.PlayerLoggedInEvent event) {
         Player player = event.getEntity();
-        Level world = player.getLevel();
+        Level level = player.level();
 
         if (Config.PATREON_REWARDS.get()) {
 
@@ -184,7 +184,7 @@ public class Events {
                             ownerNBT.putString("SkullOwner", player.getName().getString());
                             reward.setTag(ownerNBT);
 
-                            player.getLevel().playSound((Player) null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.5F, world.random.nextFloat() * 0.15F + 0.8F);
+                            level.playSound((Player) null, player.blockPosition(), SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.5F, level.random.nextFloat() * 0.15F + 0.8F);
                             player.addItem(reward);
                             player.addItem(certificate);
                         }
@@ -208,6 +208,7 @@ public class Events {
             }
         }
     }
+
 
     /**
      * Tests if a player is a supporter

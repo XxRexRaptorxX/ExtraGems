@@ -11,8 +11,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import xxrexraptorxx.extragems.utils.Config;
 
@@ -20,11 +20,13 @@ import xxrexraptorxx.extragems.utils.Config;
 public class BlockRubyCharged extends Block {
 
 	public BlockRubyCharged() {
-		super(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_RED)
+		super(BlockBehaviour.Properties.of()
 				.requiresCorrectToolForDrops()
 				.strength(4.0F, 8.0F)
-				.sound(SoundType.STONE)
 				.lightLevel(value -> 5)
+				.sound(SoundType.AMETHYST)
+				.mapColor(MapColor.COLOR_RED)
+				.instrument(NoteBlockInstrument.BIT)
 		);
 	}
 

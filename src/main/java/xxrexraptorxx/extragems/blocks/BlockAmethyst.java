@@ -1,22 +1,20 @@
 package xxrexraptorxx.extragems.blocks;
 
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
-import xxrexraptorxx.extragems.main.References;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 
 
 public class BlockAmethyst extends Block {
 
 	public BlockAmethyst() {
-		super(Properties.of(Material.METAL)
+		super(Properties.of()
 				.requiresCorrectToolForDrops()
 				.strength(4.0F, 8.0F)
-				.sound(SoundType.STONE)
+				.sound(SoundType.AMETHYST)
+				.mapColor(MapColor.COLOR_PURPLE)
+				.instrument(NoteBlockInstrument.BIT)
 		);
 	}
 

@@ -6,8 +6,8 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -15,10 +15,12 @@ import java.util.concurrent.ThreadLocalRandom;
 public class BlockGemOre extends Block {
 
 	public BlockGemOre() {
-		super(Properties.of(Material.STONE, MaterialColor.STONE)
+		super(Properties.of()
 				.requiresCorrectToolForDrops()
 				.strength(3.0F, 5.0F)
 				.sound(SoundType.STONE)
+				.mapColor(MapColor.STONE)
+				.instrument(NoteBlockInstrument.BASEDRUM)
 		);
 
 	}

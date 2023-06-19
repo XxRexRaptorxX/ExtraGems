@@ -10,8 +10,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import xxrexraptorxx.extragems.utils.Config;
 
@@ -19,11 +19,14 @@ import xxrexraptorxx.extragems.utils.Config;
 public class BlockAmethystCharged extends Block {
 
 	public BlockAmethystCharged() {
-		super(Properties.of(Material.STONE, MaterialColor.COLOR_PURPLE)
+		super(Properties.of()
 				.requiresCorrectToolForDrops()
 				.strength(4.0F, 8.0F)
 				.sound(SoundType.STONE)
 				.lightLevel(value -> 5)
+				.sound(SoundType.AMETHYST)
+				.mapColor(MapColor.COLOR_PURPLE)
+				.instrument(NoteBlockInstrument.BIT)
 		);
 
 	}

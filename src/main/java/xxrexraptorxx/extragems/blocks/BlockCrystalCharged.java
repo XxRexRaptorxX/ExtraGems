@@ -11,8 +11,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import xxrexraptorxx.extragems.utils.Config;
 
@@ -20,10 +20,12 @@ import xxrexraptorxx.extragems.utils.Config;
 public class BlockCrystalCharged extends Block {
 
 	public BlockCrystalCharged() {
-		super(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.QUARTZ)
+		super(BlockBehaviour.Properties.of()
 				.requiresCorrectToolForDrops()
 				.strength(4.0F, 8.0F)
-				.sound(SoundType.STONE)
+				.sound(SoundType.AMETHYST)
+				.mapColor(MapColor.QUARTZ)
+				.instrument(NoteBlockInstrument.BIT)
 				.lightLevel(value -> 5)
 		);
 	}
