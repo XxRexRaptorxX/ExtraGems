@@ -8,7 +8,7 @@ import mezz.jei.api.runtime.IIngredientManager;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-import xxrexraptorxx.extragems.main.ModItems;
+import xxrexraptorxx.extragems.registry.ModItems;
 import xxrexraptorxx.extragems.main.References;
 
 import java.util.ArrayList;

@@ -6,8 +6,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import xxrexraptorxx.extragems.main.ModBlocks;
-import xxrexraptorxx.extragems.main.ModItems;
 import xxrexraptorxx.extragems.main.References;
 
 public class CreativeModeTabs {

@@ -3,7 +3,7 @@ package xxrexraptorxx.extragems.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import xxrexraptorxx.extragems.main.ModBlocks;
+import xxrexraptorxx.extragems.registry.ModBlocks;
 import xxrexraptorxx.extragems.main.References;
 
 public class BlockStateGen extends BlockStateProvider {

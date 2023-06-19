@@ -29,8 +29,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import xxrexraptorxx.extragems.main.ExtraGems;
-import xxrexraptorxx.extragems.main.ModBlocks;
-import xxrexraptorxx.extragems.main.ModItems;
+import xxrexraptorxx.extragems.registry.ModBlocks;
+import xxrexraptorxx.extragems.registry.ModItems;
 import xxrexraptorxx.extragems.main.References;
 import xxrexraptorxx.extragems.utils.Config;
 

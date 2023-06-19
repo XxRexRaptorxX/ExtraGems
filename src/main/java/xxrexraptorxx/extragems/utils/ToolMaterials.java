@@ -8,7 +8,7 @@ import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ForgeTier;
-import xxrexraptorxx.extragems.main.ModItems;
+import xxrexraptorxx.extragems.registry.ModItems;
 import xxrexraptorxx.extragems.main.References;
 
 public class ToolMaterials {

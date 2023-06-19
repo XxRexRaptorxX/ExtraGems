@@ -1,4 +1,4 @@
-package xxrexraptorxx.extragems.main;
+package xxrexraptorxx.extragems.registry;
 
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -9,6 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 import xxrexraptorxx.extragems.items.ItemAmulet;
 import xxrexraptorxx.extragems.items.ItemGem;
 import xxrexraptorxx.extragems.items.ItemGemCharged;
+import xxrexraptorxx.extragems.main.References;
 import xxrexraptorxx.extragems.utils.ArmorMaterials;
 import xxrexraptorxx.extragems.utils.ToolMaterials;
 

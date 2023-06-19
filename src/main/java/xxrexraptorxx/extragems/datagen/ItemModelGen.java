@@ -1,13 +1,12 @@
 package xxrexraptorxx.extragems.datagen;
 
-import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
-import xxrexraptorxx.extragems.main.ModBlocks;
-import xxrexraptorxx.extragems.main.ModItems;
+import xxrexraptorxx.extragems.registry.ModBlocks;
+import xxrexraptorxx.extragems.registry.ModItems;
 import xxrexraptorxx.extragems.main.References;
 
 public class ItemModelGen extends ItemModelProvider {

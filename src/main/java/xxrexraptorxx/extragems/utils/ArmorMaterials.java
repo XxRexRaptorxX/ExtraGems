@@ -10,7 +10,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.util.Lazy;
-import xxrexraptorxx.extragems.main.ModItems;
+import xxrexraptorxx.extragems.registry.ModItems;
 import xxrexraptorxx.extragems.main.References;
 
 import java.util.EnumMap;
