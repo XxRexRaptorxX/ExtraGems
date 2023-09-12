@@ -84,7 +84,7 @@ public class CreativeModeTabs {
                 output.accept(ModItems.CRYSTAL_LEGGINGS.get());
                 output.accept(ModItems.CRYSTAL_BOOTS.get());
 
-                output.accept(ModItems.CHARGED_CRYSTAL.get());
+                output.accept(ModItems.CHARGED_EMERALD.get());
                 output.accept(ModItems.EMERALD_AMULET.get());
                 output.accept(ModItems.EMERALD_SWORD.get());
                 output.accept(ModItems.EMERALD_PICKAXE.get());
@@ -95,6 +95,8 @@ public class CreativeModeTabs {
                 output.accept(ModItems.EMERALD_CHESTPLATE.get());
                 output.accept(ModItems.EMERALD_LEGGINGS.get());
                 output.accept(ModItems.EMERALD_BOOTS.get());
+
+                output.accept(ModItems.CHARGED_DIAMOND.get());
 
                 output.accept(ModBlocks.GEM_CHARGER.get());
                 output.accept(ModBlocks.AMETHYST_BLOCK.get());
@@ -116,5 +118,6 @@ public class CreativeModeTabs {
                 output.accept(ModBlocks.CRYSTAL_ORE.get());
                 output.accept(ModBlocks.DEEPSLATE_CRYSTAL_ORE.get());
                 output.accept(ModBlocks.CHARGED_EMERALD_BLOCK.get());
+                output.accept(ModBlocks.CHARGED_DIAMOND_BLOCK.get());
             }).build());
 }
