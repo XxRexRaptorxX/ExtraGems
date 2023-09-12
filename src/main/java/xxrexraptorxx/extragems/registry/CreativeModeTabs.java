@@ -18,6 +18,7 @@ public class CreativeModeTabs {
     public static final RegistryObject<CreativeModeTab> MAIN_TAB = CREATIVE_MODE_TABS.register(References.MODID, () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup." + References.MODID + "_tab"))
             .icon(() -> ModItems.CHARGED_AMETHYST.get().getDefaultInstance())
+            .withTabsBefore(net.minecraft.world.item.CreativeModeTabs.SPAWN_EGGS)
             .displayItems((params, output) -> {
                 output.accept(ModItems.AMETHYST.get());
                 output.accept(ModItems.CHARGED_AMETHYST.get());

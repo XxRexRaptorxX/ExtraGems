@@ -20,7 +20,6 @@ import xxrexraptorxx.extragems.utils.Config;
 public class ExtraGems {
 
     public static final Logger LOGGER = LogManager.getLogger();
-    private static final ResourceLocation CREATIVE_TAB = new ResourceLocation(References.MODID, "tab");
 
 
     public ExtraGems() {
