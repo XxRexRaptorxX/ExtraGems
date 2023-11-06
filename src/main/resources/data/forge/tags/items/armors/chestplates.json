@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "extragems:emerald_chestplate",
+    "extragems:ruby_chestplate",
+    "extragems:sapphire_chestplate",
+    "extragems:amethyst_chestplate",
+    "extragems:topaz_chestplate",
+    "extragems:crystal_chestplate"
+  ]
+}

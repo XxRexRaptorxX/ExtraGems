@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "extragems:emerald_helmet",
+    "extragems:ruby_helmet",
+    "extragems:sapphire_helmet",
+    "extragems:amethyst_helmet",
+    "extragems:topaz_helmet",
+    "extragems:crystal_helmet"
+  ]
+}
