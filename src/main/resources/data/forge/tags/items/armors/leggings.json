@@ -1,11 +1,11 @@
 {
   "replace": false,
   "values": [
-    "extragems:emerald_legging",
-    "extragems:ruby_legging",
-    "extragems:sapphire_legging",
-    "extragems:amethyst_legging",
-    "extragems:topaz_legging",
-    "extragems:crystal_legging"
+    "extragems:emerald_leggings",
+    "extragems:ruby_leggings",
+    "extragems:sapphire_leggings",
+    "extragems:amethyst_leggings",
+    "extragems:topaz_leggings",
+    "extragems:crystal_leggings"
   ]
 }
