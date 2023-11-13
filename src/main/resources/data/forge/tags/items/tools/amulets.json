@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values":
+  [
+    "extragems:amethyst_amulet",
+    "extragems:ruby_amulet",
+    "extragems:sapphire_amulet",
+    "extragems:topaz_amulet",
+    "extragems:crystal_amulet",
+    "extragems:emerald_amulet",
+    "extragems:diamond_amulet"
+  ]
+}

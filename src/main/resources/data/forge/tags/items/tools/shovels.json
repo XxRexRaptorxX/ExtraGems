@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values":
+  [
+    "extragems:amethyst_shovel",
+    "extragems:ruby_shovel",
+    "extragems:sapphire_shovel",
+    "extragems:topaz_shovel",
+    "extragems:crystal_shovel",
+    "extragems:emerald_shovel"
+  ]
+}
