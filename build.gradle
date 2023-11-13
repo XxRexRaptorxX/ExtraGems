@@ -169,6 +169,9 @@ dependencies {
     runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${mc_version}-${patchouli_version}-FORGE")
     //JEED
     runtimeOnly fg.deobf("curse.maven:jeed-532286:${jeed_version}")
+    //Engerized Power
+    runtimeOnly fg.deobf("curse.maven:energized-power-782147:${energized_power_version}")
+
 }
 
 // MixinGradle Settings

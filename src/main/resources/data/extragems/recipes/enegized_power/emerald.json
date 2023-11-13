@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:crystal_growth_chamber",
+  "ingredient": {
+    "tag": "forge:gems/emerald"
+  },
+  "ticks": 16000,
+  "output": {
+    "output": {
+      "item": "minecraft:emerald"
+    },
+    "percentages": [0.25, 0.125]
+  }
+}

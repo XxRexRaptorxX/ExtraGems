@@ -1,0 +1,19 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:crystal_growth_chamber",
+  "ingredient": {
+    "tag": "forge:gems/topaz"
+  },
+  "ticks": 16000,
+  "output": {
+    "output": {
+      "item": "extragems:topaz"
+    },
+    "percentages": [0.5, 0.25, 0.125]
+  }
+}
