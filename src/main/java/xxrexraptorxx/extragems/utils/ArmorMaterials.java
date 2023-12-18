@@ -1,6 +1,5 @@
 package xxrexraptorxx.extragems.utils;
 
-import cpw.mods.util.Lazy;
 import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -10,6 +9,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.jarjar.nio.util.Lazy;
 import xxrexraptorxx.extragems.main.References;
 import xxrexraptorxx.extragems.registry.ModItems;
 

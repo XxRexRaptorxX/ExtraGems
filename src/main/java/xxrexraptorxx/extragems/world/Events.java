@@ -4,6 +4,7 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
@@ -18,16 +19,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.event.entity.player.PlayerEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModList;
-import net.minecraftforge.fml.VersionChecker;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.items.ItemHandlerHelper;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.neoforged.bus.api.Event;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
@@ -37,12 +28,10 @@ import net.neoforged.neoforge.event.TickEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.items.ItemHandlerHelper;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.extragems.main.ExtraGems;
+import xxrexraptorxx.extragems.main.References;
 import xxrexraptorxx.extragems.registry.ModBlocks;
 import xxrexraptorxx.extragems.registry.ModItems;
-import xxrexraptorxx.extragems.main.References;
 import xxrexraptorxx.extragems.utils.Config;
 
 import java.net.MalformedURLException;
@@ -133,7 +122,7 @@ public class Events {
     /** Utility **/
 
     public static Item getChargedGemVariant(ItemStack gem) {
-        switch (DeferredRegister.Items.getKey(gem.getItem()).toString()) {
+        switch (BuiltInRegistries.ITEM.getKey(gem.getItem()).toString()) {
 
             case References.MODID + ":amethyst":
                 return ModItems.CHARGED_AMETHYST.get();

@@ -97,8 +97,8 @@ dependencies {
 
     implementation "net.neoforged:neoforge:${forge_version}"
     //JEI
-    //compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}"))
-    //compileOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}"))
+    //compileOnly "mezz.jei:jei-1.20.2-common-api:${jei_version}"
+    //compileOnly "mezz.jei:jei-1.20.2-forge-api:${jei_version}"
     //runtimeOnly(fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}"))
     //EMI
     //compileOnly "dev.emi:emi-forge:${emi_version}+${mc_version}:api"
