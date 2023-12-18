@@ -1,10 +1,10 @@
 package xxrexraptorxx.extragems.datagen;
 
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import xxrexraptorxx.extragems.registry.ModBlocks;
+import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import xxrexraptorxx.extragems.main.References;
+import xxrexraptorxx.extragems.registry.ModBlocks;
 
 public class BlockStateGen extends BlockStateProvider {
 

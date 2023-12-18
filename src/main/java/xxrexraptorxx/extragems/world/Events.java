@@ -28,6 +28,17 @@ import net.minecraftforge.fml.VersionChecker;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.bus.api.Event;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModList;
+import net.neoforged.fml.VersionChecker;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.event.TickEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerEvent;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.extragems.main.ExtraGems;
 import xxrexraptorxx.extragems.registry.ModBlocks;
 import xxrexraptorxx.extragems.registry.ModItems;
@@ -122,7 +133,7 @@ public class Events {
     /** Utility **/
 
     public static Item getChargedGemVariant(ItemStack gem) {
-        switch (ForgeRegistries.ITEMS.getKey(gem.getItem()).toString()) {
+        switch (DeferredRegister.Items.getKey(gem.getItem()).toString()) {
 
             case References.MODID + ":amethyst":
                 return ModItems.CHARGED_AMETHYST.get();

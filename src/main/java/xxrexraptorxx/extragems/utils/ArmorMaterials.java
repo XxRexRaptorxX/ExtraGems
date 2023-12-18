@@ -1,5 +1,6 @@
 package xxrexraptorxx.extragems.utils;
 
+import cpw.mods.util.Lazy;
 import net.minecraft.Util;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -7,11 +8,10 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.common.util.Lazy;
-import xxrexraptorxx.extragems.registry.ModItems;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
 import xxrexraptorxx.extragems.main.References;
+import xxrexraptorxx.extragems.registry.ModItems;
 
 import java.util.EnumMap;
 import java.util.function.Supplier;

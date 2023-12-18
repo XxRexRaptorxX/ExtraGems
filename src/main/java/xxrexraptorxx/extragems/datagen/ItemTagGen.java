@@ -6,9 +6,9 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.data.tags.TagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import xxrexraptorxx.extragems.registry.ModItems;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import xxrexraptorxx.extragems.main.References;
+import xxrexraptorxx.extragems.registry.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 

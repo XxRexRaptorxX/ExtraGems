@@ -27,8 +27,7 @@ ExtraGems is a mod that adds a few new gems for tools, weapons, armor, blocks an
 - config file
 - update-checker
 - supports english, german, russian and chinese
-- uses the Forge OreDictionary
-- mod compatible (OreCore, Chisel, AS: ExtraResources, Age of Weapons and much more!)
+- mod compatible
 
 
 The gems have stats similar to diamond, but a durability similar to iron and the highest enchantability, with slightly changes between its variants.

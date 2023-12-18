@@ -1,11 +1,9 @@
 package xxrexraptorxx.extragems.utils;
 
-import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.fml.ModLoadingContext;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
+import net.neoforged.fml.ModLoadingContext;
+import net.neoforged.fml.config.ModConfig;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
-@Mod.EventBusSubscriber
 public class Config {
 
     public static final String CATEGORY_GENERAL = "general";
@@ -13,32 +11,32 @@ public class Config {
     public static final String CATEGORY_ITEMS = "gems";
     public static final String CATEGORY_WORLD = "world";
 
-    public static ForgeConfigSpec SERVER_CONFIG;
-    public static ForgeConfigSpec CLIENT_CONFIG;
-    public static ForgeConfigSpec COMMON_CONFIG;
+    public static ModConfigSpec SERVER_CONFIG;
+    public static ModConfigSpec CLIENT_CONFIG;
+    public static ModConfigSpec COMMON_CONFIG;
 
-    public static ForgeConfigSpec.BooleanValue UPDATE_CHECKER;
-    public static ForgeConfigSpec.BooleanValue PATREON_REWARDS;
+    public static ModConfigSpec.BooleanValue UPDATE_CHECKER;
+    public static ModConfigSpec.BooleanValue PATREON_REWARDS;
 
-    public static ForgeConfigSpec.IntValue CHARGED_BLOCK_EFFECT_DURATION;
-    public static ForgeConfigSpec.IntValue CHARGED_BLOCK_EFFECT_AMPLIFIER;
-    public static ForgeConfigSpec.BooleanValue AMULET_DESTROYABLE;
-    public static ForgeConfigSpec.IntValue AMULET_EFFECT_DURATION;
-    public static ForgeConfigSpec.IntValue AMULET_EFFECT_AMPLIFIER;
-    public static ForgeConfigSpec.IntValue AMULET_EFFECT_RADIUS;
-    public static ForgeConfigSpec.IntValue AMULET_EFFECT_COOLDOWN;
-    public static ForgeConfigSpec.IntValue AMULET_MAX_USAGES;
-    public static ForgeConfigSpec.BooleanValue GENERATE_STONE_ORE_VARIANTS;
-    public static ForgeConfigSpec.BooleanValue GENERATE_DEEPSLATE_ORE_VARIANTS;
-    public static ForgeConfigSpec.BooleanValue RUBY_ORE_GENERATION;
-    public static ForgeConfigSpec.BooleanValue SAPPHIRE_ORE_GENERATION;
-    public static ForgeConfigSpec.BooleanValue TOPAZ_ORE_GENERATION;
-    public static ForgeConfigSpec.BooleanValue CRYSTAL_ORE_GENERATION;
-    public static ForgeConfigSpec.IntValue ORE_RARITY;
-    public static ForgeConfigSpec.IntValue DEEPSLATE_ORE_RARITY;
-    public static ForgeConfigSpec.IntValue CHARGING_COST;
-    public static ForgeConfigSpec.BooleanValue LOOT_GENERATOR;
-    public static ForgeConfigSpec.IntValue MINING_LEVEL;
+    public static ModConfigSpec.IntValue CHARGED_BLOCK_EFFECT_DURATION;
+    public static ModConfigSpec.IntValue CHARGED_BLOCK_EFFECT_AMPLIFIER;
+    public static ModConfigSpec.BooleanValue AMULET_DESTROYABLE;
+    public static ModConfigSpec.IntValue AMULET_EFFECT_DURATION;
+    public static ModConfigSpec.IntValue AMULET_EFFECT_AMPLIFIER;
+    public static ModConfigSpec.IntValue AMULET_EFFECT_RADIUS;
+    public static ModConfigSpec.IntValue AMULET_EFFECT_COOLDOWN;
+    public static ModConfigSpec.IntValue AMULET_MAX_USAGES;
+    public static ModConfigSpec.BooleanValue GENERATE_STONE_ORE_VARIANTS;
+    public static ModConfigSpec.BooleanValue GENERATE_DEEPSLATE_ORE_VARIANTS;
+    public static ModConfigSpec.BooleanValue RUBY_ORE_GENERATION;
+    public static ModConfigSpec.BooleanValue SAPPHIRE_ORE_GENERATION;
+    public static ModConfigSpec.BooleanValue TOPAZ_ORE_GENERATION;
+    public static ModConfigSpec.BooleanValue CRYSTAL_ORE_GENERATION;
+    public static ModConfigSpec.IntValue ORE_RARITY;
+    public static ModConfigSpec.IntValue DEEPSLATE_ORE_RARITY;
+    public static ModConfigSpec.IntValue CHARGING_COST;
+    public static ModConfigSpec.BooleanValue LOOT_GENERATOR;
+    public static ModConfigSpec.IntValue MINING_LEVEL;
 
     public static void init() {
         initServer();
@@ -50,7 +48,7 @@ public class Config {
 
 
     public static void initClient() {
-        ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
+        ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
         builder.comment("General settings").push(CATEGORY_GENERAL);
         UPDATE_CHECKER = builder.comment("Activate the Update-Checker").define("update-checker", true);
@@ -61,7 +59,7 @@ public class Config {
 
 
     public static void initServer() {
-        ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
+        ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
         builder.comment("General settings").push(CATEGORY_GENERAL);
         PATREON_REWARDS = builder.comment("Enables ingame rewards on first spawn for Patreons").define("patreon_rewards", true);
