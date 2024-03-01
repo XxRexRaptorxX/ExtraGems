@@ -24,13 +24,13 @@ public class ItemModelGen extends ItemModelProvider {
         itemGenerated(ModItems.TOPAZ);
         itemGenerated(ModItems.CRYSTAL);
 
-        itemHandheld(ModItems.CHARGED_AMETHYST);
-        itemHandheld(ModItems.CHARGED_RUBY);
-        itemHandheld(ModItems.CHARGED_SAPPHIRE);
-        itemHandheld(ModItems.CHARGED_TOPAZ);
-        itemHandheld(ModItems.CHARGED_CRYSTAL);
-        itemHandheld(ModItems.CHARGED_DIAMOND);
-        itemHandheld(ModItems.CHARGED_EMERALD);
+        itemGenerated(ModItems.CHARGED_AMETHYST);
+        itemGenerated(ModItems.CHARGED_RUBY);
+        itemGenerated(ModItems.CHARGED_SAPPHIRE);
+        itemGenerated(ModItems.CHARGED_TOPAZ);
+        itemGenerated(ModItems.CHARGED_CRYSTAL);
+        itemGenerated(ModItems.CHARGED_DIAMOND);
+        itemGenerated(ModItems.CHARGED_EMERALD);
 
         itemHandheld(ModItems.AMETHYST_AMULET);
         itemHandheld(ModItems.RUBY_AMULET);
@@ -139,15 +139,15 @@ public class ItemModelGen extends ItemModelProvider {
 
 
     private void itemGenerated(RegistryObject item) {
-        singleTexture(item.getId().getPath(), new ResourceLocation("item/generated"),"layer0", new ResourceLocation(References.MODID, "item/" + item.getId().getPath().toString().substring(References.MODID.length() + 1)));
+        singleTexture(item.getId().getPath(), new ResourceLocation("item/generated"),"layer0", new ResourceLocation(References.MODID, "item/" + item.getId().getPath()));
     }
 
     private void itemHandheld(RegistryObject item) {
-        singleTexture(item.getId().getPath(), new ResourceLocation("item/handheld"),"layer0", new ResourceLocation(References.MODID, "item/" + item.getId().getPath().toString().substring(References.MODID.length() + 1)));
+        singleTexture(item.getId().getPath(), new ResourceLocation("item/handheld"),"layer0", new ResourceLocation(References.MODID, "item/" + item.getId().getPath()));
     }
 
     private void itemBlock(RegistryObject item) {
-        withExistingParent(item.getId().getPath(), new ResourceLocation(References.MODID, "block/" + item.getId().getPath().toString().substring(References.MODID.length() + 1)));
+        withExistingParent(item.getId().getPath(), new ResourceLocation(References.MODID, "block/" + item.getId().getPath()));
     }
 
 }
