@@ -1,0 +1,4 @@
+// 1.20.1	2024-03-01T18:38:49.7237017	Tags for minecraft:block mod id extragems
+6c83ed9713ac37cf473322c034f01bec0f99c296 data/minecraft/tags/blocks/beacon_base_blocks.json
+ba7abdf727eded74996f2e6eaae13dc7f7277035 data/minecraft/tags/blocks/mineable/pickaxe.json
+ba7abdf727eded74996f2e6eaae13dc7f7277035 data/minecraft/tags/blocks/needs_iron_tool.json
