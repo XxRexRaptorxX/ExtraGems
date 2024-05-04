@@ -2,6 +2,7 @@
   "replace": false,
   "values":
           [
-            "extragems:sapphire_ore"
+            "extragems:sapphire_ore",
+            "extragems:deepslate_sapphire_ore"
           ]
 }
