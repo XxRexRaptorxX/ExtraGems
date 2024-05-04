@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input":
+  {
+    "ingredient":
+    {
+      "tag": "gems/sapphire"
+    }
+  },
+  "output":
+  {
+    "item": "extragems:sapphire_charged"
+  }
+}

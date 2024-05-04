@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input":
+  {
+    "ingredient":
+    {
+      "tag": "forge:storage_blocks/sapphire"
+    }
+  },
+  "output":
+  {
+    "item": "extragems:charged_sapphire_block"
+  }
+}
