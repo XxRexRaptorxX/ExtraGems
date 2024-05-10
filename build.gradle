@@ -153,6 +153,10 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+
+    maven {
+        url "https://maven.firstdarkdev.xyz/snapshots"
+    }
 }
 
 dependencies {
@@ -164,14 +168,16 @@ dependencies {
     compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
     compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
     runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
-    //Patchouli
-    compileOnly fg.deobf("vazkii.patchouli:Patchouli:${mc_version}-${patchouli_version}-FORGE:api")
-    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${mc_version}-${patchouli_version}-FORGE")
     //JEED
     runtimeOnly fg.deobf("curse.maven:jeed-532286:${jeed_version}")
+    //JADE
+    runtimeOnly fg.deobf("curse.maven:jade-324717:${jade_version}")
     //Engerized Power
     runtimeOnly fg.deobf("curse.maven:energized-power-782147:${energized_power_version}")
-
+    //MEKANISM
+    runtimeOnly fg.deobf("curse.maven:mekanism-268560:${mekanism_version}")
+    //SHIMMER
+    implementation fg.deobf("curse.maven:shimmer-627824:${shimmer_version}")
 }
 
 // MixinGradle Settings
