@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input":
+  {
+    "ingredient":
+    {
+      "tag": "forge:gems/topaz"
+    }
+  },
+  "output":
+  {
+    "item": "extragems:topaz_charged"
+  }
+}

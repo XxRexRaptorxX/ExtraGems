@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:enriching",
+  "input":
+  {
+    "ingredient":
+    {
+      "tag": "forge:ores/ruby"
+    }
+  },
+  "output":
+  {
+    "item": "extragems:ruby",
+    "count": 2
+  }
+}

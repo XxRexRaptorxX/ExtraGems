@@ -1,0 +1,25 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:nucleosynthesizing",
+  "duration": 200,
+  "gasInput":
+  {
+    "amount": 1,
+    "gas": "mekanism:antimatter"
+  },
+  "itemInput":
+  {
+    "ingredient":
+    {
+      "item": "minecraft:crying_obsidian"
+    }
+  },
+  "output": {
+    "item": "extragems:gem_charger"
+  }
+}

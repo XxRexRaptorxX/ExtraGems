@@ -95,6 +95,13 @@ repositories {
         name = "ModMaven"
         url = "https://modmaven.dev"
     }
+    maven {
+        // location of the cursemaven
+        url 'https://www.cursemaven.com'
+        content {
+            includeGroup "curse.maven"
+        }
+    }
 
     flatDir {
         dir 'libs'
@@ -110,6 +117,13 @@ dependencies {
     runtimeOnly("mezz.jei:jei-${mc_version}-neoforge:${jei_version}")
     ////JEED
     //runtimeOnly fg.deobf("curse.maven:jeed-532286:${jeed_version}")
+    //JADE
+    runtimeOnly("curse.maven:jade-324717:${jade_version}")
+    //Mekanism
+    runtimeOnly("curse.maven:mekanism-268560:${mekanism_version}")
+    //Mekanism
+    runtimeOnly("curse.maven:energizedpower-782147:${ep_version}")
+
 }
 
 // Example for how to get properties into the manifest for reading at runtime.
