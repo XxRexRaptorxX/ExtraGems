@@ -121,7 +121,7 @@ dependencies {
     runtimeOnly("curse.maven:jade-324717:${jade_version}")
     //Mekanism
     runtimeOnly("curse.maven:mekanism-268560:${mekanism_version}")
-    //Mekanism
+    //EnergizedPower
     runtimeOnly("curse.maven:energizedpower-782147:${ep_version}")
 
 }
