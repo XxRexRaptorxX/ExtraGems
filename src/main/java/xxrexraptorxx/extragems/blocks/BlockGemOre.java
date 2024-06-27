@@ -25,11 +25,10 @@ public class BlockGemOre extends Block {
 
 	}
 
-	@Override
-	public int getExpDrop(BlockState state, LevelReader level, RandomSource randomSource, BlockPos pos, int fortuneLevel, int silkTouchLevel) {
-		int random = ThreadLocalRandom.current().nextInt(3, 7 + 1);
-		return silkTouchLevel == 0 ? random : 0;
 
+	@Override
+	public int getExpDrop(BlockState state, LevelReader world, RandomSource randomSource, BlockPos pos) {
+		return 3 + randomSource.nextInt(4);
 	}
 
 }

@@ -1,5 +1,6 @@
 package xxrexraptorxx.extragems.items;
 
+import net.minecraft.core.Holder;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.sounds.SoundEvents;
@@ -28,7 +29,7 @@ public class ItemAmulet extends Item {
             .stacksTo(1)
             .durability(100)
             .rarity(Rarity.RARE)
-            .defaultDurability(200)
+            //.defaultDurability(200)
         );
 
     }
@@ -73,7 +74,7 @@ public class ItemAmulet extends Item {
     }
 
 
-    private static MobEffect getEffect(String registryName) {
+    private static Holder<MobEffect> getEffect(String registryName) {
         switch (registryName) {
             case References.MODID + ":amethyst_amulet":
                 return MobEffects.REGENERATION;

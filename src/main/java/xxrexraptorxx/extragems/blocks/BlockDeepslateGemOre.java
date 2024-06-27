@@ -26,9 +26,8 @@ public class BlockDeepslateGemOre extends Block {
 	}
 
 	@Override
-	public int getExpDrop(BlockState state, LevelReader level, RandomSource randomSource, BlockPos pos, int fortuneLevel, int silkTouchLevel) {
-		int random = ThreadLocalRandom.current().nextInt(4, 8 + 1);
-		return silkTouchLevel == 0 ? random : 0;
+	public int getExpDrop(BlockState state, LevelReader world, RandomSource randomSource, BlockPos pos) {
+		return 4 + randomSource.nextInt(4);
 	}
 
 }
