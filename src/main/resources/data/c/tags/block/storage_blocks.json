@@ -2,12 +2,12 @@
   "replace": false,
   "values":
           [
-            "#forge:storage_blocks/ruby",
-            "#forge:storage_blocks/sapphire",
-            "#forge:storage_blocks/crystal",
-            "#forge:storage_blocks/topaz",
-            "#forge:storage_blocks/amethyst",
-            "#forge:storage_blocks/diamond",
-            "#forge:storage_blocks/emerald"
+            "#c:storage_blocks/ruby",
+            "#c:storage_blocks/sapphire",
+            "#c:storage_blocks/crystal",
+            "#c:storage_blocks/topaz",
+            "#c:storage_blocks/amethyst",
+            "#c:storage_blocks/diamond",
+            "#c:storage_blocks/emerald"
           ]
 }
