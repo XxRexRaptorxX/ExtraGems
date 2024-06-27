@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#c:charged_gems/diamond",
+    "#c:charged_gems/emerald",
+    "#c:charged_gems/amethyst",
+    "#c:charged_gems/ruby",
+    "#c:charged_gems/sapphire",
+    "#c:charged_gems/topaz",
+    "#c:charged_gems/crystal"
+  ]
+}

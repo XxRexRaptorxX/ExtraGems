@@ -2,9 +2,9 @@
   "replace": false,
   "values":
           [
-            "#forge:ores/ruby",
-            "#forge:ores/sapphire",
-            "#forge:ores/crystal",
-            "#forge:ores/topaz"
+            "#c:ores/ruby",
+            "#c:ores/sapphire",
+            "#c:ores/crystal",
+            "#c:ores/topaz"
           ]
 }

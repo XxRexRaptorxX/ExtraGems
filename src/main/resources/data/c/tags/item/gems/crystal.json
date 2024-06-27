@@ -2,6 +2,7 @@
   "replace": false,
   "values":
           [
-            "extragems:crystal"
+            "extragems:crystal",
+            "#c:charged_gems/crystal"
           ]
 }

@@ -1,12 +1,12 @@
 {
   "replace": false,
   "values": [
-    "#forge:gems/diamond",
-    "#forge:gems/emerald",
-    "#forge:gems/amethyst",
-    "#forge:gems/ruby",
-    "#forge:gems/sapphire",
-    "#forge:gems/topaz",
-    "#forge:gems/crystal"
+    "#c:gems/diamond",
+    "#c:gems/emerald",
+    "#c:gems/amethyst",
+    "#c:gems/ruby",
+    "#c:gems/sapphire",
+    "#c:gems/topaz",
+    "#c:gems/crystal"
   ]
 }
