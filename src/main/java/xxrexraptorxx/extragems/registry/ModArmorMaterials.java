@@ -33,9 +33,7 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 3);
             }),
             18, SoundEvents.ARMOR_EQUIP_DIAMOND, () -> Ingredient.of(ModTags.EMERALD_TAG),
-            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "emerald")),
-                    new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "emerald"), "_overlay", false)
-            ), 0, 0));
+            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "emerald"))), 0, 0));
 
 
     public static final Holder<ArmorMaterial> RUBY_ARMOR_MATERIAL = MATERIAL.register("ruby", () -> new ArmorMaterial(
@@ -46,9 +44,7 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 3);
             }),
             18, SoundEvents.ARMOR_EQUIP_DIAMOND, () -> Ingredient.of(ModTags.RUBY_TAG),
-            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "ruby")),
-                    new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "ruby"), "_overlay", false)
-            ), 0, 0));
+            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "ruby"))), 0, 0));
 
 
     public static final Holder<ArmorMaterial> SAPPHIRE_ARMOR_MATERIAL = MATERIAL.register("sapphire", () -> new ArmorMaterial(
@@ -59,9 +55,7 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 3);
             }),
             18, SoundEvents.ARMOR_EQUIP_DIAMOND, () -> Ingredient.of(ModTags.SAPPHIRE_TAG),
-            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "sapphire")),
-                    new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "sapphire"), "_overlay", false)
-                    ), 0, 0));
+            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "sapphire"))), 0, 0));
 
 
     public static final Holder<ArmorMaterial> TOPAZ_ARMOR_MATERIAL = MATERIAL.register("topaz", () -> new ArmorMaterial(
@@ -72,9 +66,7 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 3);
             }),
             18, SoundEvents.ARMOR_EQUIP_DIAMOND, () -> Ingredient.of(ModTags.TOPAZ_TAG),
-            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "topaz")),
-                    new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "topaz"), "_overlay", false)
-                    ), 0, 0));
+            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "topaz"))), 0, 0));
 
 
     public static final Holder<ArmorMaterial> CRYSTAL_ARMOR_MATERIAL = MATERIAL.register("crystal", () -> new ArmorMaterial(
@@ -85,9 +77,7 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 3);
             }),
             18, SoundEvents.ARMOR_EQUIP_DIAMOND, () -> Ingredient.of(ModTags.CRYSTAL_TAG),
-            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "crystal")),
-                    new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "crystal"), "_overlay", false)
-                    ), 0, 0));
+            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "crystal"))), 0, 0));
 
 
     public static final Holder<ArmorMaterial> AMETHYST_ARMOR_MATERIAL = MATERIAL.register("amethyst", () -> new ArmorMaterial(
@@ -98,8 +88,6 @@ public class ModArmorMaterials {
                 map.put(ArmorItem.Type.HELMET, 3);
             }),
             20, SoundEvents.ARMOR_EQUIP_DIAMOND, () -> Ingredient.of(ModTags.AMETHYST_TAG),
-            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "amethyst")),
-                    new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "amethyst"), "_overlay", false)
-                    ), 0, 0));
+            List.of(new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(References.MODID, "amethyst"))), 0, 0));
 
 }
