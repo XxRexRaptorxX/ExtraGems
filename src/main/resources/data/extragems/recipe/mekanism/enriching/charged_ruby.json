@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:gems/ruby"
-    }
+
+      "tag": "c:gems/ruby"
   },
   "output":
   {
-    "item": "extragems:ruby_charged"
+    "id": "extragems:ruby_charged"
   }
 }

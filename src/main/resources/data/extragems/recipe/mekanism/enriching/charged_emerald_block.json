@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:storage_blocks/emerald"
-    }
+
+      "tag": "c:storage_blocks/emerald"
   },
   "output":
   {
-    "item": "extragems:charged_emerald_block"
+    "id": "extragems:charged_emerald_block"
   }
 }

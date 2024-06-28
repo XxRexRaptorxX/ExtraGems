@@ -7,7 +7,7 @@
   ],
   "type": "energizedpower:crystal_growth_chamber",
   "ingredient": {
-    "tag": "forge:gems/ruby"
+    "tag": "c:gems/ruby"
   },
   "ticks": 16000,
   "output": {

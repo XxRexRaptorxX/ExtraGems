@@ -2,14 +2,12 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "jeed"
+      "modeffect": "jeed"
     }
   ],
   "type": "jeed:effect_provider",
-  "effect":{
-    "id": "minecraft:speed"
-  },
-  "providers": [
+  "effect": "minecraft:speed",
+  "provider": [
     {
       "item": "extragems:emerald_amulet"
     },

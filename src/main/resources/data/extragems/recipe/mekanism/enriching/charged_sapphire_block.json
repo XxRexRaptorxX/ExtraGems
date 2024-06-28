@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:storage_blocks/sapphire"
-    }
+
+      "tag": "c:storage_blocks/sapphire"
   },
   "output":
   {
-    "item": "extragems:charged_sapphire_block"
+    "id": "extragems:charged_sapphire_block"
   }
 }

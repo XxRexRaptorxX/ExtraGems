@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:storage_blocks/crystal"
-    }
+
+      "tag": "c:storage_blocks/crystal"
   },
   "output":
   {
-    "item": "extragems:charged_crystal_block"
+    "id": "extragems:charged_crystal_block"
   }
 }

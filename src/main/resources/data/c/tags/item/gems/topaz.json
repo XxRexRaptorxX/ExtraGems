@@ -2,7 +2,6 @@
   "replace": false,
   "values":
           [
-            "extragems:topaz",
-            "#c:charged_gems/topaz"
+            "extragems:topaz"
           ]
 }

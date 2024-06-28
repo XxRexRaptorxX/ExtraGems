@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:storage_blocks/topaz"
-    }
+
+      "tag": "c:storage_blocks/topaz"
   },
   "output":
   {
-    "item": "extragems:charged_topaz_block"
+    "id": "extragems:charged_topaz_block"
   }
 }

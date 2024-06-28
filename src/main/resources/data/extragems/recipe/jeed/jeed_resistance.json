@@ -2,14 +2,12 @@
   "conditions": [
     {
       "type": "forge:mod_loaded",
-      "modid": "jeed"
+      "modeffect": "jeed"
     }
   ],
   "type": "jeed:effect_provider",
-  "effect":{
-    "id": "minecraft:resistance"
-  },
-  "providers": [
+  "effect": "minecraft:resistance",
+  "provider": [
     {
       "item": "extragems:diamond_amulet"
     },

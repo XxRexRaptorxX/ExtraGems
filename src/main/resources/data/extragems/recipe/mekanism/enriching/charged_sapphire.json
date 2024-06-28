@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
+
       "tag": "gems/sapphire"
-    }
   },
   "output":
   {
-    "item": "extragems:sapphire_charged"
+    "id": "extragems:sapphire_charged"
   }
 }

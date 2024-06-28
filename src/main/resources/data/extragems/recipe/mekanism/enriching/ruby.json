@@ -8,14 +8,12 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:ores/ruby"
-    }
+
+      "tag": "c:ores/ruby"
   },
   "output":
   {
-    "item": "extragems:ruby",
+    "id": "extragems:ruby",
     "count": 2
   }
 }

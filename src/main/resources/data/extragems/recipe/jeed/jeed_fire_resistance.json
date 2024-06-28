@@ -6,9 +6,7 @@
     }
   ],
   "type": "jeed:effect_provider",
-  "effect":{
-    "id": "minecraft:haste"
-  },
+  "effect": "minecraft:haste",
   "providers": [
     {
       "item": "extragems:crystal_amulet"

@@ -1,4 +1,4 @@
-package xxrexraptorxx.extragems.registry;
+package xxrexraptorxx.extragems.utils;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
@@ -25,12 +25,12 @@ public class ModTags {
     public static final TagKey<Item> TOPAZ_TAG = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "gems/topaz"));
     public static final TagKey<Item> EMERALD_TAG = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "gems/emerald"));
 
-    public static final TagKey<Block> INCORRECT_FOR_AMETHYST_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "incorrect_for_amethyst_tool"));
-    public static final TagKey<Block> INCORRECT_FOR_RUBY_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "incorrect_for_ruby_tool"));
-    public static final TagKey<Block> INCORRECT_FOR_SAPPHIRE_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "incorrect_for_sapphire_tool"));
-    public static final TagKey<Block> INCORRECT_FOR_CRYSTAL_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "incorrect_for_crystal_tool"));
-    public static final TagKey<Block> INCORRECT_FOR_TOPAZ_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "incorrect_for_topaz_tool"));
-    public static final TagKey<Block> INCORRECT_FOR_EMERALD_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "incorrect_for_emerald_tool"));
+    public static final TagKey<Block> INCORRECT_FOR_AMETHYST_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_amethyst_tool"));
+    public static final TagKey<Block> INCORRECT_FOR_RUBY_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_ruby_tool"));
+    public static final TagKey<Block> INCORRECT_FOR_SAPPHIRE_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_sapphire_tool"));
+    public static final TagKey<Block> INCORRECT_FOR_CRYSTAL_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_crystal_tool"));
+    public static final TagKey<Block> INCORRECT_FOR_TOPAZ_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_topaz_tool"));
+    public static final TagKey<Block> INCORRECT_FOR_EMERALD_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_emerald_tool"));
 
 
 

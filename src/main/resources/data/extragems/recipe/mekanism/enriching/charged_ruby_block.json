@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:storage_blocks/ruby"
-    }
+
+      "tag": "c:storage_blocks/ruby"
   },
   "output":
   {
-    "item": "extragems:charged_ruby_block"
+    "id": "extragems:charged_ruby_block"
   }
 }

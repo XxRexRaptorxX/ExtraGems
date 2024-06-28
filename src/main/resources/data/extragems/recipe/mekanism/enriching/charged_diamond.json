@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:gems/diamond"
-    }
+
+      "tag": "c:gems/diamond"
   },
   "output":
   {
-    "item": "extragems:diamond_charged"
+    "id": "extragems:diamond_charged"
   }
 }

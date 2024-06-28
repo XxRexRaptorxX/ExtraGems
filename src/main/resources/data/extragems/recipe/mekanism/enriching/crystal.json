@@ -8,14 +8,12 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:ores/crystal"
-    }
+
+      "tag": "c:ores/crystal"
   },
   "output":
   {
-    "item": "extragems:crystal",
+    "id": "extragems:crystal",
     "count": 2
   }
 }

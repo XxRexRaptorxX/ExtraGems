@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:gems/emerald"
-    }
+
+      "tag": "c:gems/emerald"
   },
   "output":
   {
-    "item": "extragems:emerald_charged"
+    "id": "extragems:emerald_charged"
   }
 }

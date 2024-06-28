@@ -8,13 +8,11 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:gems/amethyst"
-    }
+
+      "tag": "c:gems/amethyst"
   },
   "output":
   {
-    "item": "extragems:amethyst_charged"
+    "id": "extragems:amethyst_charged"
   }
 }

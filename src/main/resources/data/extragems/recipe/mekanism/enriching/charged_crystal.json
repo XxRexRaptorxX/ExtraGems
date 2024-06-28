@@ -8,13 +8,13 @@
   "type": "mekanism:enriching",
   "input":
   {
-    "ingredient":
-    {
-      "tag": "forge:gems/crystal"
-    }
+
+      "tag": "c:gems/crystal"
   },
   "output":
   {
-    "item": "extragems:crystal_charged"
+    "id": "extragems:crystal_charged"
   }
 }
+
+{"type":"mekanism:enriching","input":{"count":1,"item":"minecraft:glowstone"},"output":{"count":4,"id":"minecraft:glowstone_dust"}}

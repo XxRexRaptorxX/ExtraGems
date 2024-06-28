@@ -1,18 +1,8 @@
 package xxrexraptorxx.extragems.registry;
 
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.common.SimpleTier;
-import xxrexraptorxx.extragems.main.References;
-import xxrexraptorxx.extragems.registry.ModItems;
+import xxrexraptorxx.extragems.utils.ModTags;
 
 public class ToolMaterials {
 

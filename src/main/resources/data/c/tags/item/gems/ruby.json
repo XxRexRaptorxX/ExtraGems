@@ -2,7 +2,6 @@
   "replace": false,
   "values":
           [
-            "extragems:ruby",
-            "#c:charged_gems/ruby"
-          ]
+            "extragems:ruby"
+                      ]
 }
