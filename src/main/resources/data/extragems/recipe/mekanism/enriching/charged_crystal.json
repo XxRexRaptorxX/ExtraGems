@@ -1,7 +1,7 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
+      "type": "neoforge:mod_loaded",
       "modid": "mekanism"
     }
   ],
@@ -16,5 +16,3 @@
     "id": "extragems:crystal_charged"
   }
 }
-
-{"type":"mekanism:enriching","input":{"count":1,"item":"minecraft:glowstone"},"output":{"count":4,"id":"minecraft:glowstone_dust"}}
