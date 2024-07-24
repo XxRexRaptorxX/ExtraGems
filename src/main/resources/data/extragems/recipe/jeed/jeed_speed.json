@@ -1,13 +1,13 @@
 {
-  "conditions": [
+  "neoforge:conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modeffect": "jeed"
+      "type": "neoforge:mod_loaded",
+      "modid": "jeed"
     }
   ],
   "type": "jeed:effect_provider",
   "effect": "minecraft:speed",
-  "provider": [
+  "providers": [
     {
       "item": "extragems:emerald_amulet"
     },
