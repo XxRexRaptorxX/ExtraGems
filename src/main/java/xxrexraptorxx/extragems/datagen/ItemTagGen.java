@@ -20,7 +20,7 @@ public class ItemTagGen extends ItemTagsProvider {
 
 
     @Override
-    protected void addTags(HolderLookup.Provider pProvider) {
+    protected void addTags(HolderLookup.Provider provider) {
         tag(ItemTags.BEACON_PAYMENT_ITEMS)
                 .add(   ModItems.AMETHYST.get(),
                         ModItems.RUBY.get(),
@@ -107,6 +107,61 @@ public class ItemTagGen extends ItemTagsProvider {
                         ModItems.CRYSTAL_HOE.get(),
                         ModItems.EMERALD_HOE.get()
                 );
+
+        tag(ItemTags.HEAD_ARMOR_ENCHANTABLE)
+                .add(   ModItems.AMETHYST_HELMET.get(),
+                        ModItems.RUBY_HELMET.get(),
+                        ModItems.SAPPHIRE_HELMET.get(),
+                        ModItems.TOPAZ_HELMET.get(),
+                        ModItems.CRYSTAL_HELMET.get(),
+                        ModItems.EMERALD_HELMET.get()
+                );
+
+        tag(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+                .add(   ModItems.AMETHYST_CHESTPLATE.get(),
+                        ModItems.RUBY_CHESTPLATE.get(),
+                        ModItems.SAPPHIRE_CHESTPLATE.get(),
+                        ModItems.TOPAZ_CHESTPLATE.get(),
+                        ModItems.CRYSTAL_CHESTPLATE.get(),
+                        ModItems.EMERALD_CHESTPLATE.get()
+                );
+
+        tag(ItemTags.LEG_ARMOR_ENCHANTABLE)
+                .add(   ModItems.AMETHYST_LEGGINGS.get(),
+                        ModItems.RUBY_LEGGINGS.get(),
+                        ModItems.SAPPHIRE_LEGGINGS.get(),
+                        ModItems.TOPAZ_LEGGINGS.get(),
+                        ModItems.CRYSTAL_LEGGINGS.get(),
+                        ModItems.EMERALD_LEGGINGS.get()
+                );
+
+        tag(ItemTags.FOOT_ARMOR_ENCHANTABLE)
+                .add(   ModItems.AMETHYST_BOOTS.get(),
+                        ModItems.RUBY_BOOTS.get(),
+                        ModItems.SAPPHIRE_BOOTS.get(),
+                        ModItems.TOPAZ_BOOTS.get(),
+                        ModItems.CRYSTAL_BOOTS.get(),
+                        ModItems.EMERALD_BOOTS.get()
+                );
+
+        tag(ItemTags.MINING_ENCHANTABLE)
+                .add(   ModItems.AMETHYST_PICKAXE.get(),
+                        ModItems.RUBY_PICKAXE.get(),
+                        ModItems.SAPPHIRE_PICKAXE.get(),
+                        ModItems.TOPAZ_PICKAXE.get(),
+                        ModItems.CRYSTAL_PICKAXE.get(),
+                        ModItems.EMERALD_PICKAXE.get()
+                );
+
+        tag(ItemTags.SWORD_ENCHANTABLE)
+                .add(   ModItems.AMETHYST_SWORD.get(),
+                        ModItems.RUBY_SWORD.get(),
+                        ModItems.SAPPHIRE_SWORD.get(),
+                        ModItems.TOPAZ_SWORD.get(),
+                        ModItems.CRYSTAL_SWORD.get(),
+                        ModItems.EMERALD_SWORD.get()
+                );
+
     }
 
 }
