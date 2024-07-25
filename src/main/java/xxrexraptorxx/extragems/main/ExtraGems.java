@@ -13,7 +13,7 @@ import xxrexraptorxx.extragems.utils.Config;
 
 /**
  * @author XxRexRaptorxX (RexRaptor)
- * @projectPage https://www.curseforge.com/minecraft/mc-mods/extra-gems
+ * @projectPage <a href="https://www.curseforge.com/minecraft/mc-mods/extra-gems">...</a>
  **/
 @Mod(References.MODID)
 public class ExtraGems {
