@@ -108,7 +108,7 @@ public class ItemTagGen extends ItemTagsProvider {
                         ModItems.EMERALD_HOE.get()
                 );
 
-        tag(ItemTags.HEAD_ARMOR_ENCHANTABLE)
+        tag(ItemTags.HEAD_ARMOR)
                 .add(   ModItems.AMETHYST_HELMET.get(),
                         ModItems.RUBY_HELMET.get(),
                         ModItems.SAPPHIRE_HELMET.get(),
@@ -117,7 +117,7 @@ public class ItemTagGen extends ItemTagsProvider {
                         ModItems.EMERALD_HELMET.get()
                 );
 
-        tag(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+        tag(ItemTags.CHEST_ARMOR)
                 .add(   ModItems.AMETHYST_CHESTPLATE.get(),
                         ModItems.RUBY_CHESTPLATE.get(),
                         ModItems.SAPPHIRE_CHESTPLATE.get(),
@@ -126,7 +126,7 @@ public class ItemTagGen extends ItemTagsProvider {
                         ModItems.EMERALD_CHESTPLATE.get()
                 );
 
-        tag(ItemTags.LEG_ARMOR_ENCHANTABLE)
+        tag(ItemTags.LEG_ARMOR)
                 .add(   ModItems.AMETHYST_LEGGINGS.get(),
                         ModItems.RUBY_LEGGINGS.get(),
                         ModItems.SAPPHIRE_LEGGINGS.get(),
@@ -135,7 +135,7 @@ public class ItemTagGen extends ItemTagsProvider {
                         ModItems.EMERALD_LEGGINGS.get()
                 );
 
-        tag(ItemTags.FOOT_ARMOR_ENCHANTABLE)
+        tag(ItemTags.FOOT_ARMOR)
                 .add(   ModItems.AMETHYST_BOOTS.get(),
                         ModItems.RUBY_BOOTS.get(),
                         ModItems.SAPPHIRE_BOOTS.get(),

@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.extragems.items.ItemAmulet;
+import xxrexraptorxx.extragems.items.ItemCustomArmor;
 import xxrexraptorxx.extragems.items.ItemGem;
 import xxrexraptorxx.extragems.items.ItemGemCharged;
 import xxrexraptorxx.extragems.main.References;
@@ -106,33 +107,33 @@ public class ModItems {
     public static final DeferredItem<HoeItem> EMERALD_HOE = ITEMS.register("emerald_hoe",
             () -> new HoeItem(ToolMaterials.EMERALD, new Item.Properties().attributes(HoeItem.createAttributes(ToolMaterials.EMERALD, 1, -0.0f))));
 
-    public static final DeferredItem<ArmorItem> AMETHYST_HELMET = ITEMS.register("amethyst_helmet", () -> new ArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> AMETHYST_LEGGINGS = ITEMS.register("amethyst_leggings", () -> new ArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> AMETHYST_CHESTPLATE = ITEMS.register("amethyst_chestplate", () -> new ArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> AMETHYST_BOOTS = ITEMS.register("amethyst_boots", () -> new ArmorItem(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> AMETHYST_HELMET = ITEMS.register("amethyst_helmet", () -> new ItemCustomArmor(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> AMETHYST_LEGGINGS = ITEMS.register("amethyst_leggings", () -> new ItemCustomArmor(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> AMETHYST_CHESTPLATE = ITEMS.register("amethyst_chestplate", () -> new ItemCustomArmor(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> AMETHYST_BOOTS = ITEMS.register("amethyst_boots", () -> new ItemCustomArmor(ModArmorMaterials.AMETHYST_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final DeferredItem<ArmorItem> RUBY_HELMET = ITEMS.register("ruby_helmet", () -> new ArmorItem(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> RUBY_LEGGINGS = ITEMS.register("ruby_leggings", () -> new ArmorItem(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate", () -> new ArmorItem(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> RUBY_BOOTS = ITEMS.register("ruby_boots", () -> new ArmorItem(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> RUBY_HELMET = ITEMS.register("ruby_helmet", () -> new ItemCustomArmor(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> RUBY_LEGGINGS = ITEMS.register("ruby_leggings", () -> new ItemCustomArmor(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate", () -> new ItemCustomArmor(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> RUBY_BOOTS = ITEMS.register("ruby_boots", () -> new ItemCustomArmor(ModArmorMaterials.RUBY_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final DeferredItem<ArmorItem> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet", () -> new ArmorItem(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings", () -> new ArmorItem(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate", () -> new ArmorItem(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots", () -> new ArmorItem(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> SAPPHIRE_HELMET = ITEMS.register("sapphire_helmet", () -> new ItemCustomArmor(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> SAPPHIRE_LEGGINGS = ITEMS.register("sapphire_leggings", () -> new ItemCustomArmor(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> SAPPHIRE_CHESTPLATE = ITEMS.register("sapphire_chestplate", () -> new ItemCustomArmor(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> SAPPHIRE_BOOTS = ITEMS.register("sapphire_boots", () -> new ItemCustomArmor(ModArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final DeferredItem<ArmorItem> TOPAZ_HELMET = ITEMS.register("topaz_helmet", () -> new ArmorItem(ModArmorMaterials.TOPAZ_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> TOPAZ_LEGGINGS = ITEMS.register("topaz_leggings", () -> new ArmorItem(ModArmorMaterials.TOPAZ_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> TOPAZ_CHESTPLATE = ITEMS.register("topaz_chestplate", () -> new ArmorItem(ModArmorMaterials.TOPAZ_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> TOPAZ_BOOTS = ITEMS.register("topaz_boots", () -> new ArmorItem(ModArmorMaterials.TOPAZ_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> TOPAZ_HELMET = ITEMS.register("topaz_helmet", () -> new ItemCustomArmor(ModArmorMaterials.TOPAZ_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> TOPAZ_LEGGINGS = ITEMS.register("topaz_leggings", () -> new ItemCustomArmor(ModArmorMaterials.TOPAZ_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> TOPAZ_CHESTPLATE = ITEMS.register("topaz_chestplate", () -> new ItemCustomArmor(ModArmorMaterials.TOPAZ_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> TOPAZ_BOOTS = ITEMS.register("topaz_boots", () -> new ItemCustomArmor(ModArmorMaterials.TOPAZ_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final DeferredItem<ArmorItem> CRYSTAL_HELMET = ITEMS.register("crystal_helmet", () -> new ArmorItem(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> CRYSTAL_LEGGINGS = ITEMS.register("crystal_leggings", () -> new ArmorItem(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> CRYSTAL_CHESTPLATE = ITEMS.register("crystal_chestplate", () -> new ArmorItem(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> CRYSTAL_BOOTS = ITEMS.register("crystal_boots", () -> new ArmorItem(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> CRYSTAL_HELMET = ITEMS.register("crystal_helmet", () -> new ItemCustomArmor(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> CRYSTAL_LEGGINGS = ITEMS.register("crystal_leggings", () -> new ItemCustomArmor(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> CRYSTAL_CHESTPLATE = ITEMS.register("crystal_chestplate", () -> new ItemCustomArmor(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> CRYSTAL_BOOTS = ITEMS.register("crystal_boots", () -> new ItemCustomArmor(ModArmorMaterials.CRYSTAL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final DeferredItem<ArmorItem> EMERALD_HELMET = ITEMS.register("emerald_helmet", () -> new ArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> EMERALD_LEGGINGS = ITEMS.register("emerald_leggings", () -> new ArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> EMERALD_CHESTPLATE = ITEMS.register("emerald_chestplate", () -> new ArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-    public static final DeferredItem<ArmorItem> EMERALD_BOOTS = ITEMS.register("emerald_boots", () -> new ArmorItem(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> EMERALD_HELMET = ITEMS.register("emerald_helmet", () -> new ItemCustomArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> EMERALD_LEGGINGS = ITEMS.register("emerald_leggings", () -> new ItemCustomArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> EMERALD_CHESTPLATE = ITEMS.register("emerald_chestplate", () -> new ItemCustomArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final DeferredItem<ItemCustomArmor> EMERALD_BOOTS = ITEMS.register("emerald_boots", () -> new ItemCustomArmor(ModArmorMaterials.EMERALD_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties()));
 }
