@@ -10,7 +10,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.extragems.items.ItemAmulet;
 import xxrexraptorxx.extragems.items.ItemCustomArmor;
-import xxrexraptorxx.extragems.items.ItemGem;
 import xxrexraptorxx.extragems.items.ItemGemCharged;
 import xxrexraptorxx.extragems.main.References;
 

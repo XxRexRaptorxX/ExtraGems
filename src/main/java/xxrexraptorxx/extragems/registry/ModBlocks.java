@@ -1,92 +1,225 @@
 package xxrexraptorxx.extragems.registry;
 
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import xxrexraptorxx.extragems.blocks.*;
+import xxrexraptorxx.extragems.blocks.BlockChargedGem;
+import xxrexraptorxx.extragems.blocks.BlockDeepslateGemOre;
+import xxrexraptorxx.extragems.blocks.BlockGemOre;
 import xxrexraptorxx.extragems.main.References;
+
+import java.util.function.Function;
 
 public class ModBlocks {
 
-    private static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(References.MODID);
-    private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(References.MODID);
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(References.MODID);
 
     public static void init(IEventBus bus) {
         BLOCKS.register(bus);
-        ITEMS.register(bus);
     }
 
 
-    //BLOCKS
-    //public static final DeferredBlock<BlockGemOre> AMETHYST_ORE = BLOCKS.register("amethyst_ore", BlockGemOre::new);
-    //public static final DeferredItem<Item> AMETHYST_ORE_BLOCKITEM = ITEMS.register("amethyst_ore", () -> new BlockItem(AMETHYST_ORE.get(), new Item.Properties()));
+    public static final DeferredBlock<Block> AMETHYST_BLOCK = registerBlock("amethyst_block", properties -> new Block(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .sound(SoundType.AMETHYST)
+            .mapColor(MapColor.COLOR_PURPLE)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockAmethyst> AMETHYST_BLOCK = BLOCKS.register("amethyst_block", BlockAmethyst::new);
-    public static final DeferredItem<Item> AMETHYST_BLOCKITEM = ITEMS.register("amethyst_block", () -> new BlockItem(AMETHYST_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockChargedGem> CHARGED_AMETHYST_BLOCK = registerBlock("charged_amethyst_block", properties -> new BlockChargedGem(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .sound(SoundType.STONE)
+            .lightLevel(value -> 5)
+            .sound(SoundType.AMETHYST)
+            .mapColor(MapColor.COLOR_PURPLE)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockAmethystCharged> CHARGED_AMETHYST_BLOCK = BLOCKS.register("charged_amethyst_block", BlockAmethystCharged::new);
-    public static final DeferredItem<Item> CHARGED_AMETHYST_BLOCKITEM = ITEMS.register("charged_amethyst_block", () -> new BlockItem(CHARGED_AMETHYST_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockGemOre> SAPPHIRE_ORE = registerBlock("sapphire_ore", properties -> new BlockGemOre(properties
+            .requiresCorrectToolForDrops()
+            .strength(3.0F, 5.0F)
+            .sound(SoundType.STONE)
+            .mapColor(MapColor.STONE)
+            .instrument(NoteBlockInstrument.BASEDRUM)
+    ));
 
-    public static final DeferredBlock<BlockGemOre> SAPPHIRE_ORE = BLOCKS.register("sapphire_ore", BlockGemOre::new);
-    public static final DeferredItem<Item> SAPPHIRE_ORE_BLOCKITEM = ITEMS.register("sapphire_ore", () -> new BlockItem(SAPPHIRE_ORE.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore", properties -> new BlockDeepslateGemOre(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.5F, 3.0F)
+            .sound(SoundType.DEEPSLATE)
+            .mapColor(MapColor.DEEPSLATE)
+            .instrument(NoteBlockInstrument.BASEDRUM)
+    ));
 
-    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_SAPPHIRE_ORE = BLOCKS.register("deepslate_sapphire_ore", BlockDeepslateGemOre::new);
-    public static final DeferredItem<Item> DEEPSLATE_SAPPHIRE_ORE_BLOCKITEM = ITEMS.register("deepslate_sapphire_ore", () -> new BlockItem(DEEPSLATE_SAPPHIRE_ORE.get(), new Item.Properties()));
+    public static final DeferredBlock<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block", properties -> new Block(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .sound(SoundType.AMETHYST)
+            .mapColor(MapColor.COLOR_BLUE)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockSapphire> SAPPHIRE_BLOCK = BLOCKS.register("sapphire_block", BlockSapphire::new);
-    public static final DeferredItem<Item> SAPPHIRE_BLOCKITEM = ITEMS.register("sapphire_block", () -> new BlockItem(SAPPHIRE_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockChargedGem> CHARGED_SAPPHIRE_BLOCK = registerBlock("charged_sapphire_block", properties -> new BlockChargedGem(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .lightLevel(value -> 5)
+            .sound(SoundType.AMETHYST)
+            .mapColor(MapColor.COLOR_BLUE)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockSapphireCharged> CHARGED_SAPPHIRE_BLOCK = BLOCKS.register("charged_sapphire_block", BlockSapphireCharged::new);
-    public static final DeferredItem<Item> CHARGED_SAPPHIRE_BLOCKITEM = ITEMS.register("charged_sapphire_block", () -> new BlockItem(CHARGED_SAPPHIRE_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockGemOre> RUBY_ORE = registerBlock("ruby_ore", properties -> new BlockGemOre(properties
+            .requiresCorrectToolForDrops()
+            .strength(3.0F, 5.0F)
+            .sound(SoundType.STONE)
+            .mapColor(MapColor.STONE)
+            .instrument(NoteBlockInstrument.BASEDRUM)
+    ));
 
-    public static final DeferredBlock<BlockGemOre> RUBY_ORE = BLOCKS.register("ruby_ore", BlockGemOre::new);
-    public static final DeferredItem<Item> RUBY_ORE_BLOCKITEM = ITEMS.register("ruby_ore", () -> new BlockItem(RUBY_ORE.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore", properties -> new BlockDeepslateGemOre(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.5F, 3.0F)
+            .sound(SoundType.DEEPSLATE)
+            .mapColor(MapColor.DEEPSLATE)
+            .instrument(NoteBlockInstrument.BASEDRUM)
+    ));
 
-    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_RUBY_ORE = BLOCKS.register("deepslate_ruby_ore", BlockDeepslateGemOre::new);
-    public static final DeferredItem<Item> DEEPSLATE_RUBY_ORE_BLOCKITEM = ITEMS.register("deepslate_ruby_ore", () -> new BlockItem(DEEPSLATE_RUBY_ORE.get(), new Item.Properties()));
+    public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_block", properties -> new Block(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .sound(SoundType.AMETHYST)
+            .mapColor(MapColor.COLOR_RED)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockRuby> RUBY_BLOCK = BLOCKS.register("ruby_block", BlockRuby::new);
-    public static final DeferredItem<Item> RUBY_BLOCKITEM = ITEMS.register("ruby_block", () -> new BlockItem(RUBY_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockChargedGem> CHARGED_RUBY_BLOCK = registerBlock("charged_ruby_block", properties -> new BlockChargedGem(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .lightLevel(value -> 5)
+            .sound(SoundType.AMETHYST)
+            .mapColor(MapColor.COLOR_RED)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockRubyCharged> CHARGED_RUBY_BLOCK = BLOCKS.register("charged_ruby_block", BlockRubyCharged::new);
-    public static final DeferredItem<Item> CHARGED_RUBY_BLOCKITEM = ITEMS.register("charged_ruby_block", () -> new BlockItem(CHARGED_RUBY_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockGemOre> TOPAZ_ORE = registerBlock("topaz_ore", properties -> new BlockGemOre(properties
+            .requiresCorrectToolForDrops()
+            .strength(3.0F, 5.0F)
+            .sound(SoundType.STONE)
+            .mapColor(MapColor.STONE)
+            .instrument(NoteBlockInstrument.BASEDRUM)
+    ));
 
-    public static final DeferredBlock<BlockGemOre> TOPAZ_ORE = BLOCKS.register("topaz_ore", BlockGemOre::new);
-    public static final DeferredItem<Item> TOPAZ_ORE_BLOCKITEM = ITEMS.register("topaz_ore", () -> new BlockItem(TOPAZ_ORE.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_TOPAZ_ORE = registerBlock("deepslate_topaz_ore", properties -> new BlockDeepslateGemOre(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.5F, 3.0F)
+            .sound(SoundType.DEEPSLATE)
+            .mapColor(MapColor.DEEPSLATE)
+            .instrument(NoteBlockInstrument.BASEDRUM)
+    ));
 
-    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_TOPAZ_ORE = BLOCKS.register("deepslate_topaz_ore", BlockDeepslateGemOre::new);
-    public static final DeferredItem<Item> DEEPSLATE_TOPAZ_ORE_BLOCKITEM = ITEMS.register("deepslate_topaz_ore", () -> new BlockItem(DEEPSLATE_TOPAZ_ORE.get(), new Item.Properties()));
+    public static final DeferredBlock<Block> TOPAZ_BLOCK = registerBlock("topaz_block", properties -> new Block(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .sound(SoundType.AMETHYST)
+            .mapColor(MapColor.COLOR_YELLOW)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockTopaz> TOPAZ_BLOCK = BLOCKS.register("topaz_block", BlockTopaz::new);
-    public static final DeferredItem<Item> TOPAZ_BLOCKITEM = ITEMS.register("topaz_block", () -> new BlockItem(TOPAZ_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockChargedGem> CHARGED_TOPAZ_BLOCK = registerBlock("charged_topaz_block", properties -> new BlockChargedGem(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .lightLevel(value -> 5)
+            .sound(SoundType.AMETHYST)
+            .mapColor(MapColor.COLOR_YELLOW)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockTopazCharged> CHARGED_TOPAZ_BLOCK = BLOCKS.register("charged_topaz_block", BlockTopazCharged::new);
-    public static final DeferredItem<Item> CHARGED_TOPAZ_BLOCKITEM = ITEMS.register("charged_topaz_block", () -> new BlockItem(CHARGED_TOPAZ_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockGemOre> CRYSTAL_ORE = registerBlock("crystal_ore", properties -> new BlockGemOre(properties
+            .requiresCorrectToolForDrops()
+            .strength(3.0F, 5.0F)
+            .sound(SoundType.STONE)
+            .mapColor(MapColor.STONE)
+            .instrument(NoteBlockInstrument.BASEDRUM)
+    ));
 
-    public static final DeferredBlock<BlockGemOre> CRYSTAL_ORE = BLOCKS.register("crystal_ore", BlockGemOre::new);
-    public static final DeferredItem<Item> CRYSTAL_ORE_BLOCKITEM = ITEMS.register("crystal_ore", () -> new BlockItem(CRYSTAL_ORE.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_CRYSTAL_ORE = registerBlock("deepslate_crystal_ore", properties -> new BlockDeepslateGemOre(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.5F, 3.0F)
+            .sound(SoundType.DEEPSLATE)
+            .mapColor(MapColor.DEEPSLATE)
+            .instrument(NoteBlockInstrument.BASEDRUM)
+    ));
 
-    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_CRYSTAL_ORE = BLOCKS.register("deepslate_crystal_ore", BlockDeepslateGemOre::new);
-    public static final DeferredItem<Item> DEEPSLATE_CRYSTAL_ORE_BLOCKITEM = ITEMS.register("deepslate_crystal_ore", () -> new BlockItem(DEEPSLATE_CRYSTAL_ORE.get(), new Item.Properties()));
+    public static final DeferredBlock<Block> CRYSTAL_BLOCK = registerBlock("crystal_block", properties -> new Block(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .sound(SoundType.AMETHYST)
+            .mapColor(MapColor.QUARTZ)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockCrystal> CRYSTAL_BLOCK = BLOCKS.register("crystal_block", BlockCrystal::new);
-    public static final DeferredItem<Item> CRYSTAL_BLOCKITEM = ITEMS.register("crystal_block", () -> new BlockItem(CRYSTAL_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockChargedGem> CHARGED_CRYSTAL_BLOCK = registerBlock("charged_crystal_block", properties -> new BlockChargedGem(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .lightLevel(value -> 5)
+            .sound(SoundType.AMETHYST)
+            .mapColor(MapColor.QUARTZ)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockCrystalCharged> CHARGED_CRYSTAL_BLOCK = BLOCKS.register("charged_crystal_block", BlockCrystalCharged::new);
-    public static final DeferredItem<Item> CHARGED_CRYSTAL_BLOCKITEM = ITEMS.register("charged_crystal_block", () -> new BlockItem(CHARGED_CRYSTAL_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockChargedGem> CHARGED_DIAMOND_BLOCK = registerBlock("charged_diamond_block", properties -> new BlockChargedGem(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .lightLevel(value -> 5)
+            .sound(SoundType.METAL)
+            .mapColor(MapColor.DIAMOND)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockDiamondCharged> CHARGED_DIAMOND_BLOCK = BLOCKS.register("charged_diamond_block", BlockDiamondCharged::new);
-    public static final DeferredItem<Item> CHARGED_DIAMOND_BLOCKITEM = ITEMS.register("charged_diamond_block", () -> new BlockItem(CHARGED_DIAMOND_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<BlockChargedGem> CHARGED_EMERALD_BLOCK = registerBlock("charged_emerald_block", properties -> new BlockChargedGem(properties
+            .requiresCorrectToolForDrops()
+            .strength(4.0F, 8.0F)
+            .lightLevel(value -> 5)
+            .sound(SoundType.METAL)
+            .mapColor(MapColor.EMERALD)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
-    public static final DeferredBlock<BlockEmeraldCharged> CHARGED_EMERALD_BLOCK = BLOCKS.register("charged_emerald_block", BlockEmeraldCharged::new);
-    public static final DeferredItem<Item> CHARGED_EMERALD_BLOCKITEM = ITEMS.register("charged_emerald_block", () -> new BlockItem(CHARGED_EMERALD_BLOCK.get(), new Item.Properties()));
+    public static final DeferredBlock<Block> GEM_CHARGER = registerBlock("gem_charger", properties -> new Block(properties
+            .strength(4.0F, 8.0F)
+            .lightLevel(value -> 8)
+            .sound(SoundType.METAL)
+            .mapColor(MapColor.COLOR_PURPLE)
+            .instrument(NoteBlockInstrument.BIT)
+    ));
 
 
-    public static final DeferredBlock<BlockGemCharger> GEM_CHARGER = BLOCKS.register("gem_charger", BlockGemCharger::new);
-    public static final DeferredItem<Item> GEM_CHARGER_BLOCKITEM = ITEMS.register("gem_charger", () -> new BlockItem(GEM_CHARGER.get(), new Item.Properties()));
 
+
+    public static <T extends Block> DeferredBlock<T> registerBlock(String name, Function<BlockBehaviour.Properties, T> blockCreator) {
+        DeferredBlock<T> toReturn = BLOCKS.register(name, () -> blockCreator.apply(BlockBehaviour.Properties.of().setId(blockId(name))));
+        registerBlockItems(name, toReturn);
+        return toReturn;
+    }
+
+    public static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().setId(ModItems.itemId(name)).useBlockDescriptionPrefix()));
+    }
+
+    public static ResourceKey<Block> blockId(String name) {
+        return ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(References.MODID, name));
+    }
 
 }

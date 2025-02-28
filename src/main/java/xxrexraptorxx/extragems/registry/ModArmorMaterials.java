@@ -11,7 +11,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.extragems.main.References;
-import xxrexraptorxx.extragems.utils.ModTags;
 
 import java.util.EnumMap;
 import java.util.List;

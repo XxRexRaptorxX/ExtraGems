@@ -36,7 +36,7 @@ public class JEIIntegration implements IModPlugin {
 
         IIngredientManager ingredientManager = registry.getIngredientManager();
 
-        registry.addIngredientInfo(gems, VanillaTypes.ITEM_STACK, Component.translatable("message.extragems.charged_gem_jei_desc"));
+        registry.addIngredientInfo(gems, VanillaTypes.ITEM_STACK, Component.translatable("message." + References.MODID + ".charged_gem_jei_desc"));
     }
 }
 

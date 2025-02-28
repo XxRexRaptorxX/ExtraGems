@@ -1,9 +1,6 @@
 package xxrexraptorxx.extragems.registry;
 
 import net.minecraft.world.item.ToolMaterial;
-import net.minecraft.world.item.crafting.Ingredient;
-import net.neoforged.neoforge.common.SimpleTier;
-import xxrexraptorxx.extragems.utils.ModTags;
 
 public class ToolMaterials {
 
