@@ -14,7 +14,7 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import xxrexraptorxx.extragems.utils.Config;
-import xxrexraptorxx.extragems.utils.EffectHelper;
+import xxrexraptorxx.extragems.utils.GemHelper;
 
 
 public class ItemAmulet extends Item {
@@ -60,7 +60,7 @@ public class ItemAmulet extends Item {
             cloud.setRadius(Config.AMULET_EFFECT_RADIUS.get());
             cloud.setWaitTime(1);
             cloud.setParticle(ParticleTypes.CRIT);
-            cloud.addEffect(new MobEffectInstance(EffectHelper.getEffect(BuiltInRegistries.ITEM.getKey(this).toString()), Config.AMULET_EFFECT_DURATION.get(), Config.AMULET_EFFECT_AMPLIFIER.get()));
+            cloud.addEffect(new MobEffectInstance(GemHelper.getEffect(BuiltInRegistries.ITEM.getKey(this).toString()), Config.AMULET_EFFECT_DURATION.get(), Config.AMULET_EFFECT_AMPLIFIER.get()));
             level.addFreshEntity(cloud);
         }
 

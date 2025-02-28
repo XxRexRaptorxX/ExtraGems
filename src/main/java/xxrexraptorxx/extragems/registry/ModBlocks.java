@@ -14,7 +14,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.extragems.blocks.BlockChargedGem;
-import xxrexraptorxx.extragems.blocks.BlockDeepslateGemOre;
 import xxrexraptorxx.extragems.blocks.BlockGemOre;
 import xxrexraptorxx.extragems.main.References;
 
@@ -55,7 +54,7 @@ public class ModBlocks {
             .instrument(NoteBlockInstrument.BASEDRUM)
     ));
 
-    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore", properties -> new BlockDeepslateGemOre(properties
+    public static final DeferredBlock<BlockGemOre> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore", properties -> new BlockGemOre(properties
             .requiresCorrectToolForDrops()
             .strength(4.5F, 3.0F)
             .sound(SoundType.DEEPSLATE)
@@ -88,7 +87,7 @@ public class ModBlocks {
             .instrument(NoteBlockInstrument.BASEDRUM)
     ));
 
-    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore", properties -> new BlockDeepslateGemOre(properties
+    public static final DeferredBlock<BlockGemOre> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore", properties -> new BlockGemOre(properties
             .requiresCorrectToolForDrops()
             .strength(4.5F, 3.0F)
             .sound(SoundType.DEEPSLATE)
@@ -121,7 +120,7 @@ public class ModBlocks {
             .instrument(NoteBlockInstrument.BASEDRUM)
     ));
 
-    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_TOPAZ_ORE = registerBlock("deepslate_topaz_ore", properties -> new BlockDeepslateGemOre(properties
+    public static final DeferredBlock<BlockGemOre> DEEPSLATE_TOPAZ_ORE = registerBlock("deepslate_topaz_ore", properties -> new BlockGemOre(properties
             .requiresCorrectToolForDrops()
             .strength(4.5F, 3.0F)
             .sound(SoundType.DEEPSLATE)
@@ -154,7 +153,7 @@ public class ModBlocks {
             .instrument(NoteBlockInstrument.BASEDRUM)
     ));
 
-    public static final DeferredBlock<BlockDeepslateGemOre> DEEPSLATE_CRYSTAL_ORE = registerBlock("deepslate_crystal_ore", properties -> new BlockDeepslateGemOre(properties
+    public static final DeferredBlock<BlockGemOre> DEEPSLATE_CRYSTAL_ORE = registerBlock("deepslate_crystal_ore", properties -> new BlockGemOre(properties
             .requiresCorrectToolForDrops()
             .strength(4.5F, 3.0F)
             .sound(SoundType.DEEPSLATE)

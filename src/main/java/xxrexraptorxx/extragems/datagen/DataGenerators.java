@@ -6,7 +6,6 @@ import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import xxrexraptorxx.extragems.main.References;
 
@@ -23,6 +22,7 @@ public class DataGenerators {
 
         BlockTagsProvider blocktags = new BlockTagGen(packOutput, lookupProvider);
         generator.addProvider(true, blocktags);
+        generator.addProvider(true, new ItemTagGen(packOutput, lookupProvider, blocktags.contentsGetter()));
         generator.addProvider(true, new ModelDataGen(packOutput));
     }
 }

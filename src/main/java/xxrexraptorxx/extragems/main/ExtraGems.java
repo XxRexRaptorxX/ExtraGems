@@ -22,10 +22,8 @@ public class ExtraGems {
 
 
     public ExtraGems(IEventBus bus, ModContainer container) {
-
         ModBlocks.init(bus);
         ModItems.init(bus);
-        ModArmorMaterials.init(bus);
         Config.init(container);
         CreativeModeTabs.init(bus);
     }

@@ -10,13 +10,20 @@ import xxrexraptorxx.extragems.main.References;
 
 public class ModTags {
 
-
     public static final TagKey<Block> NEEDS_AMETHYST_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "needs_amethyst_tool"));
     public static final TagKey<Block> NEEDS_RUBY_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "needs_ruby_tool"));
     public static final TagKey<Block> NEEDS_SAPPHIRE_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "needs_sapphire_tool"));
     public static final TagKey<Block> NEEDS_CRYSTAL_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "needs_crystal_tool"));
     public static final TagKey<Block> NEEDS_TOPAZ_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "needs_topaz_tool"));
     public static final TagKey<Block> NEEDS_EMERALD_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath(References.MODID, "needs_emerald_tool"));
+
+    public static final TagKey<Block> INCORRECT_FOR_AMETHYST_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_amethyst_tool"));
+    public static final TagKey<Block> INCORRECT_FOR_RUBY_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_ruby_tool"));
+    public static final TagKey<Block> INCORRECT_FOR_SAPPHIRE_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_sapphire_tool"));
+    public static final TagKey<Block> INCORRECT_FOR_CRYSTAL_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_crystal_tool"));
+    public static final TagKey<Block> INCORRECT_FOR_TOPAZ_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_topaz_tool"));
+    public static final TagKey<Block> INCORRECT_FOR_EMERALD_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_emerald_tool"));
+
 
     public static final TagKey<Item> AMETHYST_TOOL_MATERIALS_TAG = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "amethyst_tool_materials"));
     public static final TagKey<Item> RUBY_TOOL_MATERIALS_TAG = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "ruby_tool_materials"));
@@ -31,14 +38,4 @@ public class ModTags {
     public static final TagKey<Item> REPAIRS_CRYSTAL_ARMOR_TAG = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "repairs_crystal_armor"));
     public static final TagKey<Item> REPAIRS_TOPAZ_ARMOR_TAG = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "repairs_topaz_armor"));
     public static final TagKey<Item> REPAIRS_EMERALD_ARMOR_TAG = ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", "repairs_emerald_armor"));
-
-    public static final TagKey<Block> INCORRECT_FOR_AMETHYST_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_amethyst_tool"));
-    public static final TagKey<Block> INCORRECT_FOR_RUBY_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_ruby_tool"));
-    public static final TagKey<Block> INCORRECT_FOR_SAPPHIRE_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_sapphire_tool"));
-    public static final TagKey<Block> INCORRECT_FOR_CRYSTAL_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_crystal_tool"));
-    public static final TagKey<Block> INCORRECT_FOR_TOPAZ_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_topaz_tool"));
-    public static final TagKey<Block> INCORRECT_FOR_EMERALD_TAG = BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", "incorrect_for_emerald_tool"));
-
-
-
 }

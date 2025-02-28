@@ -39,6 +39,7 @@ import xxrexraptorxx.extragems.main.References;
 import xxrexraptorxx.extragems.registry.ModBlocks;
 import xxrexraptorxx.extragems.registry.ModItems;
 import xxrexraptorxx.extragems.utils.Config;
+import xxrexraptorxx.extragems.utils.GemHelper;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -161,6 +162,7 @@ public class Events {
         player.getInventory().add(certificate);
     }
 
+
     private static void givePremiumSupporterReward(Player player, Level level) {
         ItemStack reward = new ItemStack(Items.DIAMOND_SWORD, 1);
         Registry<Enchantment> enchantmentsRegistry = level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT);
@@ -171,6 +173,7 @@ public class Events {
         player.getInventory().add(reward);
     }
 
+
     private static void giveEliteReward(Player player) {
         ItemStack star = new ItemStack(Items.NETHER_STAR);
 
@@ -178,47 +181,14 @@ public class Events {
         player.getInventory().add(star);
     }
 
-
-    /**
-     * Tests if a player is a supporter
-     *
-     * @param url url to a file that contains the supporter names
-     * @param player ingame player
-     * @return true/false
-     */
-    private static boolean SupporterCheck(URL url, Player player) {
-        try {
-            Scanner scanner = new Scanner(url.openStream());
-            List<String> supporterList = scanner.tokens().toList();
-
-            for (String name: supporterList) {
-                //test if player is in supporter list
-                if (player.getName().getString().equals(name)) {
-                    return true;
-                }
-            }
-
-            scanner.close();
-
-        } catch (MalformedURLException e) {
-            ExtraGems.LOGGER.error("Supporter list URL not found! >>{}", url);
-
-        } catch (Exception e) {
-            ExtraGems.LOGGER.error("An unexpected error occurred while checking supporter list", e);
-        }
-
-        return false;
-    }
-
-
-
-    /** Gem Charger **/
     // from ThinkersConstruct and modified
-
+    /** Gem Charger **/
     @SubscribeEvent
     public static void onInteract(PlayerInteractEvent.RightClickBlock event) {
-        if(ItemStack.isSameItem(event.getItemStack(), new ItemStack(ModItems.AMETHYST.get())) || ItemStack.isSameItem(event.getItemStack(), new ItemStack(ModItems.RUBY.get())) || ItemStack.isSameItem(event.getItemStack(), new ItemStack(ModItems.SAPPHIRE.get()))
-                || ItemStack.isSameItem(event.getItemStack(), new ItemStack(ModItems.CRYSTAL.get())) || ItemStack.isSameItem(event.getItemStack(), new ItemStack(ModItems.TOPAZ.get())) || ItemStack.isSameItem(event.getItemStack(), new ItemStack(Items.DIAMOND)) || ItemStack.isSameItem(event.getItemStack(), new ItemStack(Items.EMERALD))) {
+        ItemStack stack = event.getItemStack();
+
+        if(ItemStack.isSameItem(stack, new ItemStack(ModItems.AMETHYST.get())) || ItemStack.isSameItem(stack, new ItemStack(ModItems.RUBY.get())) || ItemStack.isSameItem(stack, new ItemStack(ModItems.SAPPHIRE.get()))
+                || ItemStack.isSameItem(stack, new ItemStack(ModItems.CRYSTAL.get())) || ItemStack.isSameItem(stack, new ItemStack(ModItems.TOPAZ.get())) || ItemStack.isSameItem(stack, new ItemStack(Items.DIAMOND)) || ItemStack.isSameItem(stack, new ItemStack(Items.EMERALD))) {
             BlockPos pos = event.getPos();
             Player player = event.getEntity();
             Level level = event.getLevel();
@@ -240,57 +210,22 @@ public class Events {
                             if (!level.isClientSide) {
                                 event.getItemStack().shrink(1);
                                 player.onEnchantmentPerformed(null, Config.CHARGING_COST.get());
-                                ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(getChargedGemVariant(player.getItemInHand(player.getUsedItemHand()).copy())));
+                                ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(GemHelper.getChargedGemVariant(player.getItemInHand(player.getUsedItemHand()).copy())));
 
                                 event.setUseBlock(TriState.FALSE);
                                 event.setUseItem(TriState.FALSE);
                                 event.setCanceled(true);
                             }
                         } else {
-                            if(level.isClientSide) player.displayClientMessage(Component.translatable("message.extragems.not_night"), true);
+                            if(level.isClientSide) player.displayClientMessage(Component.translatable("message." + References.MODID + ".not_night"), true);
                         }
                     } else {
-                        if(level.isClientSide) player.displayClientMessage(Component.translatable("message.extragems.not_enough_levels"), true);
+                        if(level.isClientSide) player.displayClientMessage(Component.translatable("message." + References.MODID + ".not_enough_levels"), true);
                     }
                 } else {
-                    if (level.isClientSide) player.displayClientMessage(Component.translatable("message.extragems.wrong_block"), true);
+                    if (level.isClientSide) player.displayClientMessage(Component.translatable("message." + References.MODID + ".wrong_block"), true);
                 }
         }
     }
-
-
-
-    /** Utility **/
-
-    public static Item getChargedGemVariant(ItemStack gem) {
-        switch (BuiltInRegistries.ITEM.getKey(gem.getItem()).toString()) {
-
-            case References.MODID + ":amethyst":
-                return ModItems.CHARGED_AMETHYST.get();
-
-            case References.MODID + ":ruby":
-                return ModItems.CHARGED_RUBY.get();
-
-            case References.MODID + ":sapphire":
-                return ModItems.CHARGED_SAPPHIRE.get();
-
-            case References.MODID + ":topaz":
-                return ModItems.CHARGED_TOPAZ.get();
-
-            case References.MODID + ":crystal":
-                return ModItems.CHARGED_CRYSTAL.get();
-
-            case "minecraft:diamond":
-                return ModItems.CHARGED_DIAMOND.get();
-
-            case "minecraft:emerald":
-                return ModItems.CHARGED_EMERALD.get();
-
-            default:
-                ExtraGems.LOGGER.error("Invalid registry name for gem type.");
-                return Items.COAL;
-        }
-    }
-
 
 }
