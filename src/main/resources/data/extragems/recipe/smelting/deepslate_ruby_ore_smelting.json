@@ -4,9 +4,8 @@
   "cookingtime": 200,
   "experience": 1.0,
   "group": "ruby",
-  "ingredient": {
-    "item": "extragems:deepslate_ruby_ore"
-  },
+  "ingredient": "extragems:deepslate_ruby_ore",
+
   "result": {
     "id": "extragems:ruby"
   }

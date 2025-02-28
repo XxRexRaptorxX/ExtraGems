@@ -4,9 +4,8 @@
   "cookingtime": 200,
   "experience": 1.0,
   "group": "crystal",
-  "ingredient": {
-    "item": "extragems:crystal_ore"
-  },
+  "ingredient": "extragems:crystal_ore",
+
   "result": {
     "id": "extragems:crystal"
   }

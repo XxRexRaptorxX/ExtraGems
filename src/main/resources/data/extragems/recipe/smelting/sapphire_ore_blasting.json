@@ -4,9 +4,8 @@
   "cookingtime": 100,
   "experience": 1.0,
   "group": "sapphire",
-  "ingredient": {
-    "item": "extragems:sapphire_ore"
-  },
+  "ingredient": "extragems:sapphire_ore",
+
   "result": {
     "id": "extragems:sapphire"
   }
