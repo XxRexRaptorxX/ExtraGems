@@ -6,8 +6,8 @@ import net.minecraft.world.item.Rarity;
 
 public class ItemGemCharged extends Item {
 
-    public ItemGemCharged() {
-        super(new Properties()
+    public ItemGemCharged(Properties properties) {
+        super(properties
             .rarity(Rarity.UNCOMMON)
         );
 

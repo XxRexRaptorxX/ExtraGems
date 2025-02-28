@@ -1,153 +1,109 @@
 package xxrexraptorxx.extragems.datagen;
 
-import net.minecraft.data.PackOutput;
+import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.ItemModelOutput;
+import net.minecraft.client.data.models.model.ModelInstance;
+import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.resources.ResourceLocation;
-import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.DeferredItem;
-import xxrexraptorxx.extragems.main.References;
-import xxrexraptorxx.extragems.registry.ModBlocks;
 import xxrexraptorxx.extragems.registry.ModItems;
 
-public class ItemModelGen extends ItemModelProvider {
+import java.util.function.BiConsumer;
 
-    public ItemModelGen(PackOutput packOutput, ExistingFileHelper existingFileHelper) {
-        super(packOutput, References.MODID, existingFileHelper);
+public class ItemModelGen extends ItemModelGenerators {
+
+    public ItemModelGen(ItemModelOutput itemModelOutput, BiConsumer<ResourceLocation, ModelInstance> modelOutput) {
+        super(itemModelOutput, modelOutput);
     }
 
     @Override
-    protected void registerModels() {
+    public void run() {
         //Generic
-        itemGenerated(ModItems.AMETHYST);
-        itemGenerated(ModItems.RUBY);
-        itemGenerated(ModItems.SAPPHIRE);
-        itemGenerated(ModItems.TOPAZ);
-        itemGenerated(ModItems.CRYSTAL);
+        this.generateFlatItem(ModItems.AMETHYST.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.RUBY.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.SAPPHIRE.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.TOPAZ.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CRYSTAL.get(), ModelTemplates.FLAT_ITEM);
 
-        itemHandheld(ModItems.CHARGED_AMETHYST);
-        itemHandheld(ModItems.CHARGED_RUBY);
-        itemHandheld(ModItems.CHARGED_SAPPHIRE);
-        itemHandheld(ModItems.CHARGED_TOPAZ);
-        itemHandheld(ModItems.CHARGED_CRYSTAL);
-        itemHandheld(ModItems.CHARGED_DIAMOND);
-        itemHandheld(ModItems.CHARGED_EMERALD);
+        this.generateFlatItem(ModItems.CHARGED_AMETHYST.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CHARGED_RUBY.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CHARGED_SAPPHIRE.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CHARGED_TOPAZ.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CHARGED_CRYSTAL.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CHARGED_DIAMOND.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CHARGED_EMERALD.get(), ModelTemplates.FLAT_ITEM);
 
-        itemHandheld(ModItems.AMETHYST_AMULET);
-        itemHandheld(ModItems.RUBY_AMULET);
-        itemHandheld(ModItems.SAPPHIRE_AMULET);
-        itemHandheld(ModItems.TOPAZ_AMULET);
-        itemHandheld(ModItems.CRYSTAL_AMULET);
-        itemHandheld(ModItems.DIAMOND_AMULET);
-        itemHandheld(ModItems.EMERALD_AMULET);
+        this.generateFlatItem(ModItems.AMETHYST_AMULET.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.RUBY_AMULET.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.SAPPHIRE_AMULET.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.TOPAZ_AMULET.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CRYSTAL_AMULET.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.DIAMOND_AMULET.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.EMERALD_AMULET.get(), ModelTemplates.FLAT_ITEM);
 
-        itemHandheld(ModItems.AMETHYST_HELMET);
-        itemHandheld(ModItems.RUBY_HELMET);
-        itemHandheld(ModItems.SAPPHIRE_HELMET);
-        itemHandheld(ModItems.TOPAZ_HELMET);
-        itemHandheld(ModItems.CRYSTAL_HELMET);
-        itemHandheld(ModItems.EMERALD_HELMET);
+        this.generateFlatItem(ModItems.AMETHYST_HELMET.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.RUBY_HELMET.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.SAPPHIRE_HELMET.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.TOPAZ_HELMET.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CRYSTAL_HELMET.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.EMERALD_HELMET.get(), ModelTemplates.FLAT_ITEM);
 
-        itemHandheld(ModItems.AMETHYST_CHESTPLATE);
-        itemHandheld(ModItems.RUBY_CHESTPLATE);
-        itemHandheld(ModItems.SAPPHIRE_CHESTPLATE);
-        itemHandheld(ModItems.TOPAZ_CHESTPLATE);
-        itemHandheld(ModItems.CRYSTAL_CHESTPLATE);
-        itemHandheld(ModItems.EMERALD_CHESTPLATE);
+        this.generateFlatItem(ModItems.AMETHYST_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.RUBY_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.SAPPHIRE_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.TOPAZ_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CRYSTAL_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.EMERALD_CHESTPLATE.get(), ModelTemplates.FLAT_ITEM);
 
-        itemHandheld(ModItems.AMETHYST_LEGGINGS);
-        itemHandheld(ModItems.RUBY_LEGGINGS);
-        itemHandheld(ModItems.SAPPHIRE_LEGGINGS);
-        itemHandheld(ModItems.TOPAZ_LEGGINGS);
-        itemHandheld(ModItems.CRYSTAL_LEGGINGS);
-        itemHandheld(ModItems.EMERALD_LEGGINGS);
+        this.generateFlatItem(ModItems.AMETHYST_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.RUBY_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.SAPPHIRE_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.TOPAZ_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CRYSTAL_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.EMERALD_LEGGINGS.get(), ModelTemplates.FLAT_ITEM);
 
-        itemHandheld(ModItems.AMETHYST_BOOTS);
-        itemHandheld(ModItems.RUBY_BOOTS);
-        itemHandheld(ModItems.SAPPHIRE_BOOTS);
-        itemHandheld(ModItems.TOPAZ_BOOTS);
-        itemHandheld(ModItems.CRYSTAL_BOOTS);
-        itemHandheld(ModItems.EMERALD_BOOTS);
-
+        this.generateFlatItem(ModItems.AMETHYST_BOOTS.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.RUBY_BOOTS.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.SAPPHIRE_BOOTS.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.TOPAZ_BOOTS.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.CRYSTAL_BOOTS.get(), ModelTemplates.FLAT_ITEM);
+        this.generateFlatItem(ModItems.EMERALD_BOOTS.get(), ModelTemplates.FLAT_ITEM);
 
 
         //Tools
-        itemHandheld(ModItems.AMETHYST_SWORD);
-        itemHandheld(ModItems.RUBY_SWORD);
-        itemHandheld(ModItems.SAPPHIRE_SWORD);
-        itemHandheld(ModItems.TOPAZ_SWORD);
-        itemHandheld(ModItems.CRYSTAL_SWORD);
-        itemHandheld(ModItems.EMERALD_SWORD);
+        this.generateFlatItem(ModItems.AMETHYST_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.RUBY_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.SAPPHIRE_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.TOPAZ_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.CRYSTAL_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.EMERALD_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
-        itemHandheld(ModItems.AMETHYST_PICKAXE);
-        itemHandheld(ModItems.RUBY_PICKAXE);
-        itemHandheld(ModItems.SAPPHIRE_PICKAXE);
-        itemHandheld(ModItems.TOPAZ_PICKAXE);
-        itemHandheld(ModItems.CRYSTAL_PICKAXE);
-        itemHandheld(ModItems.EMERALD_PICKAXE);
+        this.generateFlatItem(ModItems.AMETHYST_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.RUBY_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.SAPPHIRE_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.TOPAZ_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.CRYSTAL_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.EMERALD_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
-        itemHandheld(ModItems.AMETHYST_AXE);
-        itemHandheld(ModItems.RUBY_AXE);
-        itemHandheld(ModItems.SAPPHIRE_AXE);
-        itemHandheld(ModItems.TOPAZ_AXE);
-        itemHandheld(ModItems.CRYSTAL_AXE);
-        itemHandheld(ModItems.EMERALD_AXE);
+        this.generateFlatItem(ModItems.AMETHYST_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.RUBY_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.SAPPHIRE_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.TOPAZ_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.CRYSTAL_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.EMERALD_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
-        itemHandheld(ModItems.AMETHYST_HOE);
-        itemHandheld(ModItems.RUBY_HOE);
-        itemHandheld(ModItems.SAPPHIRE_HOE);
-        itemHandheld(ModItems.TOPAZ_HOE);
-        itemHandheld(ModItems.CRYSTAL_HOE);
-        itemHandheld(ModItems.EMERALD_HOE);
+        this.generateFlatItem(ModItems.AMETHYST_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.RUBY_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.SAPPHIRE_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.TOPAZ_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.CRYSTAL_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.EMERALD_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
-        itemHandheld(ModItems.AMETHYST_SHOVEL);
-        itemHandheld(ModItems.RUBY_SHOVEL);
-        itemHandheld(ModItems.SAPPHIRE_SHOVEL);
-        itemHandheld(ModItems.TOPAZ_SHOVEL);
-        itemHandheld(ModItems.CRYSTAL_SHOVEL);
-        itemHandheld(ModItems.EMERALD_SHOVEL);
-
-
-
-        //BlockItems
-        itemBlock(ModBlocks.RUBY_ORE_BLOCKITEM);
-        itemBlock(ModBlocks.SAPPHIRE_ORE_BLOCKITEM);
-        itemBlock(ModBlocks.TOPAZ_ORE_BLOCKITEM);
-        itemBlock(ModBlocks.CRYSTAL_ORE_BLOCKITEM);
-
-        itemBlock(ModBlocks.DEEPSLATE_RUBY_ORE_BLOCKITEM);
-        itemBlock(ModBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCKITEM);
-        itemBlock(ModBlocks.DEEPSLATE_TOPAZ_ORE_BLOCKITEM);
-        itemBlock(ModBlocks.DEEPSLATE_CRYSTAL_ORE_BLOCKITEM);
-
-        itemBlock(ModBlocks.AMETHYST_BLOCKITEM);
-        itemBlock(ModBlocks.RUBY_BLOCKITEM);
-        itemBlock(ModBlocks.SAPPHIRE_BLOCKITEM);
-        itemBlock(ModBlocks.TOPAZ_BLOCKITEM);
-        itemBlock(ModBlocks.CRYSTAL_BLOCKITEM);
-
-        itemBlock(ModBlocks.CHARGED_AMETHYST_BLOCKITEM);
-        itemBlock(ModBlocks.CHARGED_RUBY_BLOCKITEM);
-        itemBlock(ModBlocks.CHARGED_SAPPHIRE_BLOCKITEM);
-        itemBlock(ModBlocks.CHARGED_TOPAZ_BLOCKITEM);
-        itemBlock(ModBlocks.CHARGED_CRYSTAL_BLOCKITEM);
-        itemBlock(ModBlocks.CHARGED_DIAMOND_BLOCKITEM);
-        itemBlock(ModBlocks.CHARGED_EMERALD_BLOCKITEM);
-
-        itemBlock(ModBlocks.GEM_CHARGER_BLOCKITEM);
-    }
-
-
-
-    private void itemGenerated(DeferredItem item) {
-        singleTexture(item.getId().getPath(), ResourceLocation.withDefaultNamespace("item/generated"),"layer0", ResourceLocation.fromNamespaceAndPath(References.MODID, "item/" + item.getId().getPath().toString().substring(References.MODID.length() + 1)));
-    }
-
-    private void itemHandheld(DeferredItem item) {
-        singleTexture(item.getId().getPath(), ResourceLocation.withDefaultNamespace("item/handheld"),"layer0", ResourceLocation.fromNamespaceAndPath(References.MODID, "item/" + item.getId().getPath().toString().substring(References.MODID.length() + 1)));
-    }
-
-    private void itemBlock(DeferredItem item) {
-        withExistingParent(item.getId().getPath(), ResourceLocation.fromNamespaceAndPath(References.MODID, "block/" + item.getId().getPath().toString().substring(References.MODID.length() + 1)));
+        this.generateFlatItem(ModItems.AMETHYST_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.RUBY_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.SAPPHIRE_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.TOPAZ_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.CRYSTAL_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        this.generateFlatItem(ModItems.EMERALD_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
     }
 
 }

@@ -1,0 +1,15 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "extragems:ruby"
+      }
+    ],
+
+    "humanoid_leggings": [
+      {
+        "texture": "extragems:ruby"
+      }
+    ]
+  }
+}

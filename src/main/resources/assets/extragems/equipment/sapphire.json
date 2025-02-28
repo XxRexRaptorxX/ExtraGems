@@ -1,0 +1,15 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "extragems:sapphire"
+      }
+    ],
+
+    "humanoid_leggings": [
+      {
+        "texture": "extragems:sapphire"
+      }
+    ]
+  }
+}

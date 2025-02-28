@@ -24,8 +24,8 @@ import java.util.Random;
 
 public class ItemAmulet extends Item {
 
-    public ItemAmulet() {
-        super(new Properties()
+    public ItemAmulet(Properties properties) {
+        super(properties
             .stacksTo(1)
             .durability(100)
             .rarity(Rarity.RARE)
