@@ -106,7 +106,7 @@ public class ModArmorMaterials {
 
 
     public static final ArmorMaterial AMETHYST_ARMOR_MATERIAL = new ArmorMaterial(
-            20,
+            18,
             Util.make(new EnumMap<>(ArmorType.class), map -> {
                 map.put(ArmorType.BOOTS, 3);
                 map.put(ArmorType.LEGGINGS, 6);
