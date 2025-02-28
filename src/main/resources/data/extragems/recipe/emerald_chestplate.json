@@ -8,12 +8,10 @@
     "###"
     
   ],
+
   "key": {
-    "#": {
-      "item": "minecraft:emerald"
-    }
+    "#": "minecraft:emerald"
   },
-  
   
   "result": {
     "id": "extragems:emerald_chestplate"

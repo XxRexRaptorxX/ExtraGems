@@ -8,15 +8,11 @@
     " X "
     
   ],
+
   "key": {
-    "X": {
-      "tag": "c:ingots/gold"
-    },
-    "#": {
-      "item": "extragems:ruby_charged"
-    }
+    "X": "#c:ingots/gold",
+    "#": "extragems:ruby_charged"
   },
-  
   
   "result": {
     "id": "extragems:ruby_amulet"

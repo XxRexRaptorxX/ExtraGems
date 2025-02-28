@@ -8,15 +8,11 @@
     " X "
     
   ],
+
   "key": {
-    "X": {
-      "tag": "c:ingots/gold"
-    },
-    "#": {
-      "item": "extragems:topaz_charged"
-    }
+    "X": "#c:ingots/gold",
+    "#": "extragems:topaz_charged"
   },
-  
   
   "result": {
     "id": "extragems:topaz_amulet"

@@ -8,15 +8,11 @@
     " X "
     
   ],
+
   "key": {
-    "X": {
-      "tag": "c:ingots/gold"
-    },
-    "#": {
-      "item": "extragems:diamond_charged"
-    }
+    "X": "#c:ingots/gold",
+    "#": "extragems:diamond_charged"
   },
-  
   
   "result": {
     "id": "extragems:diamond_amulet"

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "extragems:amethyst_block"
-    }
+    "extragems:amethyst_block"
   ],
   
   "result": {

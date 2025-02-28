@@ -9,11 +9,8 @@
   ],
   
   "key": {
-    "#": {
-      "tag": "c:gems/amethyst"
-      }
-  },
-  
+    "#": "#c:gems/amethyst"
+    },
   
   "result": {
     "id": "extragems:amethyst_helmet"

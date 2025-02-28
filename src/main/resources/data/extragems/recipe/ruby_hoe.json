@@ -10,15 +10,9 @@
   ],
   
   "key": {
-    "X": {
-      "tag": "c:gems/ruby"
-      },
-    
-    "#": {
-        "item": "minecraft:stick"
-     }
-  },
-  
+    "X": "#c:gems/ruby",
+    "#": "minecraft:stick"
+   },
   
   "result": {
     "id": "extragems:ruby_hoe"

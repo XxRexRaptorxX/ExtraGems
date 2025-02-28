@@ -8,16 +8,11 @@
     " X "
     
   ],
+
   "key": {
-    "#": {
-      "item": "minecraft:emerald"
-    },
-    
-    "X": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:emerald",
+    "X": "minecraft:stick"
   },
-  
   
   "result": {
     "id": "extragems:emerald_pickaxe"

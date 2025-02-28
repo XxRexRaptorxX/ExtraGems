@@ -10,15 +10,9 @@
   ],
   
   "key": {
-    "X": {
-      "tag": "c:gems/amethyst"
-      },
-    
-    "#": {
-        "item": "minecraft:stick"
-     }
-  },
-  
+    "X": "#c:gems/amethyst",
+    "#": "minecraft:stick"
+   },
   
   "result": {
     "id": "extragems:amethyst_sword"

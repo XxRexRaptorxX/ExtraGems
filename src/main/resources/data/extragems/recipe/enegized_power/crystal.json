@@ -11,9 +11,7 @@
   },
   "ticks": 16000,
   "output": {
-    "output": {
-      "item": "extragems:crystal"
-    },
+    "output": "extragems:crystal",
     "percentages": [0.5, 0.25, 0.125]
   }
 }

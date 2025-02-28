@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values":
-          [
-            "extragems:topaz_block",
-            "extragems:charged_topaz_block"
-          ]
+    [
+      "extragems:topaz_block",
+      "extragems:charged_topaz_block"
+    ]
 }

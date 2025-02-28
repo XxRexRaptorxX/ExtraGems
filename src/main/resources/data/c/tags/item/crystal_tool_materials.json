@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#c:gems/crystal",
+    "#c:charged_gems/crystal"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#c:gems/topaz",
+    "#c:charged_gems/topaz"
+  ]
+}

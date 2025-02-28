@@ -10,11 +10,8 @@
   ],
   
   "key": {
-    "#": {
-      "tag": "c:gems/crystal"
-      }
-  },
-  
+    "#": "#c:gems/crystal"
+    },
   
   "result": {
     "id": "extragems:crystal_chestplate"

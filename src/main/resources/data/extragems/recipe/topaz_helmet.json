@@ -9,11 +9,8 @@
   ],
   
   "key": {
-    "#": {
-      "tag": "c:gems/topaz"
-    }
+    "#": "#c:gems/topaz"
   },
-  
   
   "result": {
     "id": "extragems:topaz_helmet"

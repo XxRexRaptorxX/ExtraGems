@@ -10,11 +10,8 @@
   ],
   
   "key": {
-    "#": {
-      "item": "extragems:crystal_charged"
-      }
-  },
-  
+    "#": "extragems:crystal_charged"
+    },
   
   "result": {
     "id": "extragems:charged_crystal_block"

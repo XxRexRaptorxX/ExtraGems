@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values":
-          [
-            "extragems:ruby_ore",
-            "extragems:deepslate_ruby_ore"
-          ]
+    [
+        "extragems:ruby_ore",
+        "extragems:deepslate_ruby_ore"
+    ]
 }

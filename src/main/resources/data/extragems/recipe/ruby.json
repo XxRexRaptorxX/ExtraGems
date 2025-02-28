@@ -3,9 +3,7 @@
   "category": "misc",
   "ingredients": [
   
-    {
-      "item": "extragems:ruby_block"
-    }
+    "extragems:ruby_block"
   ],
   
   "result": {

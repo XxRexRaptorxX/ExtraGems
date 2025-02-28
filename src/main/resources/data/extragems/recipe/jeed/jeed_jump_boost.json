@@ -8,11 +8,7 @@
   "type": "jeed:effect_provider",
   "effect": "minecraft:jump_boost",
   "providers": [
-    {
-      "item": "extragems:ruby_amulet"
-    },
-    {
-      "item": "extragems:charged_ruby_block"
-    }
+    "extragems:ruby_amulet",
+    "extragems:charged_ruby_block"
   ]
 }

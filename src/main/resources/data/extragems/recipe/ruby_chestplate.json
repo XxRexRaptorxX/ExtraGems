@@ -10,11 +10,8 @@
   ],
   
   "key": {
-    "#": {
-      "tag": "c:gems/ruby"
-      }
-  },
-  
+    "#": "#c:gems/ruby"
+    },
   
   "result": {
     "id": "extragems:ruby_chestplate"

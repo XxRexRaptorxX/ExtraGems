@@ -3,15 +3,9 @@
   "category": "misc",
   "ingredients": [
   
-    {
-      "item": "minecraft:amethyst_shard"
-    },
-    {
-      "item": "minecraft:amethyst_shard"
-    },
-    {
-      "item": "minecraft:amethyst_shard"
-    }
+    "minecraft:amethyst_shard",
+    "minecraft:amethyst_shard",
+    "minecraft:amethyst_shard"
   ],
   
   "result": {

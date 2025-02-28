@@ -10,19 +10,12 @@
   ],
   
   "key": {
-    "#": {
-      "tag": "c:gems/amethyst"
-      },
-    
-    "X": {
-        "item": "minecraft:obsidian"
+    "#": "#c:gems/amethyst",
+    "X": "minecraft:obsidian"
      },
 
-    "O": {
-      "item": "minecraft:crying_obsidian"
-    }
+    "O": "minecraft:crying_obsidian"
   },
-  
   
   "result": {
     "id": "extragems:gem_charger"

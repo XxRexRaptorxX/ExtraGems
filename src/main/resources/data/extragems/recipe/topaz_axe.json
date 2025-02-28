@@ -10,15 +10,9 @@
   ],
   
   "key": {
-    "X": {
-      "tag": "c:gems/topaz"
-      },
-    
-    "#": {
-        "item": "minecraft:stick"
-     }
-  },
-  
+    "X": "#c:gems/topaz",
+    "#": "minecraft:stick"
+   },
   
   "result": {
     "id": "extragems:topaz_axe"

@@ -3,9 +3,7 @@
   "category": "misc",
   "ingredients": [
   
-    {
-      "item": "extragems:charged_sapphire_block"
-    }
+    "extragems:charged_sapphire_block"
   ],
   
   "result": {

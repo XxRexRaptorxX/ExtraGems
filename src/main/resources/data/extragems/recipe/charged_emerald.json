@@ -3,9 +3,7 @@
   "category": "misc",
   "ingredients": [
   
-    {
-      "item": "extragems:charged_emerald_block"
-    }
+    "extragems:charged_emerald_block"
   ],
   
   "result": {

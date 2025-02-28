@@ -10,15 +10,9 @@
   ],
   
   "key": {
-    "X": {
-      "tag": "c:gems/crystal"
-      },
-    
-    "#": {
-        "item": "minecraft:stick"
-     }
-  },
-  
+    "X": "#c:gems/crystal",
+    "#": "minecraft:stick"
+   },
   
   "result": {
     "id": "extragems:crystal_shovel"

@@ -3,9 +3,7 @@
   "category": "misc",
   "ingredients": [
   
-    {
-      "item": "extragems:topaz_block"
-    }
+    "extragems:topaz_block"
   ],
   
   "result": {

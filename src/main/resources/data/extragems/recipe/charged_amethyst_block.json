@@ -10,11 +10,8 @@
   ],
   
   "key": {
-    "#": {
-      "item": "extragems:amethyst_charged"
-      }
-  },
-  
+    "#": "extragems:amethyst_charged"
+    },
   
   "result": {
     "id": "extragems:charged_amethyst_block"

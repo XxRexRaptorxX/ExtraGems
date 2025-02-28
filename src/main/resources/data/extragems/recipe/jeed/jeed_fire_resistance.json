@@ -8,11 +8,7 @@
   "type": "jeed:effect_provider",
   "effect": "minecraft:haste",
   "providers": [
-    {
-      "item": "extragems:crystal_amulet"
-    },
-    {
-      "item": "extragems:charged_crystal_block"
-    }
+    "extragems:crystal_amulet",
+    "extragems:charged_crystal_block"
   ]
 }

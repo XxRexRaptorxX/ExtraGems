@@ -8,7 +8,6 @@
   "type": "mekanism:enriching",
   "input":
   {
-
       "tag": "c:ores/ruby"
   },
   "output":

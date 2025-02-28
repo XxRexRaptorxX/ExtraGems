@@ -3,9 +3,7 @@
   "category": "misc",
   "ingredients": [
   
-    {
-      "item": "extragems:charged_crystal_block"
-    }
+    "extragems:charged_crystal_block"
   ],
   
   "result": {

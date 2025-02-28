@@ -10,11 +10,8 @@
   ],
   
   "key": {
-    "#": {
-      "item": "extragems:ruby_charged"
-      }
-  },
-  
+    "#": "extragems:ruby_charged"
+    },
   
   "result": {
     "id": "extragems:charged_ruby_block"

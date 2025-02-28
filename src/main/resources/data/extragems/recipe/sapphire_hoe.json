@@ -10,15 +10,9 @@
   ],
   
   "key": {
-    "X": {
-      "tag": "c:gems/sapphire"
-      },
-    
-    "#": {
-        "item": "minecraft:stick"
-     }
-  },
-  
+    "X": "#c:gems/sapphire",
+    "#": "minecraft:stick"
+   },
   
   "result": {
     "id": "extragems:sapphire_hoe"

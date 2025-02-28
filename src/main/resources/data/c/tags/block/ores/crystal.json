@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values":
-          [
-            "extragems:crystal_ore",
-            "extragems:deepslate_crystal_ore"
-          ]
+    [
+      "extragems:crystal_ore",
+      "extragems:deepslate_crystal_ore"
+    ]
 }

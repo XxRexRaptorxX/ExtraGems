@@ -3,9 +3,7 @@
   "category": "misc",
   "ingredients": [
   
-    {
-      "item": "extragems:charged_diamond_block"
-    }
+    "extragems:charged_diamond_block"
   ],
   
   "result": {

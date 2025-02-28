@@ -9,11 +9,8 @@
   ],
   
   "key": {
-    "#": {
-      "tag": "c:gems/sapphire"
-      }
-  },
-  
+    "#": "#c:gems/sapphire"
+    },
   
   "result": {
     "id": "extragems:sapphire_boots"

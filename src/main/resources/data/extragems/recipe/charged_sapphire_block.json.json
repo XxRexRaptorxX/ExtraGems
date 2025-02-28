@@ -10,11 +10,8 @@
   ],
   
   "key": {
-    "#": {
-      "item": "extragems:sapphire_charged"
-      }
-  },
-  
+    "#": "extragems:sapphire_charged"
+    },
   
   "result": {
     "id": "extragems:charged_sapphire_block"

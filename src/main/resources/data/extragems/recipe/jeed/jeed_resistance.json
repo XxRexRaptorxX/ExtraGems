@@ -8,11 +8,7 @@
   "type": "jeed:effect_provider",
   "effect": "minecraft:resistance",
   "providers": [
-    {
-      "item": "extragems:diamond_amulet"
-    },
-    {
-      "item": "extragems:charged_diamond_block"
-    }
+    "extragems:diamond_amulet",
+    "extragems:charged_diamond_block"
   ]
 }
