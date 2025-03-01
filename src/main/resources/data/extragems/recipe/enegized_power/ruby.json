@@ -7,11 +7,17 @@
   ],
   "type": "energizedpower:crystal_growth_chamber",
   "ingredient": {
-    "tag": "c:gems/ruby"
+    "ingredient": "#c:gems/ruby"
   },
   "ticks": 16000,
-  "output": {
-    "output": "extragems:ruby",
-    "percentages": [0.5, 0.25, 0.125]
+
+  "result": {
+    "percentages": [
+      0.5, 0.25, 0.125
+    ],
+    "result": {
+      "count": 1,
+      "id": "extragems:ruby"
+    }
   }
 }

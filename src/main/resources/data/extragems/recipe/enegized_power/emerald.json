@@ -7,11 +7,17 @@
   ],
   "type": "energizedpower:crystal_growth_chamber",
   "ingredient": {
-    "tag": "c:gems/emerald"
+    "ingredient": "#c:gems/emerald"
   },
   "ticks": 16000,
-  "output": {
-    "output": "minecraft:emerald",
-    "percentages": [0.25, 0.125]
+
+  "result": {
+    "percentages": [
+      0.25, 0.125
+    ],
+    "result": {
+      "count": 1,
+      "id": "minecraft:emerald"
+    }
   }
 }
