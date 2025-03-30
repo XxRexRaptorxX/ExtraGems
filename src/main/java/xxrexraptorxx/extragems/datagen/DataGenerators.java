@@ -7,7 +7,6 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
-import xxrexraptorxx.bedrockminer.datagen.ModelDataGen;
 import xxrexraptorxx.extragems.main.References;
 
 import java.util.concurrent.CompletableFuture;

@@ -1,4 +1,4 @@
-package xxrexraptorxx.bedrockminer.datagen;
+package xxrexraptorxx.extragems.datagen;
 
 import com.google.common.collect.Maps;
 import com.google.gson.JsonElement;
