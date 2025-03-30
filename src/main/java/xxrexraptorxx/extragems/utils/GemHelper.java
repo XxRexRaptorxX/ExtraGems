@@ -21,11 +21,11 @@ public class GemHelper {
 
             case References.MODID + ":ruby_amulet":
             case References.MODID + ":charged_ruby_block":
-                return MobEffects.JUMP;
+                return MobEffects.JUMP_BOOST;
 
             case References.MODID + ":sapphire_amulet":
             case References.MODID + ":charged_sapphire_block":
-                return MobEffects.DAMAGE_BOOST;
+                return MobEffects.STRENGTH;
 
             case References.MODID + ":topaz_amulet":
             case References.MODID + ":charged_topaz_block":
@@ -33,15 +33,15 @@ public class GemHelper {
 
             case References.MODID + ":crystal_amulet":
             case References.MODID + ":charged_crystal_block":
-                return MobEffects.DIG_SPEED;
+                return MobEffects.HASTE;
 
             case References.MODID + ":emerald_amulet":
             case References.MODID + ":charged_emerald_block":
-                return MobEffects.MOVEMENT_SPEED;
+                return MobEffects.SPEED;
 
             case References.MODID + ":diamond_amulet":
             case References.MODID + ":charged_diamond_block":
-                return MobEffects.DAMAGE_RESISTANCE;
+                return MobEffects.RESISTANCE;
 
             default:
                 return MobEffects.UNLUCK;

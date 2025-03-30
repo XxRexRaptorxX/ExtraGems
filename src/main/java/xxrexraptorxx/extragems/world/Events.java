@@ -7,7 +7,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
@@ -16,8 +15,8 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
+import net.minecraft.util.TriState;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.component.ResolvableProfile;
@@ -30,7 +29,6 @@ import net.neoforged.fml.ModList;
 import net.neoforged.fml.VersionChecker;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
-import net.neoforged.neoforge.common.util.TriState;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import net.neoforged.neoforge.items.ItemHandlerHelper;
@@ -41,14 +39,11 @@ import xxrexraptorxx.extragems.registry.ModItems;
 import xxrexraptorxx.extragems.utils.Config;
 import xxrexraptorxx.extragems.utils.GemHelper;
 
-import java.net.MalformedURLException;
 import java.net.URI;
-import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
-import java.util.Scanner;
 import java.util.concurrent.CompletableFuture;
 
 @EventBusSubscriber(modid = References.MODID, bus = EventBusSubscriber.Bus.GAME)
@@ -71,8 +66,8 @@ public class Events {
                     var versionCheckResult = VersionChecker.getResult(modContainer.getModInfo());
 
                     if (versionCheckResult.status() == VersionChecker.Status.OUTDATED || versionCheckResult.status() == VersionChecker.Status.BETA_OUTDATED) {
-                        MutableComponent url = Component.translatable(ChatFormatting.GREEN + "Click here to update!")
-                                .withStyle(style -> style.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, References.URL)));
+                        MutableComponent url = Component.literal(ChatFormatting.GREEN + "Click here to update!")
+                                .withStyle(style -> style.withClickEvent(new ClickEvent.OpenUrl(URI.create(References.URL))));
 
                         player.displayClientMessage(Component.literal(ChatFormatting.BLUE + "A newer version of " + ChatFormatting.YELLOW + References.NAME + ChatFormatting.BLUE + " is available!"), false);
                         player.displayClientMessage(url, false);
@@ -181,6 +176,7 @@ public class Events {
         player.getInventory().add(star);
     }
 
+
     // from ThinkersConstruct and modified
     /** Gem Charger **/
     @SubscribeEvent
@@ -194,7 +190,6 @@ public class Events {
             Level level = event.getLevel();
 
                 if (level.getBlockState(pos).getBlock() == ModBlocks.GEM_CHARGER.get()) {
-
                     if (player.experienceLevel >= Config.CHARGING_COST.get()) {
 
                         if (level.getMoonPhase() == 0) {
@@ -218,13 +213,13 @@ public class Events {
                             }
                         } else {
                             if(level.isClientSide) player.displayClientMessage(Component.translatable("message." + References.MODID + ".not_night"), true);
-                        }
-                    } else {
-                        if(level.isClientSide) player.displayClientMessage(Component.translatable("message." + References.MODID + ".not_enough_levels"), true);
                     }
                 } else {
-                    if (level.isClientSide) player.displayClientMessage(Component.translatable("message." + References.MODID + ".wrong_block"), true);
+                    if(level.isClientSide) player.displayClientMessage(Component.translatable("message." + References.MODID + ".not_enough_levels"), true);
                 }
+            } else {
+                if (level.isClientSide) player.displayClientMessage(Component.translatable("message." + References.MODID + ".wrong_block"), true);
+            }
         }
     }
 
