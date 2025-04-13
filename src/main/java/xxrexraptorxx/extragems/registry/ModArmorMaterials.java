@@ -6,12 +6,21 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorType;
+import net.minecraft.world.item.equipment.EquipmentAsset;
 import net.minecraft.world.item.equipment.EquipmentAssets;
 import xxrexraptorxx.extragems.main.References;
 
 import java.util.EnumMap;
 
 public class ModArmorMaterials {
+
+    public static final ResourceKey<EquipmentAsset> RUBY_EQUIPMENT_ASSET = ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "ruby"));
+    public static final ResourceKey<EquipmentAsset> EMERALD_EQUIPMENT_ASSET = ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "emerald"));
+    public static final ResourceKey<EquipmentAsset> SAPPHIRE_EQUIPMENT_ASSET = ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "sapphire"));
+    public static final ResourceKey<EquipmentAsset> TOPAZ_EQUIPMENT_ASSET = ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "topaz"));
+    public static final ResourceKey<EquipmentAsset> CRYSTAL_EQUIPMENT_ASSET = ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "crystal"));
+    public static final ResourceKey<EquipmentAsset> AMETHYST_EQUIPMENT_ASSET = ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "amethyst"));
+
 
     public static final ArmorMaterial EMERALD_ARMOR_MATERIAL = new ArmorMaterial(
             // The durability multiplier of the armor material.
@@ -33,7 +42,7 @@ public class ModArmorMaterials {
             0.0F,
             0.0F,
             ModTags.REPAIRS_EMERALD_ARMOR_TAG,
-            ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "emerald"))
+            EMERALD_EQUIPMENT_ASSET
     );
 
 
@@ -50,7 +59,7 @@ public class ModArmorMaterials {
             0.0F,
             0.0F,
             ModTags.REPAIRS_RUBY_ARMOR_TAG,
-            ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "ruby"))
+            RUBY_EQUIPMENT_ASSET
     );
 
 
@@ -67,7 +76,7 @@ public class ModArmorMaterials {
             0.0F,
             0.0F,
             ModTags.REPAIRS_SAPPHIRE_ARMOR_TAG,
-            ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "sapphire"))
+            SAPPHIRE_EQUIPMENT_ASSET
     );
 
 
@@ -84,7 +93,7 @@ public class ModArmorMaterials {
             0.0F,
             0.0F,
             ModTags.REPAIRS_TOPAZ_ARMOR_TAG,
-            ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "topaz"))
+            TOPAZ_EQUIPMENT_ASSET
     );
 
 
@@ -101,7 +110,7 @@ public class ModArmorMaterials {
             0.0F,
             0.0F,
             ModTags.REPAIRS_CRYSTAL_ARMOR_TAG,
-            ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "crystal"))
+            CRYSTAL_EQUIPMENT_ASSET
     );
 
 
@@ -118,7 +127,6 @@ public class ModArmorMaterials {
             0.0F,
             0.0F,
             ModTags.REPAIRS_AMETHYST_ARMOR_TAG,
-            ResourceKey.create(EquipmentAssets.ROOT_ID, ResourceLocation.fromNamespaceAndPath(References.MODID, "amethyst"))
+            AMETHYST_EQUIPMENT_ASSET
     );
-
 }

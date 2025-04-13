@@ -38,7 +38,8 @@ public class ItemTagGen extends ItemTagsProvider {
                 .add(   ModItems.RUBY.get(),
                         ModItems.SAPPHIRE.get(),
                         ModItems.TOPAZ.get(),
-                        ModItems.CRYSTAL.get()
+                        ModItems.CRYSTAL.get(),
+                        ModItems.AMETHYST.get()
                 );
 
         tag(ItemTags.TRIMMABLE_ARMOR)

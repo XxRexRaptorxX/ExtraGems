@@ -1,9 +1,0 @@
-{
-  "asset_name": "topaz",
-  "description": {
-    "color": "#d19513",
-    "translate": "trim_material.extragems.topaz"
-  },
-  "ingredient": "extragems:topaz",
-  "item_model_index": 1.0
-}

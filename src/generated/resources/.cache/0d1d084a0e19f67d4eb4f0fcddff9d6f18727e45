@@ -1,4 +1,4 @@
-// 1.21.5	2025-04-13T14:49:38.7924785	Tags for minecraft:item mod id extragems
+// 1.21.5	2025-04-13T16:24:19.3302414	Tags for minecraft:item mod id extragems
 9a30a4cf6dc5f53d4dca7e9dff73690ce6ed2a40 data/minecraft/tags/item/axes.json
 d88d979b63ebb09b8277e276174ffda6f8c0946b data/minecraft/tags/item/beacon_payment_items.json
 78b368b2f70775ba6ff32affc4cdf36613fd4e86 data/minecraft/tags/item/chest_armor.json
@@ -12,4 +12,4 @@ ccdda9dc05925868d8f65baf6639538316b72f0d data/minecraft/tags/item/leg_armor.json
 9733bb24b03c6aff3cce4643e2394476e8c42912 data/minecraft/tags/item/shovels.json
 995f583a4d7616bbcb0ba41d1b49801d672fa2b7 data/minecraft/tags/item/swords.json
 632473652f6a2e32fed15f8293c6a8d57abdb5c7 data/minecraft/tags/item/trimmable_armor.json
-98aede3477e53955655a481252d7fef3071321a2 data/minecraft/tags/item/trim_materials.json
+29b4bfd5db6a55bc6891c9b77811ee308a40cac0 data/minecraft/tags/item/trim_materials.json

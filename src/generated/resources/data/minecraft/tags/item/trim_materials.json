@@ -3,6 +3,7 @@
     "extragems:ruby",
     "extragems:sapphire",
     "extragems:topaz",
-    "extragems:crystal"
+    "extragems:crystal",
+    "extragems:amethyst"
   ]
 }

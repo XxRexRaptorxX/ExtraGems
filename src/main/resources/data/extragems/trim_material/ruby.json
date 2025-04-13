@@ -1,9 +1,0 @@
-{
-  "asset_name": "ruby",
-  "description": {
-    "color": "#d11313",
-    "translate": "trim_material.extragems.ruby"
-  },
-  "ingredient": "extragems:ruby",
-  "item_model_index": 1.0
-}

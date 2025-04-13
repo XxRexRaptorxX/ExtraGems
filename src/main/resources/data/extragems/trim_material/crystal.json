@@ -1,9 +1,0 @@
-{
-  "asset_name": "crystal",
-  "description": {
-    "color": "#8fd9db",
-    "translate": "trim_material.extragems.crystal"
-  },
-  "ingredient": "extragems:crystal",
-  "item_model_index": 1.0
-}
