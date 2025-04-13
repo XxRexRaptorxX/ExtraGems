@@ -7,6 +7,11 @@
 	"message.extragems.not_night": "Il doit faire nuit avec une pleine lune...",
 	"message.extragems.charged_gem_jei_desc": "Pour obtenir une gemme activée, cliquez sur un activateur de gemmes de nuit de pleine lune, avec suffisamment d'éxperience.",
 
+	"trim_material.extragems.ruby": "Ruby Material",
+	"trim_material.extragems.sapphire": "Sapphire Material",
+	"trim_material.extragems.topaz": "Topaz Material",
+	"trim_material.extragems.crystal": "Crystal Material",
+
 	"block.extragems.ruby_block": "Bloc de Rubis",
 	"block.extragems.sapphire_block": "Bloc de Saphir",
 	"block.extragems.amethyst_block": " Bloc d'Améthyste",

@@ -7,6 +7,11 @@
   "message.extragems.not_night": "Это должно происходить в ночное время в полнолунии...",
   "message.extragems.charged_gem_jei_desc": "Для получения заряженного самоцвета, щёлкните по заряднику самоцвета с достаточным количеством уровней опыта в ночное время в полнолуние.",
 
+  "trim_material.extragems.ruby": "Ruby Material",
+  "trim_material.extragems.sapphire": "Sapphire Material",
+  "trim_material.extragems.topaz": "Topaz Material",
+  "trim_material.extragems.crystal": "Crystal Material",
+
   "block.extragems.ruby_block": "Рубиновый блок",
   "block.extragems.sapphire_block": "Сапфировый блок",
   "block.extragems.amethyst_block": "Аметистовый блок",

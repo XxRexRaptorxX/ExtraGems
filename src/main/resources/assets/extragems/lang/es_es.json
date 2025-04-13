@@ -7,6 +7,11 @@
   "message.extragems.not_night": "Tiene que ser de noche con luna llena...",
   "message.extragems.charged_gem_jei_desc": "Para obtener una gema cargada, Click en una noche con luna llena y suficientes nivles de experiencia en un cargador de gemas.",
 
+  "trim_material.extragems.ruby": "Ruby Material",
+  "trim_material.extragems.sapphire": "Sapphire Material",
+  "trim_material.extragems.topaz": "Topaz Material",
+  "trim_material.extragems.crystal": "Crystal Material",
+
   "block.extragems.ruby_block": "Bloque de Rubi",
   "block.extragems.sapphire_block": "Bloque de Safiro",
   "block.extragems.amethyst_block": "Bloque de Amatista",

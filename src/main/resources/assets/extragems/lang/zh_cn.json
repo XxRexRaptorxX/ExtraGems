@@ -7,6 +7,11 @@
   "message.extragems.not_night": "It has to be night with full moon...",
   "message.extragems.charged_gem_jei_desc": "To get a charged gem, click at night with full moon and enough experience levels on the gem charger.",
 
+  "trim_material.extragems.ruby": "Ruby Material",
+  "trim_material.extragems.sapphire": "Sapphire Material",
+  "trim_material.extragems.topaz": "Topaz Material",
+  "trim_material.extragems.crystal": "Crystal Material",
+
   "block.extragems.ruby_block": "红宝石块",
   "block.extragems.sapphire_block": "蓝宝石块",
   "block.extragems.amethyst_block": "紫水晶块",
