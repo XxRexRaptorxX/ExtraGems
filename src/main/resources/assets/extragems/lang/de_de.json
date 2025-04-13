@@ -1,9 +1,14 @@
 {
-    "itemGroup.extragems_tab": "ExtraGems",
+    "itemGroup.extragems_tab": "Extra Gems",
     "message.extragems.not_enough_levels": "Du hast nicht genügend Erfahrungslevel!",
     "message.extragems.wrong_block": "Benutze es an einem Edelstein Charger...",
     "message.extragems.not_night": "Es muss Nacht und Vollmond sein...",
-    "message.extragems.charged_gem_jei_desc": "Um Geladenene Edelsteine zu bekommen, clicke Nachts und Vollmond mit ausreichend XP auf dem Edelstein Charger.",
+    "message.extragems.charged_gem_jei_desc": "Um geladene Edelsteine zu bekommen, klicke Nachts und bei Vollmond mit ausreichend XP auf dem Edelstein Charger.",
+
+    "trim_material.extragems.ruby": "Rubin Material",
+    "trim_material.extragems.sapphire": "Saphir Material",
+    "trim_material.extragems.topaz": "Topas Material",
+    "trim_material.extragems.crystal": "Kristall Material",
 
     "block.extragems.ruby_block": "Rubin Block",
     "block.extragems.sapphire_block": "Saphir Block",
@@ -17,11 +22,6 @@
     "block.extragems.topaz_ore": "Topas Erz",
     "block.extragems.crystal_ore": "Kristall Erz",
 
-    "block.extragems.deepslate_ruby_block": "Tiefenschiefer Rubin Block",
-    "block.extragems.deepslate_sapphire_block": "Tiefenschiefer Saphir Block",
-    "block.extragems.deepslate_amethyst_block": "Tiefenschiefer Amethyst Block",
-    "block.extragems.deepslate_topaz_block": "Tiefenschiefer Topas Block",
-    "block.extragems.deepslate_crystal_block": "Tiefenschiefer Kristall Block",
     "block.extragems.deepslate_ruby_ore": "Tiefenschiefer Rubin Erz",
     "block.extragems.deepslate_sapphire_ore": "Tiefenschiefer Saphir Erz",
     "block.extragems.deepslate_amethyst_ore": "Tiefenschiefer Amethyst Erz",
