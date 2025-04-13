@@ -4,6 +4,6 @@
     "color": "#003891",
     "translate": "trim_material.extragems.sapphire"
   },
-  "ingredient": "#c:gems/sapphire",
+  "ingredient": "extragems:sapphire",
   "item_model_index": 1.0
 }

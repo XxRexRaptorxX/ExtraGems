@@ -4,6 +4,6 @@
     "color": "#d11313",
     "translate": "trim_material.extragems.ruby"
   },
-  "ingredient": "#c:gems/ruby",
+  "ingredient": "extragems:ruby",
   "item_model_index": 1.0
 }

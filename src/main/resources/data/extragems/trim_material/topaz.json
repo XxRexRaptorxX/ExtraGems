@@ -4,6 +4,6 @@
     "color": "#d19513",
     "translate": "trim_material.extragems.topaz"
   },
-  "ingredient": "#c:gems/topaz",
+  "ingredient": "extragems:topaz",
   "item_model_index": 1.0
 }
