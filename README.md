@@ -20,7 +20,7 @@ The gems have stats similar to diamond, but a durability similar to iron and the
 
 #### Features:
 
-- 6 materials! [emerald, ruby , sapphire, amethyst, topaz, crystal]
+- 6 materials! [<span style="color:green">emerald</span>, <span style="color:red">ruby</span>, <span style="color:blue">sapphire</span>, <span style="color:purple">amethyst</span>, <span style="color:gold">topaz</span>, <span style="color:lightblue">crystal</span>]
 - amulets with cool side effects!
 - can be used for beacons
 - emissive textures support
