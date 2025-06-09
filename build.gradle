@@ -238,6 +238,17 @@ modrinth {
     dependencies {
         // The scope can be `required`, `optional`, `incompatible`, or `embedded`
         // The type can either be `project` or `version`
+        //required.project "magma-core"
+        optional.project "jei"
+        optional.project "just-enough-effect-descriptions-jeed"
+        optional.project "curios"
+        optional.project "epic-fight"
+        optional.project "shimmer!"
+        optional.project "moremcmeta-emissive"
+        optional.project "energized-power"
+        optional.project "mekanism"
+        optional.project "continuity"
+
     }
 }
 //tasks.modrinth.dependsOn(tasks.modrinthSyncBody) //auto readme sync
