@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:storage_blocks/sapphire"
+  "input": {
+    "tag": "c:storage_blocks/sapphire"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:charged_sapphire_block"
   }
 }

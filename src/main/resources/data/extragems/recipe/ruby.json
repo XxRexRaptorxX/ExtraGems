@@ -2,10 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-  
     "extragems:ruby_block"
   ],
-  
   "result": {
     "id": "extragems:ruby",
     "count": 9

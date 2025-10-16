@@ -2,18 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-  
     "XX",
     "# ",
     "# "
-    
   ],
-  
   "key": {
     "X": "#c:gems/amethyst",
     "#": "minecraft:stick"
-   },
-  
+  },
   "result": {
     "id": "extragems:amethyst_hoe"
   }

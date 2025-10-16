@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-          [
-            "extragems:diamond_charged"
-          ]
+  "values": [
+    "extragems:diamond_charged"
+  ]
 }

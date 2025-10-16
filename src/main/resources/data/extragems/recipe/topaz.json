@@ -2,10 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-  
     "extragems:topaz_block"
   ],
-  
   "result": {
     "id": "extragems:topaz",
     "count": 9

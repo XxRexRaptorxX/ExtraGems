@@ -2,10 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-  
     "extragems:charged_diamond_block"
   ],
-  
   "result": {
     "id": "extragems:diamond_charged",
     "count": 9

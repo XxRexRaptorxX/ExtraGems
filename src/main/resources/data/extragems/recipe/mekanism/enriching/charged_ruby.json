@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:gems/ruby"
+  "input": {
+    "tag": "c:gems/ruby"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:ruby_charged"
   }
 }

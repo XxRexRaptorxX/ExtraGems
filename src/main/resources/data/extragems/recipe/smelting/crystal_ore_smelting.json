@@ -5,7 +5,6 @@
   "experience": 1.0,
   "group": "crystal",
   "ingredient": "extragems:crystal_ore",
-
   "result": {
     "id": "extragems:crystal"
   }

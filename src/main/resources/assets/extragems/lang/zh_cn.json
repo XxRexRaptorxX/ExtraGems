@@ -1,17 +1,14 @@
 {
   "_comment": "translated by qyhao",
-
   "itemGroup.extragems_tab": "ExtraGems",
   "message.extragems.not_enough_levels": "您没有足够的经验等级",
   "message.extragems.wrong_block": "Use it on a gem charger...",
   "message.extragems.not_night": "It has to be night with full moon...",
   "message.extragems.charged_gem_jei_desc": "To get a charged gem, click at night with full moon and enough experience levels on the gem charger.",
-
   "trim_material.extragems.ruby": "Ruby Material",
   "trim_material.extragems.sapphire": "Sapphire Material",
   "trim_material.extragems.topaz": "Topaz Material",
   "trim_material.extragems.crystal": "Crystal Material",
-
   "block.extragems.ruby_block": "红宝石块",
   "block.extragems.sapphire_block": "蓝宝石块",
   "block.extragems.amethyst_block": "紫水晶块",
@@ -29,16 +26,12 @@
   "block.extragems.charged_amethyst_block": "Charged Amethyst Block",
   "block.extragems.charged_topaz_block": "Charged Topaz Block",
   "block.extragems.charged_crystal_block": "Charged Crystal Block",
-
   "block.extragems.deepslate_ruby_ore": "Deepslate Ruby Ore",
   "block.extragems.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
   "block.extragems.deepslate_amethyst_ore": "Deepslate Amethyst Ore",
   "block.extragems.deepslate_topaz_ore": "Deepslate Topaz Ore",
   "block.extragems.deepslate_crystal_ore": "Deepslate Crystal Ore",
-
   "block.extragems.gem_charger": "Gem Charger",
-
-
   "item.extragems.ruby": "红宝石",
   "item.extragems.sapphire": "蓝宝石",
   "item.extragems.amethyst": "紫水晶",
@@ -51,7 +44,6 @@
   "item.extragems.crystal_charged": "充能水晶",
   "item.extragems.diamond_charged": "充能钻石",
   "item.extragems.emerald_charged": "充能绿宝石",
-
   "item.extragems.gem_charger": "宝石充能器",
   "item.extragems.emerald_amulet": "绿宝石护符",
   "item.extragems.ruby_amulet": "红宝石护符",
@@ -60,7 +52,6 @@
   "item.extragems.topaz_amulet": "黄水晶护符",
   "item.extragems.crystal_amulet": "水晶护符",
   "item.extragems.diamond_amulet": "钻石护符",
-
   "item.extragems.emerald_sword": "绿宝石剑",
   "item.extragems.emerald_pickaxe": "绿宝石镐",
   "item.extragems.emerald_axe": "绿宝石斧",
@@ -70,7 +61,6 @@
   "item.extragems.emerald_chestplate": "绿宝石胸甲",
   "item.extragems.emerald_leggings": "绿宝石护腿",
   "item.extragems.emerald_boots": "绿宝石靴",
-
   "item.extragems.ruby_sword": "红宝石剑",
   "item.extragems.ruby_pickaxe": "红宝石镐",
   "item.extragems.ruby_axe": "红宝石斧",
@@ -80,7 +70,6 @@
   "item.extragems.ruby_chestplate": "红宝石胸甲",
   "item.extragems.ruby_leggings": "红宝石护腿",
   "item.extragems.ruby_boots": "红宝石靴",
-
   "item.extragems.sapphire_sword": "蓝宝石剑",
   "item.extragems.sapphire_pickaxe": "蓝宝石镐",
   "item.extragems.sapphire_axe": "蓝宝石斧",
@@ -90,7 +79,6 @@
   "item.extragems.sapphire_chestplate": "蓝宝石胸甲",
   "item.extragems.sapphire_leggings": "蓝宝石护腿",
   "item.extragems.sapphire_boots": "蓝宝石靴",
-
   "item.extragems.amethyst_sword": "紫水晶剑",
   "item.extragems.amethyst_pickaxe": "紫水晶镐",
   "item.extragems.amethyst_axe": "紫水晶斧",
@@ -100,7 +88,6 @@
   "item.extragems.amethyst_chestplate": "紫水晶胸甲",
   "item.extragems.amethyst_leggings": "紫水晶护腿",
   "item.extragems.amethyst_boots": "紫水晶靴",
-
   "item.extragems.topaz_sword": "黄水晶剑",
   "item.extragems.topaz_pickaxe": "黄水晶镐",
   "item.extragems.topaz_axe": "黄水晶斧",
@@ -110,7 +97,6 @@
   "item.extragems.topaz_chestplate": "黄水晶胸甲",
   "item.extragems.topaz_leggings": "黄水晶护腿",
   "item.extragems.topaz_boots": "黄水晶靴",
-
   "item.extragems.crystal_sword": "水晶剑",
   "item.extragems.crystal_pickaxe": "水晶镐",
   "item.extragems.crystal_axe": "水晶斧",

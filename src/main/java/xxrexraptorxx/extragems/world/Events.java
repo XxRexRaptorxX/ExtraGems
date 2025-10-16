@@ -46,7 +46,7 @@ import java.net.http.HttpResponse;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = References.MODID, bus = EventBusSubscriber.Bus.GAME)
+@EventBusSubscriber(modid = References.MODID)
 public class Events {
 
     /** Update Checker **/
@@ -69,7 +69,9 @@ public class Events {
                         MutableComponent url = Component.literal(ChatFormatting.GREEN + "Click here to update!")
                                 .withStyle(style -> style.withClickEvent(new ClickEvent.OpenUrl(URI.create(References.URL))));
 
-                        player.displayClientMessage(Component.literal(ChatFormatting.BLUE + "A newer version of " + ChatFormatting.YELLOW + References.NAME + ChatFormatting.BLUE + " is available!"), false);
+                        player.displayClientMessage(
+                                Component.literal(ChatFormatting.BLUE + "A newer version of " + ChatFormatting.YELLOW + References.NAME + ChatFormatting.BLUE + " is available!"),
+                                false);
                         player.displayClientMessage(url, false);
 
                         hasShownUp = true;
@@ -183,42 +185,44 @@ public class Events {
     public static void onInteract(PlayerInteractEvent.RightClickBlock event) {
         ItemStack stack = event.getItemStack();
 
-        if(ItemStack.isSameItem(stack, new ItemStack(ModItems.AMETHYST.get())) || ItemStack.isSameItem(stack, new ItemStack(ModItems.RUBY.get())) || ItemStack.isSameItem(stack, new ItemStack(ModItems.SAPPHIRE.get()))
-                || ItemStack.isSameItem(stack, new ItemStack(ModItems.CRYSTAL.get())) || ItemStack.isSameItem(stack, new ItemStack(ModItems.TOPAZ.get())) || ItemStack.isSameItem(stack, new ItemStack(Items.DIAMOND)) || ItemStack.isSameItem(stack, new ItemStack(Items.EMERALD))) {
+        if (ItemStack.isSameItem(stack, new ItemStack(ModItems.AMETHYST.get())) || ItemStack.isSameItem(stack, new ItemStack(ModItems.RUBY.get()))
+                || ItemStack.isSameItem(stack, new ItemStack(ModItems.SAPPHIRE.get())) || ItemStack.isSameItem(stack, new ItemStack(ModItems.CRYSTAL.get()))
+                || ItemStack.isSameItem(stack, new ItemStack(ModItems.TOPAZ.get())) || ItemStack.isSameItem(stack, new ItemStack(Items.DIAMOND))
+                || ItemStack.isSameItem(stack, new ItemStack(Items.EMERALD))) {
             BlockPos pos = event.getPos();
             Player player = event.getEntity();
             Level level = event.getLevel();
 
-                if (level.getBlockState(pos).getBlock() == ModBlocks.GEM_CHARGER.get()) {
-                    if (player.experienceLevel >= Config.CHARGING_COST.get()) {
+            if (level.getBlockState(pos).getBlock() == ModBlocks.GEM_CHARGER.get()) {
+                if (player.experienceLevel >= Config.CHARGING_COST.get()) {
 
-                        if (level.getMoonPhase() == 0) {
-                            player.playSound(SoundEvents.EXPERIENCE_ORB_PICKUP, 1.0f, 1.0f);
+                    if (level.getMoonPhase() == 0) {
+                        player.playSound(SoundEvents.EXPERIENCE_ORB_PICKUP, 1.0f, 1.0f);
 
-                            for (int i = 0; i < 2; i++) {
-                                level.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 1.1F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
-                                level.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 1.1F, pos.getY() + 0.5F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
-                                level.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() - 0.1F, 0.0D, 0.0D, 0.0D);
-                                level.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() - 0.1F, pos.getY() + 0.5F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
-                                level.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() + 1.1F, 0.0D, 0.0D, 0.0D);
-                            }
-                            if (!level.isClientSide) {
-                                event.getItemStack().shrink(1);
-                                player.onEnchantmentPerformed(null, Config.CHARGING_COST.get());
-                                ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(GemHelper.getChargedGemVariant(player.getItemInHand(player.getUsedItemHand()).copy())));
+                        for (int i = 0; i < 2; i++) {
+                            level.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 1.1F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
+                            level.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 1.1F, pos.getY() + 0.5F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
+                            level.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() - 0.1F, 0.0D, 0.0D, 0.0D);
+                            level.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() - 0.1F, pos.getY() + 0.5F, pos.getZ() + 0.5F, 0.0D, 0.0D, 0.0D);
+                            level.addParticle(ParticleTypes.HAPPY_VILLAGER, pos.getX() + 0.5F, pos.getY() + 0.5F, pos.getZ() + 1.1F, 0.0D, 0.0D, 0.0D);
+                        }
+                        if (!level.isClientSide()) {
+                            event.getItemStack().shrink(1);
+                            player.onEnchantmentPerformed(null, Config.CHARGING_COST.get());
+                            ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(GemHelper.getChargedGemVariant(player.getItemInHand(player.getUsedItemHand()).copy())));
 
-                                event.setUseBlock(TriState.FALSE);
-                                event.setUseItem(TriState.FALSE);
-                                event.setCanceled(true);
-                            }
-                        } else {
-                            if(level.isClientSide) player.displayClientMessage(Component.translatable("message." + References.MODID + ".not_night"), true);
+                            event.setUseBlock(TriState.FALSE);
+                            event.setUseItem(TriState.FALSE);
+                            event.setCanceled(true);
+                        }
+                    } else {
+                        if (level.isClientSide()) player.displayClientMessage(Component.translatable("message." + References.MODID + ".not_night"), true);
                     }
                 } else {
-                    if(level.isClientSide) player.displayClientMessage(Component.translatable("message." + References.MODID + ".not_enough_levels"), true);
+                    if (level.isClientSide()) player.displayClientMessage(Component.translatable("message." + References.MODID + ".not_enough_levels"), true);
                 }
             } else {
-                if (level.isClientSide) player.displayClientMessage(Component.translatable("message." + References.MODID + ".wrong_block"), true);
+                if (level.isClientSide()) player.displayClientMessage(Component.translatable("message." + References.MODID + ".wrong_block"), true);
             }
         }
     }

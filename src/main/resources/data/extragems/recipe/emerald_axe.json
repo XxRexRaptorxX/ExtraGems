@@ -2,18 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-  
     "##",
     "X#",
     "X "
-    
   ],
-
   "key": {
     "#": "minecraft:emerald",
     "X": "minecraft:stick"
   },
-  
   "result": {
     "id": "extragems:emerald_axe"
   }

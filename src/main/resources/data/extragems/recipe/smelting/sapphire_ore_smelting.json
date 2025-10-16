@@ -5,7 +5,6 @@
   "experience": 1.0,
   "group": "sapphire",
   "ingredient": "extragems:sapphire_ore",
-
   "result": {
     "id": "extragems:sapphire"
   }

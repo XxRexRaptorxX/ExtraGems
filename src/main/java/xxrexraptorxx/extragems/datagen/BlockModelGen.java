@@ -16,9 +16,10 @@ public class BlockModelGen extends BlockModelGenerators {
         super(blockstateOutput, itemModelOutput, modelOutput);
     }
 
+
     @Override
     public void run() {
-        //createTrivialCube(Registration.AMETHYST_ORE.get());
+        // createTrivialCube(Registration.AMETHYST_ORE.get());
         createTrivialCube(ModBlocks.AMETHYST_BLOCK.get());
         createTrivialCube(ModBlocks.CHARGED_AMETHYST_BLOCK.get());
         createTrivialCube(ModBlocks.RUBY_ORE.get());

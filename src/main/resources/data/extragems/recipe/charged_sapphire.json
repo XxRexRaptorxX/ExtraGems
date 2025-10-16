@@ -2,10 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-  
     "extragems:charged_sapphire_block"
   ],
-  
   "result": {
     "id": "extragems:sapphire_charged",
     "count": 9

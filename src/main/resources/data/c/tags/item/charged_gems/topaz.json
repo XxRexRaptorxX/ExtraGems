@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-          [
-            "extragems:topaz_charged"
-          ]
+  "values": [
+    "extragems:topaz_charged"
+  ]
 }

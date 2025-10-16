@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:ores/topaz"
+  "input": {
+    "tag": "c:ores/topaz"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:topaz",
     "count": 2
   }

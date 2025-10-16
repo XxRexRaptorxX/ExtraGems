@@ -1,8 +1,7 @@
 {
   "replace": false,
-  "values":
-    [
-      "extragems:sapphire_block",
-      "extragems:charged_sapphire_block"
-    ]
+  "values": [
+    "extragems:sapphire_block",
+    "extragems:charged_sapphire_block"
+  ]
 }

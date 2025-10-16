@@ -5,7 +5,6 @@
   "experience": 1.0,
   "group": "ruby",
   "ingredient": "extragems:ruby_ore",
-
   "result": {
     "id": "extragems:ruby"
   }

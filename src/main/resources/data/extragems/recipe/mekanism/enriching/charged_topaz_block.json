@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:storage_blocks/topaz"
+  "input": {
+    "tag": "c:storage_blocks/topaz"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:charged_topaz_block"
   }
 }

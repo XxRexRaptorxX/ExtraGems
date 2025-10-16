@@ -2,17 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-  
     "###",
     "###",
     "###"
-    
   ],
-  
   "key": {
     "#": "extragems:crystal_charged"
-    },
-  
+  },
   "result": {
     "id": "extragems:charged_crystal_block"
   }

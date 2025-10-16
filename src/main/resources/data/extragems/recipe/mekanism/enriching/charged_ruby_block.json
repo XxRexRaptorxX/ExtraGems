@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:storage_blocks/ruby"
+  "input": {
+    "tag": "c:storage_blocks/ruby"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:charged_ruby_block"
   }
 }

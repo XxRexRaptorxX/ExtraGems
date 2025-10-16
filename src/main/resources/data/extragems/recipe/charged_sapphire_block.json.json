@@ -2,17 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-  
     "###",
     "###",
     "###"
-    
   ],
-  
   "key": {
     "#": "extragems:sapphire_charged"
-    },
-  
+  },
   "result": {
     "id": "extragems:charged_sapphire_block"
   }

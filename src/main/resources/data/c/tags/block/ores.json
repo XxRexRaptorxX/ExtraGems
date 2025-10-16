@@ -1,10 +1,9 @@
 {
   "replace": false,
-  "values":
-    [
-      "#c:ores/ruby",
-      "#c:ores/sapphire",
-      "#c:ores/crystal",
-      "#c:ores/topaz"
-    ]
+  "values": [
+    "#c:ores/ruby",
+    "#c:ores/sapphire",
+    "#c:ores/crystal",
+    "#c:ores/topaz"
+  ]
 }

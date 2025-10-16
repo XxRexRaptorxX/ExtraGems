@@ -2,10 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-  
     "extragems:charged_crystal_block"
   ],
-  
   "result": {
     "id": "extragems:crystal_charged",
     "count": 9

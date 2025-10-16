@@ -2,17 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-  
     "###",
     "###",
     "###"
-    
   ],
-  
   "key": {
     "#": "#c:gems/topaz"
-    },
-  
+  },
   "result": {
     "id": "extragems:topaz_block"
   }

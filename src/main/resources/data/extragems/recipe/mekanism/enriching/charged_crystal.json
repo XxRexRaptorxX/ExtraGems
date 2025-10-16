@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:gems/crystal"
+  "input": {
+    "tag": "c:gems/crystal"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:crystal_charged"
   }
 }

@@ -2,18 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-  
     "XXX",
     " # ",
     " # "
-    
   ],
-  
   "key": {
     "X": "#c:gems/sapphire",
     "#": "minecraft:stick"
-   },
-  
+  },
   "result": {
     "id": "extragems:sapphire_pickaxe"
   }

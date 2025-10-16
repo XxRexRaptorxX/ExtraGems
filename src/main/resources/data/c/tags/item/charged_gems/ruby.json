@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-          [
-            "extragems:ruby_charged"
-          ]
+  "values": [
+    "extragems:ruby_charged"
+  ]
 }

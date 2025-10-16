@@ -10,10 +10,10 @@
     "ingredient": "#c:gems/emerald"
   },
   "ticks": 16000,
-
   "result": {
     "percentages": [
-      0.25, 0.125
+      0.25,
+      0.125
     ],
     "result": {
       "count": 1,

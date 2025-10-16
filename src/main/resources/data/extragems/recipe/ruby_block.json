@@ -2,17 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-  
     "###",
     "###",
     "###"
-    
   ],
-  
   "key": {
     "#": "#c:gems/ruby"
-    },
-  
+  },
   "result": {
     "id": "extragems:ruby_block"
   }

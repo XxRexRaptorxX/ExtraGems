@@ -1,35 +1,29 @@
 {
   "_comment": "translated by Ulitraboom & Heimdallr-1",
-
   "itemGroup.extragems_tab": "ExtraGems",
   "message.extragems.not_enough_levels": "Мало уровней опыта!",
   "message.extragems.wrong_block": "Используйте по заряднику для самоцвета...",
   "message.extragems.not_night": "Это должно происходить в ночное время в полнолунии...",
   "message.extragems.charged_gem_jei_desc": "Для получения заряженного самоцвета, щёлкните по заряднику самоцвета с достаточным количеством уровней опыта в ночное время в полнолуние.",
-
   "trim_material.extragems.ruby": "Ruby Material",
   "trim_material.extragems.sapphire": "Sapphire Material",
   "trim_material.extragems.topaz": "Topaz Material",
   "trim_material.extragems.crystal": "Crystal Material",
-
   "block.extragems.ruby_block": "Рубиновый блок",
   "block.extragems.sapphire_block": "Сапфировый блок",
   "block.extragems.amethyst_block": "Аметистовый блок",
   "block.extragems.topaz_block": "Топазовый блок",
   "block.extragems.crystal_block": "Кристальный блок",
-
   "block.extragems.ruby_ore": "Рубиновая руда",
   "block.extragems.sapphire_ore": "Сапфировая руда",
   "block.extragems.amethyst_ore": "Аметистовая руда",
   "block.extragems.topaz_ore": "Топазовая руда",
   "block.extragems.crystal_ore": "Руда кристалла",
-
   "block.extragems.deepslate_ruby_ore": "Рубиноносный глубинный сланец",
   "block.extragems.deepslate_sapphire_ore": "Сапфироносный глубинный сланец",
   "block.extragems.deepslate_amethyst_ore": "Аметистоносный глубинный сланец",
   "block.extragems.deepslate_topaz_ore": "Топазовоносный глубинный сланец",
   "block.extragems.deepslate_crystal_ore": "Кристалоносный глубинный сланец",
-
   "block.extragems.charged_ruby_block": "Блок из заряженного рубина",
   "block.extragems.charged_emerald_block": "Блок из заряженного изумруда",
   "block.extragems.charged_diamond_block": "Блок из заряженного алмаза",
@@ -37,10 +31,7 @@
   "block.extragems.charged_amethyst_block": "Блок из заряженного аметиста",
   "block.extragems.charged_topaz_block": "Блок из заряженного топаза",
   "block.extragems.charged_crystal_block": "Блок из заряженного кристалла",
-
   "block.extragems.gem_charger": "Зарядник для самоцвета",
-
-
   "item.extragems.ruby": "Рубин",
   "item.extragems.sapphire": "Сапфир",
   "item.extragems.amethyst": "Аметист",
@@ -53,7 +44,6 @@
   "item.extragems.crystal_charged": "Заряженный кристалл",
   "item.extragems.diamond_charged": "Заряженный алмаз",
   "item.extragems.emerald_charged": "Заряженный изумруд",
-
   "item.extragems.gem_charger": "Зарядник для самоцвета",
   "item.extragems.emerald_amulet": "Изумрудный амулет",
   "item.extragems.ruby_amulet": "Рубиновый амулет",
@@ -62,7 +52,6 @@
   "item.extragems.topaz_amulet": "Топазовый амулет",
   "item.extragems.crystal_amulet": "Кристальный амулет",
   "item.extragems.diamond_amulet": "Алмазный амулет",
-
   "item.extragems.emerald_sword": "Изумрудный меч",
   "item.extragems.emerald_pickaxe": "Изумрудная кирка",
   "item.extragems.emerald_axe": "Изумрудный топор",
@@ -72,7 +61,6 @@
   "item.extragems.emerald_chestplate": "Изумрудный нагрудник",
   "item.extragems.emerald_leggings": "Изумрудные поножи",
   "item.extragems.emerald_boots": "Изумрудные ботинки",
-
   "item.extragems.ruby_sword": "Рубиновый меч",
   "item.extragems.ruby_pickaxe": "Рубиновая кирка",
   "item.extragems.ruby_axe": "Рубиновый топор",
@@ -82,7 +70,6 @@
   "item.extragems.ruby_chestplate": "Рубиновый нагрудник",
   "item.extragems.ruby_leggings": "Рубиновые поножи",
   "item.extragems.ruby_boots": "Рубиновые ботинки",
-
   "item.extragems.sapphire_sword": "Сапфировый меч",
   "item.extragems.sapphire_pickaxe": "Сапфировая кирка",
   "item.extragems.sapphire_axe": "Сапфировый топор",
@@ -92,7 +79,6 @@
   "item.extragems.sapphire_chestplate": "Сапфировый нагрудник",
   "item.extragems.sapphire_leggings": "Сапфировые поножи",
   "item.extragems.sapphire_boots": "Сапфировые ботинки",
-
   "item.extragems.amethyst_sword": "Аметистовый меч",
   "item.extragems.amethyst_pickaxe": "Аметистовая кирка",
   "item.extragems.amethyst_axe": "Аметистовый топор",
@@ -102,7 +88,6 @@
   "item.extragems.amethyst_chestplate": "Аметистовый нагрудник",
   "item.extragems.amethyst_leggings": "Аметистовые поножи",
   "item.extragems.amethyst_boots": "Аметистовые ботинки",
-
   "item.extragems.topaz_sword": "Топазовый меч",
   "item.extragems.topaz_pickaxe": "Топазовая кирка",
   "item.extragems.topaz_axe": "Топазовый топор",
@@ -112,7 +97,6 @@
   "item.extragems.topaz_chestplate": "Топазовый нагрудник",
   "item.extragems.topaz_leggings": "Топазовые поножи",
   "item.extragems.topaz_boots": "Топазовые ботинки",
-
   "item.extragems.crystal_sword": "Кристальный меч",
   "item.extragems.crystal_pickaxe": "Кристальная кирка",
   "item.extragems.crystal_axe": "Кристальный топор",

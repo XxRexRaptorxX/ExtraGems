@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:gems/amethyst"
+  "input": {
+    "tag": "c:gems/amethyst"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:amethyst_charged"
   }
 }

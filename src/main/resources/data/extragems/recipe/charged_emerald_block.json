@@ -2,17 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-  
     "###",
     "###",
     "###"
-    
   ],
-  
   "key": {
     "#": "extragems:emerald_charged"
-    },
-  
+  },
   "result": {
     "id": "extragems:charged_emerald_block"
   }

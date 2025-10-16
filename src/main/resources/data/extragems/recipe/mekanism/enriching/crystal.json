@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:ores/crystal"
+  "input": {
+    "tag": "c:ores/crystal"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:crystal",
     "count": 2
   }

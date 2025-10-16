@@ -2,10 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-  
     "extragems:sapphire_block"
   ],
-  
   "result": {
     "id": "extragems:sapphire",
     "count": 9

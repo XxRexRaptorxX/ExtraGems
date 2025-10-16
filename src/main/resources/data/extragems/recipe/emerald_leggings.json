@@ -2,17 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-  
     "###",
     "# #",
     "# #"
-    
   ],
-
   "key": {
     "#": "minecraft:emerald"
   },
-  
   "result": {
     "id": "extragems:emerald_leggings"
   }

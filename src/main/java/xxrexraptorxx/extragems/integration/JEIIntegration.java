@@ -23,6 +23,7 @@ public class JEIIntegration implements IModPlugin {
         return ID;
     }
 
+
     @Override
     public void registerRecipes(IRecipeRegistration registry) {
         ArrayList<ItemStack> gems = new ArrayList<ItemStack>();
@@ -39,4 +40,3 @@ public class JEIIntegration implements IModPlugin {
         registry.addIngredientInfo(gems, VanillaTypes.ITEM_STACK, Component.translatable("message." + References.MODID + ".charged_gem_jei_desc"));
     }
 }
-

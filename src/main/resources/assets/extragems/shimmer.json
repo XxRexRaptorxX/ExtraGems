@@ -1,58 +1,249 @@
 {
   "ColorReference": {
-    "black": { "r": 33, "g": 0, "b": 255, "a": 255 },
-    "white": { "r": 255, "g": 255, "b": 255, "a": 255 },
-    "blue": { "r": 0, "g": 0, "b": 255, "a": 255 },
-    "brown": { "r": 165, "g": 42, "b": 42, "a": 255 },
-    "cyan": { "r": 0, "g": 255, "b": 255, "a": 255 },
-    "gray": { "r": 128, "g": 128, "b": 128, "a": 255 },
-    "green": { "r": 0, "g": 128, "b": 0, "a": 255 },
-    "light_blue": { "r": 173, "g": 216, "b": 230, "a": 255 },
-    "light_gray": { "r": 211, "g": 211, "b": 211, "a": 255 },
-    "lime": { "r": 0, "g": 255, "b": 0, "a": 255 },
-    "magenta": { "r": 255, "g": 0, "b": 255, "a": 255 },
-    "orange": { "r": 255, "g": 165, "b": 0, "a": 255 },
-    "pink": { "r": 255, "g": 192, "b": 203, "a": 255 },
-    "purple": { "r": 200, "g": 10, "b": 226, "a": 255 },
-    "red": { "r": 255, "g": 0, "b": 0, "a": 255 },
-    "yellow": { "r": 255, "g": 255, "b": 0, "a": 255 }
+    "black": {
+      "r": 33,
+      "g": 0,
+      "b": 255,
+      "a": 255
+    },
+    "white": {
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "blue": {
+      "r": 0,
+      "g": 0,
+      "b": 255,
+      "a": 255
+    },
+    "brown": {
+      "r": 165,
+      "g": 42,
+      "b": 42,
+      "a": 255
+    },
+    "cyan": {
+      "r": 0,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "gray": {
+      "r": 128,
+      "g": 128,
+      "b": 128,
+      "a": 255
+    },
+    "green": {
+      "r": 0,
+      "g": 128,
+      "b": 0,
+      "a": 255
+    },
+    "light_blue": {
+      "r": 173,
+      "g": 216,
+      "b": 230,
+      "a": 255
+    },
+    "light_gray": {
+      "r": 211,
+      "g": 211,
+      "b": 211,
+      "a": 255
+    },
+    "lime": {
+      "r": 0,
+      "g": 255,
+      "b": 0,
+      "a": 255
+    },
+    "magenta": {
+      "r": 255,
+      "g": 0,
+      "b": 255,
+      "a": 255
+    },
+    "orange": {
+      "r": 255,
+      "g": 165,
+      "b": 0,
+      "a": 255
+    },
+    "pink": {
+      "r": 255,
+      "g": 192,
+      "b": 203,
+      "a": 255
+    },
+    "purple": {
+      "r": 200,
+      "g": 10,
+      "b": 226,
+      "a": 255
+    },
+    "red": {
+      "r": 255,
+      "g": 0,
+      "b": 0,
+      "a": 255
+    },
+    "yellow": {
+      "r": 255,
+      "g": 255,
+      "b": 0,
+      "a": 255
+    }
   },
-
   "LightBlock": [
-    { "block": "extragems:gem_charger", "color": "#purple", "radius": 2 },
-
-    { "block": "extragems:charged_amethyst_block", "color": "#purple", "radius": 5 },
-    { "block": "extragems:charged_ruby_block", "color": "#red", "radius": 5 },
-    { "block": "extragems:charged_sapphire_block", "color": "#blue", "radius": 5 },
-    { "block": "extragems:charged_topaz_block", "color": "#yellow", "radius": 5 },
-    { "block": "extragems:charged_crystal_block", "color": "#light_blue", "radius": 5 },
-    { "block": "extragems:charged_emerald_block", "color": "#green", "radius": 5 },
-    { "block": "extragems:charged_diamond_block", "color": "#light_blue", "radius": 5 }
+    {
+      "block": "extragems:gem_charger",
+      "color": "#purple",
+      "radius": 2
+    },
+    {
+      "block": "extragems:charged_amethyst_block",
+      "color": "#purple",
+      "radius": 5
+    },
+    {
+      "block": "extragems:charged_ruby_block",
+      "color": "#red",
+      "radius": 5
+    },
+    {
+      "block": "extragems:charged_sapphire_block",
+      "color": "#blue",
+      "radius": 5
+    },
+    {
+      "block": "extragems:charged_topaz_block",
+      "color": "#yellow",
+      "radius": 5
+    },
+    {
+      "block": "extragems:charged_crystal_block",
+      "color": "#light_blue",
+      "radius": 5
+    },
+    {
+      "block": "extragems:charged_emerald_block",
+      "color": "#green",
+      "radius": 5
+    },
+    {
+      "block": "extragems:charged_diamond_block",
+      "color": "#light_blue",
+      "radius": 5
+    }
   ],
-
   "LightItem": [
-    { "item_id": "extragems:amethyst_charged", "color": "#purple", "radius": 1 },
-    { "item_id": "extragems:ruby_charged", "color": "#red", "radius": 1 },
-    { "item_id": "extragems:sapphire_charged", "color": "#blue", "radius": 1 },
-    { "item_id": "extragems:topaz_charged", "color": "#yellow", "radius": 1 },
-    { "item_id": "extragems:crystal_charged", "color": "#light_blue", "radius": 1 },
-    { "item_id": "extragems:emerald_charged", "color": "#green", "radius": 1 },
-    { "item_id": "extragems:diamond_charged", "color": "#light_blue", "radius": 1 },
-
-    { "item_id": "extragems:amethyst_amulet", "color": "#purple", "radius": 1 },
-    { "item_id": "extragems:ruby_amulet", "color": "#red", "radius": 1 },
-    { "item_id": "extragems:sapphire_amulet", "color": "#blue", "radius": 1 },
-    { "item_id": "extragems:topaz_amulet", "color": "#yellow", "radius": 1 },
-    { "item_id": "extragems:crystal_amulet", "color": "#light_blue", "radius": 1 },
-    { "item_id": "extragems:emerald_amulet", "color": "#green", "radius": 1 },
-    { "item_id": "extragems:diamond_amulet", "color": "#light_blue", "radius": 1 },
-
-    { "item_id": "extragems:charged_amethyst_block", "color": "#purple", "radius": 3 },
-    { "item_id": "extragems:charged_ruby_block", "color": "#red", "radius": 3 },
-    { "item_id": "extragems:charged_sapphire_block", "color": "#blue", "radius": 3 },
-    { "item_id": "extragems:charged_topaz_block", "color": "#yellow", "radius": 3 },
-    { "item_id": "extragems:charged_crystal_block", "color": "#light_blue", "radius": 3 },
-    { "item_id": "extragems:charged_emerald_block", "color": "#green", "radius": 3 },
-    { "item_id": "extragems:charged_diamond_block", "color": "#light_blue", "radius": 3 }
+    {
+      "item_id": "extragems:amethyst_charged",
+      "color": "#purple",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:ruby_charged",
+      "color": "#red",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:sapphire_charged",
+      "color": "#blue",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:topaz_charged",
+      "color": "#yellow",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:crystal_charged",
+      "color": "#light_blue",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:emerald_charged",
+      "color": "#green",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:diamond_charged",
+      "color": "#light_blue",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:amethyst_amulet",
+      "color": "#purple",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:ruby_amulet",
+      "color": "#red",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:sapphire_amulet",
+      "color": "#blue",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:topaz_amulet",
+      "color": "#yellow",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:crystal_amulet",
+      "color": "#light_blue",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:emerald_amulet",
+      "color": "#green",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:diamond_amulet",
+      "color": "#light_blue",
+      "radius": 1
+    },
+    {
+      "item_id": "extragems:charged_amethyst_block",
+      "color": "#purple",
+      "radius": 3
+    },
+    {
+      "item_id": "extragems:charged_ruby_block",
+      "color": "#red",
+      "radius": 3
+    },
+    {
+      "item_id": "extragems:charged_sapphire_block",
+      "color": "#blue",
+      "radius": 3
+    },
+    {
+      "item_id": "extragems:charged_topaz_block",
+      "color": "#yellow",
+      "radius": 3
+    },
+    {
+      "item_id": "extragems:charged_crystal_block",
+      "color": "#light_blue",
+      "radius": 3
+    },
+    {
+      "item_id": "extragems:charged_emerald_block",
+      "color": "#green",
+      "radius": 3
+    },
+    {
+      "item_id": "extragems:charged_diamond_block",
+      "color": "#light_blue",
+      "radius": 3
+    }
   ]
 }

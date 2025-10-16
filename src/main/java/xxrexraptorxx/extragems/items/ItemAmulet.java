@@ -20,11 +20,8 @@ import xxrexraptorxx.extragems.utils.GemHelper;
 public class ItemAmulet extends Item {
 
     public ItemAmulet(Properties properties) {
-        super(properties
-            .stacksTo(1)
-            .durability(100)
-            .rarity(Rarity.RARE)
-            //.defaultDurability(200)
+        super(properties.stacksTo(1).durability(100).rarity(Rarity.RARE)
+        // .defaultDurability(200)
         );
 
     }
@@ -42,14 +39,16 @@ public class ItemAmulet extends Item {
         ItemStack stack = event.getItemInHand();
         Player player = event.getPlayer();
 
-        level.playSound(player, player.position().x, player.position().y, player.position().z, SoundEvents.ENDER_EYE_DEATH, SoundSource.PLAYERS, 0.5F, 0.4F / (level.random.nextFloat() * 0.4F + 0.8F));
+        level.playSound(player, player.position().x, player.position().y, player.position().z, SoundEvents.ENDER_EYE_DEATH, SoundSource.PLAYERS, 0.5F,
+                0.4F / (level.random.nextFloat() * 0.4F + 0.8F));
         player.getCooldowns().addCooldown(stack, Config.AMULET_EFFECT_COOLDOWN.get());
 
         if (Config.AMULET_DESTROYABLE.get()) {
             stack.setDamageValue(stack.getDamageValue() + 1);
 
             if (stack.getDamageValue() == stack.getMaxDamage()) {
-                level.playSound((Player) null, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_BREAK, SoundSource.PLAYERS, 0.5F, 0.4F / (level.random.nextFloat() * 0.4F + 0.8F));
+                level.playSound((Player) null, player.getX(), player.getY(), player.getZ(), SoundEvents.ITEM_BREAK, SoundSource.PLAYERS, 0.5F,
+                        0.4F / (level.random.nextFloat() * 0.4F + 0.8F));
                 stack.shrink(1);
             }
         }
@@ -60,7 +59,8 @@ public class ItemAmulet extends Item {
             cloud.setRadius(Config.AMULET_EFFECT_RADIUS.get());
             cloud.setWaitTime(1);
             cloud.setParticle(ParticleTypes.CRIT);
-            cloud.addEffect(new MobEffectInstance(GemHelper.getEffect(BuiltInRegistries.ITEM.getKey(this).toString()), Config.AMULET_EFFECT_DURATION.get(), Config.AMULET_EFFECT_AMPLIFIER.get()));
+            cloud.addEffect(new MobEffectInstance(GemHelper.getEffect(BuiltInRegistries.ITEM.getKey(this).toString()), Config.AMULET_EFFECT_DURATION.get(),
+                    Config.AMULET_EFFECT_AMPLIFIER.get()));
             level.addFreshEntity(cloud);
         }
 

@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:gems/diamond"
+  "input": {
+    "tag": "c:gems/diamond"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:diamond_charged"
   }
 }

@@ -1,9 +1,6 @@
 package xxrexraptorxx.extragems.registry;
 
 import net.minecraft.Util;
-import net.minecraft.core.Holder;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.network.chat.Component;
@@ -11,13 +8,10 @@ import net.minecraft.network.chat.Style;
 import net.minecraft.network.chat.TextColor;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.component.ProvidesTrimMaterial;
 import net.minecraft.world.item.equipment.trim.MaterialAssetGroup;
 import net.minecraft.world.item.equipment.trim.TrimMaterial;
 import xxrexraptorxx.extragems.main.References;
 
-import java.util.Optional;
 
 public class ModTrimMaterials {
 
@@ -43,7 +37,7 @@ public class ModTrimMaterials {
         register(context, RUBY, Style.EMPTY.withColor(TextColor.parseColor("#d11313").getOrThrow()), RUBY_ASSET_GROUP);
         register(context, SAPPHIRE, Style.EMPTY.withColor(TextColor.parseColor("#003891").getOrThrow()), SAPPHIRE_ASSET_GROUP);
         register(context, TOPAZ, Style.EMPTY.withColor(TextColor.parseColor("#031cfc").getOrThrow()), TOPAZ_ASSET_GROUP);
-        //register(context, AMETHYST, Style.EMPTY.withColor(TextColor.parseColor("#9A5CC6").getOrThrow()), AMETHYST_ASSET_GROUP);
+        // register(context, AMETHYST, Style.EMPTY.withColor(TextColor.parseColor("#9A5CC6").getOrThrow()), AMETHYST_ASSET_GROUP);
         register(context, CRYSTAL, Style.EMPTY.withColor(TextColor.parseColor("#8fd9db").getOrThrow()), CRYSTAL_ASSET_GROUP);
     }
 

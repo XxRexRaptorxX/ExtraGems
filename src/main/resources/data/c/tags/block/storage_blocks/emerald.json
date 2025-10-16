@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-    [
-      "extragems:charged_emerald_block"
-    ]
+  "values": [
+    "extragems:charged_emerald_block"
+  ]
 }

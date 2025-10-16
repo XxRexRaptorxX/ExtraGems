@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:storage_blocks/emerald"
+  "input": {
+    "tag": "c:storage_blocks/emerald"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:charged_emerald_block"
   }
 }

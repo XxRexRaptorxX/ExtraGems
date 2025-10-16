@@ -34,7 +34,7 @@ public class ItemModelGen extends ItemModelGenerators {
 
     @Override
     public void run() {
-        //Generic
+        // Generic
         this.generateFlatItem(ModItems.AMETHYST.get(), ModelTemplates.FLAT_ITEM);
         this.generateFlatItem(ModItems.RUBY.get(), ModelTemplates.FLAT_ITEM);
         this.generateFlatItem(ModItems.SAPPHIRE.get(), ModelTemplates.FLAT_ITEM);
@@ -85,7 +85,7 @@ public class ItemModelGen extends ItemModelGenerators {
         generateTrimmableArmor(ModItems.CRYSTAL_BOOTS.get(), ModArmorMaterials.CRYSTAL_EQUIPMENT_ASSET, TRIM_PREFIX_BOOTS, false);
         generateTrimmableArmor(ModItems.EMERALD_BOOTS.get(), ModArmorMaterials.EMERALD_EQUIPMENT_ASSET, TRIM_PREFIX_BOOTS, false);
 
-        //Tools
+        // Tools
         this.generateFlatItem(ModItems.AMETHYST_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         this.generateFlatItem(ModItems.RUBY_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
         this.generateFlatItem(ModItems.SAPPHIRE_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
@@ -129,7 +129,7 @@ public class ItemModelGen extends ItemModelGenerators {
         ResourceLocation resourcelocation2 = TextureMapping.getItemTexture(item, "_overlay");
         List<SelectItemModel.SwitchCase<ResourceKey<TrimMaterial>>> list = new ArrayList(TRIM_MATERIAL_MODELS.size());
 
-        for(TrimMaterialData itemmodelgenerators$trimmaterialdata : TRIM_MATERIAL_MODELS) {
+        for (TrimMaterialData itemmodelgenerators$trimmaterialdata : TRIM_MATERIAL_MODELS) {
             ResourceLocation resourcelocation3 = resourcelocation.withSuffix("_" + itemmodelgenerators$trimmaterialdata.assets().base().suffix() + "_trim");
             String var10001 = itemmodelgenerators$trimmaterialdata.assets().assetId(resourceKey).suffix();
             ResourceLocation resourcelocation4 = location.withSuffix("_" + var10001);
@@ -165,9 +165,11 @@ public class ItemModelGen extends ItemModelGenerators {
             this.materialKey = materialKey;
         }
 
+
         public MaterialAssetGroup assets() {
             return this.assets;
         }
+
 
         public ResourceKey<TrimMaterial> materialKey() {
             return this.materialKey;
@@ -176,23 +178,19 @@ public class ItemModelGen extends ItemModelGenerators {
 
 
     public static final List<TrimMaterialData> TRIM_MATERIAL_MODELS = List.of(
-            //VANILLA
-            new ItemModelGen.TrimMaterialData(MaterialAssetGroup.QUARTZ, TrimMaterials.QUARTZ),
-            new ItemModelGen.TrimMaterialData(MaterialAssetGroup.IRON, TrimMaterials.IRON),
+            // VANILLA
+            new ItemModelGen.TrimMaterialData(MaterialAssetGroup.QUARTZ, TrimMaterials.QUARTZ), new ItemModelGen.TrimMaterialData(MaterialAssetGroup.IRON, TrimMaterials.IRON),
             new ItemModelGen.TrimMaterialData(MaterialAssetGroup.NETHERITE, TrimMaterials.NETHERITE),
             new ItemModelGen.TrimMaterialData(MaterialAssetGroup.REDSTONE, TrimMaterials.REDSTONE),
-            new ItemModelGen.TrimMaterialData(MaterialAssetGroup.COPPER, TrimMaterials.COPPER),
-            new ItemModelGen.TrimMaterialData(MaterialAssetGroup.GOLD, TrimMaterials.GOLD),
+            new ItemModelGen.TrimMaterialData(MaterialAssetGroup.COPPER, TrimMaterials.COPPER), new ItemModelGen.TrimMaterialData(MaterialAssetGroup.GOLD, TrimMaterials.GOLD),
             new ItemModelGen.TrimMaterialData(MaterialAssetGroup.EMERALD, TrimMaterials.EMERALD),
-            new ItemModelGen.TrimMaterialData(MaterialAssetGroup.DIAMOND, TrimMaterials.DIAMOND),
-            new ItemModelGen.TrimMaterialData(MaterialAssetGroup.LAPIS, TrimMaterials.LAPIS),
+            new ItemModelGen.TrimMaterialData(MaterialAssetGroup.DIAMOND, TrimMaterials.DIAMOND), new ItemModelGen.TrimMaterialData(MaterialAssetGroup.LAPIS, TrimMaterials.LAPIS),
             new ItemModelGen.TrimMaterialData(MaterialAssetGroup.AMETHYST, TrimMaterials.AMETHYST),
             new ItemModelGen.TrimMaterialData(MaterialAssetGroup.RESIN, TrimMaterials.RESIN),
-            //CUSTOM
+            // CUSTOM
             new ItemModelGen.TrimMaterialData(ModTrimMaterials.RUBY_ASSET_GROUP, ModTrimMaterials.RUBY),
             new ItemModelGen.TrimMaterialData(ModTrimMaterials.SAPPHIRE_ASSET_GROUP, ModTrimMaterials.SAPPHIRE),
             new ItemModelGen.TrimMaterialData(ModTrimMaterials.TOPAZ_ASSET_GROUP, ModTrimMaterials.TOPAZ),
-            new ItemModelGen.TrimMaterialData(ModTrimMaterials.CRYSTAL_ASSET_GROUP, ModTrimMaterials.CRYSTAL)
-    );
+            new ItemModelGen.TrimMaterialData(ModTrimMaterials.CRYSTAL_ASSET_GROUP, ModTrimMaterials.CRYSTAL));
 
 }

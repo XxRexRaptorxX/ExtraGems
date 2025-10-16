@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-          [
-            "extragems:crystal_charged"
-          ]
+  "values": [
+    "extragems:crystal_charged"
+  ]
 }

@@ -2,18 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "pattern": [
-  
     "X",
     "X",
     "#"
-    
   ],
-  
   "key": {
     "X": "#c:gems/crystal",
     "#": "minecraft:stick"
-   },
-  
+  },
   "result": {
     "id": "extragems:crystal_sword"
   }

@@ -15,35 +15,35 @@ public class GemHelper {
 
     public static Holder<MobEffect> getEffect(String registryName) {
         switch (registryName) {
-            case References.MODID + ":amethyst_amulet":
-            case References.MODID + ":charged_amethyst_block":
+            case References.MODID + ":amethyst_amulet" :
+            case References.MODID + ":charged_amethyst_block" :
                 return MobEffects.REGENERATION;
 
-            case References.MODID + ":ruby_amulet":
-            case References.MODID + ":charged_ruby_block":
+            case References.MODID + ":ruby_amulet" :
+            case References.MODID + ":charged_ruby_block" :
                 return MobEffects.JUMP_BOOST;
 
-            case References.MODID + ":sapphire_amulet":
-            case References.MODID + ":charged_sapphire_block":
+            case References.MODID + ":sapphire_amulet" :
+            case References.MODID + ":charged_sapphire_block" :
                 return MobEffects.STRENGTH;
 
-            case References.MODID + ":topaz_amulet":
-            case References.MODID + ":charged_topaz_block":
+            case References.MODID + ":topaz_amulet" :
+            case References.MODID + ":charged_topaz_block" :
                 return MobEffects.FIRE_RESISTANCE;
 
-            case References.MODID + ":crystal_amulet":
-            case References.MODID + ":charged_crystal_block":
+            case References.MODID + ":crystal_amulet" :
+            case References.MODID + ":charged_crystal_block" :
                 return MobEffects.HASTE;
 
-            case References.MODID + ":emerald_amulet":
-            case References.MODID + ":charged_emerald_block":
+            case References.MODID + ":emerald_amulet" :
+            case References.MODID + ":charged_emerald_block" :
                 return MobEffects.SPEED;
 
-            case References.MODID + ":diamond_amulet":
-            case References.MODID + ":charged_diamond_block":
+            case References.MODID + ":diamond_amulet" :
+            case References.MODID + ":charged_diamond_block" :
                 return MobEffects.RESISTANCE;
 
-            default:
+            default :
                 return MobEffects.UNLUCK;
         }
     }
@@ -52,28 +52,28 @@ public class GemHelper {
     public static Item getChargedGemVariant(ItemStack gem) {
         switch (BuiltInRegistries.ITEM.getKey(gem.getItem()).toString()) {
 
-            case References.MODID + ":amethyst":
+            case References.MODID + ":amethyst" :
                 return ModItems.CHARGED_AMETHYST.get();
 
-            case References.MODID + ":ruby":
+            case References.MODID + ":ruby" :
                 return ModItems.CHARGED_RUBY.get();
 
-            case References.MODID + ":sapphire":
+            case References.MODID + ":sapphire" :
                 return ModItems.CHARGED_SAPPHIRE.get();
 
-            case References.MODID + ":topaz":
+            case References.MODID + ":topaz" :
                 return ModItems.CHARGED_TOPAZ.get();
 
-            case References.MODID + ":crystal":
+            case References.MODID + ":crystal" :
                 return ModItems.CHARGED_CRYSTAL.get();
 
-            case "minecraft:diamond":
+            case "minecraft:diamond" :
                 return ModItems.CHARGED_DIAMOND.get();
 
-            case "minecraft:emerald":
+            case "minecraft:emerald" :
                 return ModItems.CHARGED_EMERALD.get();
 
-            default:
+            default :
                 ExtraGems.LOGGER.error("Invalid registry name for gem type.");
                 return Items.COAL;
         }

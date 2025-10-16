@@ -1,7 +1,6 @@
 {
-	"attributes":
-	{
-		"stun_armor":4.7,
-		"weight":24.0
-	}
+  "attributes": {
+    "stun_armor": 4.7,
+    "weight": 24.0
+  }
 }

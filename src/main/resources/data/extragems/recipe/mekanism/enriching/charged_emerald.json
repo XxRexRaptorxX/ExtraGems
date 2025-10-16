@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:gems/emerald"
+  "input": {
+    "tag": "c:gems/emerald"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:emerald_charged"
   }
 }

@@ -1,35 +1,29 @@
 {
   "_comment": "translated by ragcloud",
-
   "itemGroup.extragems_tab": "ExtraGems",
   "message.extragems.not_enough_levels": "¡No tienes suficientes nivles de experiencia!",
   "message.extragems.wrong_block": "Usalo en un cargador de gemas...",
   "message.extragems.not_night": "Tiene que ser de noche con luna llena...",
   "message.extragems.charged_gem_jei_desc": "Para obtener una gema cargada, Click en una noche con luna llena y suficientes nivles de experiencia en un cargador de gemas.",
-
   "trim_material.extragems.ruby": "Ruby Material",
   "trim_material.extragems.sapphire": "Sapphire Material",
   "trim_material.extragems.topaz": "Topaz Material",
   "trim_material.extragems.crystal": "Crystal Material",
-
   "block.extragems.ruby_block": "Bloque de Rubi",
   "block.extragems.sapphire_block": "Bloque de Safiro",
   "block.extragems.amethyst_block": "Bloque de Amatista",
   "block.extragems.topaz_block": "Bloque de Topacio",
   "block.extragems.crystal_block": "Bloque de Cristal",
-
   "block.extragems.ruby_ore": "Mena de Rubi",
   "block.extragems.sapphire_ore": "Mena de Safiro",
   "block.extragems.amethyst_ore": "Mena de Amatista",
   "block.extragems.topaz_ore": "Mena de Topacio",
   "block.extragems.crystal_ore": "Mena de Cristal",
-
   "block.extragems.deepslate_ruby_ore": "Mena de Rubi de pizarra profunda",
   "block.extragems.deepslate_sapphire_ore": "Mena de Safiro de pizarra profunda",
   "block.extragems.deepslate_amethyst_ore": "Mena de Amatista de pizarra profunda",
   "block.extragems.deepslate_topaz_ore": "Mena de Topacio de pizarra profunda",
   "block.extragems.deepslate_crystal_ore": "Mena de Cristal de pizarra profunda",
-
   "block.extragems.charged_ruby_block": "Bloque de Rubi cargado",
   "block.extragems.charged_emerald_block": "Bloque de Esmeralda cargado",
   "block.extragems.charged_diamond_block": "Bloque de Diamante cargado",
@@ -37,10 +31,7 @@
   "block.extragems.charged_amethyst_block": "Bloque de Amatista cargado",
   "block.extragems.charged_topaz_block": "Bloque de Topacio cargado",
   "block.extragems.charged_crystal_block": "Bloque de Cristal cargado",
-
   "block.extragems.gem_charger": "Cargador de Gemas",
-
-
   "item.extragems.ruby": "Rubi",
   "item.extragems.sapphire": "Safiro",
   "item.extragems.amethyst": "Amatista",
@@ -53,7 +44,6 @@
   "item.extragems.crystal_charged": "Cristal Cargado",
   "item.extragems.diamond_charged": "Diamante Cargado",
   "item.extragems.emerald_charged": "Esmeralda Cargada",
-
   "item.extragems.gem_charger": "Cargador de Gemas",
   "item.extragems.emerald_amulet": "Amuleto de Esmeralda",
   "item.extragems.ruby_amulet": "Amuleto de Rubi",
@@ -62,7 +52,6 @@
   "item.extragems.topaz_amulet": "Amuleto de Topacio",
   "item.extragems.crystal_amulet": "Amuleto de Cristal",
   "item.extragems.diamond_amulet": "Amuleto de Diamante",
-
   "item.extragems.emerald_sword": "Espada de Esmeralda",
   "item.extragems.emerald_pickaxe": "Pico de Esmeralda",
   "item.extragems.emerald_axe": "Hacha de Esmeralda",
@@ -72,7 +61,6 @@
   "item.extragems.emerald_chestplate": "Peto de Esmeralda",
   "item.extragems.emerald_leggings": "Grebas de Esmeralda",
   "item.extragems.emerald_boots": "Botas de Esmeralda",
-
   "item.extragems.ruby_sword": "Espada de Rubi",
   "item.extragems.ruby_pickaxe": "Pico de Rubi",
   "item.extragems.ruby_axe": "Hacha de Rubi",
@@ -82,7 +70,6 @@
   "item.extragems.ruby_chestplate": "Peto de Rubi",
   "item.extragems.ruby_leggings": "Grebas de Rubi",
   "item.extragems.ruby_boots": "Botas de Rubi",
-
   "item.extragems.sapphire_sword": "Espada de Safiro",
   "item.extragems.sapphire_pickaxe": "Pico de Safiro",
   "item.extragems.sapphire_axe": "Hacha de Safiro",
@@ -92,7 +79,6 @@
   "item.extragems.sapphire_chestplate": "Peto de Safiro",
   "item.extragems.sapphire_leggings": "Grebas de Safiro",
   "item.extragems.sapphire_boots": "Botas de Safiro",
-
   "item.extragems.amethyst_sword": "Espada de Amatista",
   "item.extragems.amethyst_pickaxe": "Pico de Amatista",
   "item.extragems.amethyst_axe": "Hacha de Amatista",
@@ -102,7 +88,6 @@
   "item.extragems.amethyst_chestplate": "Peto de Amatista",
   "item.extragems.amethyst_leggings": "Grebas de Amatista",
   "item.extragems.amethyst_boots": "Botas de Amatista",
-
   "item.extragems.topaz_sword": "Espada de Topacio",
   "item.extragems.topaz_pickaxe": "Pico de Topacio",
   "item.extragems.topaz_axe": "Hacha de Topacio",
@@ -112,7 +97,6 @@
   "item.extragems.topaz_chestplate": "Peto de Topacio",
   "item.extragems.topaz_leggings": "Grebas de Topacio",
   "item.extragems.topaz_boots": "Botas de Topacio",
-
   "item.extragems.crystal_sword": "Espada de Cristal",
   "item.extragems.crystal_pickaxe": "Pico de Cristal",
   "item.extragems.crystal_axe": "Hacha de Cristal",

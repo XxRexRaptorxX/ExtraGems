@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:storage_blocks/diamond"
+  "input": {
+    "tag": "c:storage_blocks/diamond"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:charged_diamond_block"
   }
 }

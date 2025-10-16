@@ -1,8 +1,7 @@
 {
   "replace": false,
-  "values":
-    [
-      "extragems:topaz_ore",
-      "extragems:deepslate_topaz_ore"
-    ]
+  "values": [
+    "extragems:topaz_ore",
+    "extragems:deepslate_topaz_ore"
+  ]
 }

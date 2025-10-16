@@ -7,11 +7,10 @@ import net.minecraft.world.item.Rarity;
 public class ItemGemCharged extends Item {
 
     public ItemGemCharged(Properties properties) {
-        super(properties
-            .rarity(Rarity.UNCOMMON)
-        );
+        super(properties.rarity(Rarity.UNCOMMON));
 
     }
+
 
     @Override
     public boolean isFoil(ItemStack stack) {

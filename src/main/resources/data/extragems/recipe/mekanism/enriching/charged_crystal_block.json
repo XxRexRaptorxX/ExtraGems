@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:storage_blocks/crystal"
+  "input": {
+    "tag": "c:storage_blocks/crystal"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:charged_crystal_block"
   }
 }

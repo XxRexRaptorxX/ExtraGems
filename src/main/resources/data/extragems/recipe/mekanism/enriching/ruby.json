@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:ores/ruby"
+  "input": {
+    "tag": "c:ores/ruby"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:ruby",
     "count": 2
   }

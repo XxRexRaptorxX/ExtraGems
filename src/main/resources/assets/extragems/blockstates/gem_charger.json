@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "extragems:block/gem_charger" }
+    "": {
+      "model": "extragems:block/gem_charger"
+    }
   }
 }

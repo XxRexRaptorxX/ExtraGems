@@ -6,12 +6,10 @@
     }
   ],
   "type": "mekanism:enriching",
-  "input":
-  {
-      "tag": "c:ores/sapphire"
+  "input": {
+    "tag": "c:ores/sapphire"
   },
-  "output":
-  {
+  "output": {
     "id": "extragems:sapphire",
     "count": 2
   }

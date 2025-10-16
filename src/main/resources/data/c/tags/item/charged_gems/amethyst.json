@@ -1,7 +1,6 @@
 {
   "replace": false,
-  "values":
-          [
-            "extragems:amethyst_charged"
-          ]
+  "values": [
+    "extragems:amethyst_charged"
+  ]
 }
