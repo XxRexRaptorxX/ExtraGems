@@ -8,7 +8,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import xxrexraptorxx.extragems.main.References;
 
-public class CreativeModeTabs {
+public class CreativeTabs {
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, References.MODID);
 
@@ -104,21 +104,23 @@ public class CreativeModeTabs {
                         output.accept(ModBlocks.CHARGED_AMETHYST_BLOCK.get());
                         output.accept(ModBlocks.RUBY_BLOCK.get());
                         output.accept(ModBlocks.CHARGED_RUBY_BLOCK.get());
-                        output.accept(ModBlocks.RUBY_ORE.get());
-                        output.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.CHARGED_SAPPHIRE_BLOCK.get());
-                        output.accept(ModBlocks.SAPPHIRE_ORE.get());
-                        output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                         output.accept(ModBlocks.TOPAZ_BLOCK.get());
                         output.accept(ModBlocks.CHARGED_TOPAZ_BLOCK.get());
-                        output.accept(ModBlocks.TOPAZ_ORE.get());
-                        output.accept(ModBlocks.DEEPSLATE_TOPAZ_ORE.get());
                         output.accept(ModBlocks.CRYSTAL_BLOCK.get());
                         output.accept(ModBlocks.CHARGED_CRYSTAL_BLOCK.get());
-                        output.accept(ModBlocks.CRYSTAL_ORE.get());
-                        output.accept(ModBlocks.DEEPSLATE_CRYSTAL_ORE.get());
                         output.accept(ModBlocks.CHARGED_EMERALD_BLOCK.get());
                         output.accept(ModBlocks.CHARGED_DIAMOND_BLOCK.get());
+
+                        output.accept(ModBlocks.RUBY_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
+                        output.accept(ModBlocks.SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                        output.accept(ModBlocks.TOPAZ_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_TOPAZ_ORE.get());
+                        output.accept(ModBlocks.CRYSTAL_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_CRYSTAL_ORE.get());
+
                     }).build());
 }
