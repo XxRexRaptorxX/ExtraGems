@@ -12,7 +12,7 @@ import xxrexraptorxx.extragems.main.References;
 
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = References.MODID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = References.MODID)
 public class DataGenerators {
 
     @SubscribeEvent
@@ -24,7 +24,7 @@ public class DataGenerators {
 
         BlockTagsProvider blocktags = new BlockTagGen(packOutput, lookupProvider);
         generator.addProvider(true, blocktags);
-        generator.addProvider(true, new ItemTagGen(packOutput, lookupProvider, blocktags.contentsGetter()));
+        generator.addProvider(true, new ItemTagGen(packOutput, lookupProvider));
         generator.addProvider(true, new ModelDataGen(packOutput));
         generator.addProvider(true, new ModDatapackProvider(packOutput, lookupProvider));
 

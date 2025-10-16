@@ -74,7 +74,7 @@ public class GemHelper {
                 return ModItems.CHARGED_EMERALD.get();
 
             default :
-                ExtraGems.LOGGER.error("Invalid registry name for gem type.");
+                ExtraGems.LOGGER.error("Invalid registry name for gem type: " + gem);
                 return Items.COAL;
         }
     }

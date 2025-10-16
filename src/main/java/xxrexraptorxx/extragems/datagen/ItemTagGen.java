@@ -2,9 +2,8 @@ package xxrexraptorxx.extragems.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.data.ItemTagsProvider;
 import xxrexraptorxx.extragems.main.References;
 import xxrexraptorxx.extragems.registry.ModItems;
 
@@ -12,8 +11,8 @@ import java.util.concurrent.CompletableFuture;
 
 public class ItemTagGen extends ItemTagsProvider {
 
-    public ItemTagGen(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> provider) {
-        super(packOutput, lookupProvider, provider, References.MODID);
+    public ItemTagGen(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> lookupProvider) {
+        super(packOutput, lookupProvider, References.MODID);
     }
 
 

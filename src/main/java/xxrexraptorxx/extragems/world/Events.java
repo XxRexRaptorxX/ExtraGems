@@ -209,7 +209,7 @@ public class Events {
                         if (!level.isClientSide()) {
                             event.getItemStack().shrink(1);
                             player.onEnchantmentPerformed(null, Config.CHARGING_COST.get());
-                            ItemHandlerHelper.giveItemToPlayer(player, new ItemStack(GemHelper.getChargedGemVariant(player.getItemInHand(player.getUsedItemHand()).copy())));
+                            player.addItem(new ItemStack(GemHelper.getChargedGemVariant(player.getItemInHand(player.getUsedItemHand()).copy())));
 
                             event.setUseBlock(TriState.FALSE);
                             event.setUseItem(TriState.FALSE);
