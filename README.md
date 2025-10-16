@@ -56,6 +56,11 @@ Do you want more ores? Try the [ExtraOres](https://www.curseforge.com/minecraft/
 
 ## 🗃️ Dependencies
 
+### Required:
+- **Magma Core**
+  - Provides basic code and features such as update-checker
+  - [CurseForge][cf_magmacore] | [Modrinth][mr_magmacore]
+
 ### Supported:
 - **Just Enough Items (JEI)**
   - Provides some additional info pages and shows all recipes
@@ -130,6 +135,8 @@ Do you want more ores? Try the [ExtraOres](https://www.curseforge.com/minecraft/
   <a href="https://bisecthosting.com/REXRAPTOR"><img src="https://github.com/XxRexRaptorxX/General/blob/main/BH_REX_Bisect.png?raw=true" alt="Bisect Hosting - 25% off with code: REXRAPTOR"/></a>
 </p>
 
+[cf_magmacore]: https://www.curseforge.com/minecraft/mc-mods/magma-core
+[mr_magmacore]: https://modrinth.com/mod/magma-core
 [cf_jeed]: https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed
 [mr_jeed]: https://modrinth.com/mod/just-enough-effect-descriptions-jeed
 [cf_jei]: https://www.curseforge.com/minecraft/mc-mods/jei
