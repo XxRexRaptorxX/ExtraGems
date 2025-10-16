@@ -4,12 +4,11 @@ import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.registration.IRecipeRegistration;
-import mezz.jei.api.runtime.IIngredientManager;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import xxrexraptorxx.extragems.main.References;
 import xxrexraptorxx.extragems.registry.ModItems;
+import xxrexraptorxx.magmacore.utils.FormattingHelper;
 
 import java.util.ArrayList;
 
@@ -35,8 +34,6 @@ public class JEIIntegration implements IModPlugin {
         gems.add(new ItemStack(ModItems.CHARGED_DIAMOND.get()));
         gems.add(new ItemStack(ModItems.CHARGED_EMERALD.get()));
 
-        IIngredientManager ingredientManager = registry.getIngredientManager();
-
-        registry.addIngredientInfo(gems, VanillaTypes.ITEM_STACK, Component.translatable("message." + References.MODID + ".charged_gem_jei_desc"));
+        registry.addIngredientInfo(gems, VanillaTypes.ITEM_STACK, FormattingHelper.setDescComponent(References.MODID, "charged_gem_jei_desc"));
     }
 }

@@ -7,6 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import xxrexraptorxx.extragems.registry.*;
 import xxrexraptorxx.extragems.utils.Config;
+import xxrexraptorxx.magmacore.main.ModRegistry;
 
 /**
  * @author XxRexRaptorxX (RexRaptor)
@@ -17,12 +18,13 @@ public class ExtraGems {
 
     public static final Logger LOGGER = LogManager.getLogger();
 
-
     public ExtraGems(IEventBus bus, ModContainer container) {
         ModBlocks.init(bus);
         ModItems.init(bus);
         Config.init(container);
         CreativeModeTabs.init(bus);
+
+        ModRegistry.register(References.MODID, References.NAME, References.URL);
     }
 
 }

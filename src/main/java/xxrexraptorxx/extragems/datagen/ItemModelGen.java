@@ -15,8 +15,6 @@ import net.minecraft.world.item.equipment.EquipmentAsset;
 import net.minecraft.world.item.equipment.trim.MaterialAssetGroup;
 import net.minecraft.world.item.equipment.trim.TrimMaterial;
 import net.minecraft.world.item.equipment.trim.TrimMaterials;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 import xxrexraptorxx.extragems.registry.ModArmorMaterials;
 import xxrexraptorxx.extragems.registry.ModItems;
 import xxrexraptorxx.extragems.registry.ModTrimMaterials;
@@ -158,8 +156,8 @@ public class ItemModelGen extends ItemModelGenerators {
     }
 
 
-    @OnlyIn(Dist.CLIENT)
     public static record TrimMaterialData(MaterialAssetGroup assets, ResourceKey<TrimMaterial> materialKey) {
+
         public TrimMaterialData(MaterialAssetGroup assets, ResourceKey<TrimMaterial> materialKey) {
             this.assets = assets;
             this.materialKey = materialKey;
